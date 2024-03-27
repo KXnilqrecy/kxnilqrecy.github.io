@@ -1,0 +1,101 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 2rem;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+hr {
+  display: block; /* ブロックレベル要素として表示 */
+  margin-top: 0.5em; /* 上のマージン */
+  margin-bottom: 0.5em; /* 下のマージン */
+  margin-left: auto; /* 左のマージンを自動調整 */
+  margin-right: auto; /* 右のマージンを自動調整 */
+  border-style: inset; /* 線のスタイル */
+  border-width: 1px; /* 線の太さ */
+}
+
+h1 {
+  text-align: center;
+  color: #fef4f4;
+  background-color: #1e2a33;
+}
+
+.current {
+  color: green;
+}
+
+.pcolor {
+  color: #fef4f4;
+}
+
+.tcolor {
+  font-weight: 100;
+  color: #000000;
+}
+
+.de_h2 {
+  font-weight: 100;
+  color: #fef4f4;
+}
+
+.de_h3 {
+  font-weight: 400;
+  color: #fef4f4;
+}
+
+.center {
+  text-align: center;
+}
+
+.c2 {
+  background-color: #3b5566;
+}
+
+.c3 {
+  background-color: #597f99;
+}
+
+.c4 {
+  background-color: #76aacc;
+}
+
+.c5 {
+  background-color: #89c3eb;
+}
+
+.c6 {
+  background-color: #94d4ff;
+}
+
+.c7 {
+  background-color: #eaf4fc;
+}
+
+.blog {
+  border: 3px ridge #ffffff; /* 黒色の1ピクセルの固定枠 */
+  padding: 0.5em;
+  margin: 2em;
+  background-color: #1e2a33;
+  color: #fef4f4;
+}
+
+.tanka {
+  border: 3px ridge #ffffff; /* 黒色の1ピクセルの固定枠 */
+  padding: 0.5em;
+  margin: 2em;
+  background-color: #1e2a33;
+  color: #fef4f4;
+  font-weight: 100;
+}
+
+.staff_h2 {
+  color: black;
+}
+
+.staff_h3 {
+  color: black;
+}
+
+/*# sourceMappingURL=styles.css.map */
