@@ -77,6 +77,13 @@ h1 {
   background-color: #eaf4fc;
 }
 
+.clock {
+  text-align: right;
+  font-weight: 100;
+  color: #fef4f4;
+  background-color: #ba2636;
+}
+
 .blog {
   border: 3px ridge #ffffff; /* 黒色の1ピクセルの固定枠 */
   padding: 0.5em;
