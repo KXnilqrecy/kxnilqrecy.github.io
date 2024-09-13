@@ -41,7 +41,7 @@
     ここに暦を表示
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-    fetch('../../assets/csv/jungo.csv')
+    fetch('https://kxnilqrecy.github.io/assets/csv/jungo.csv')
         .then(response => response.text())
         .then(data => parseCSV(data));
 });
@@ -91,6 +91,8 @@ function parseCSV(data) {
 <p>　余談そのに。現在決定している旬号はグレゴリオ暦2026年初頭までで、もし私かその他メンバーがそれまでにサイト内の旬号データを更新しないとおそらく暦欄が壊れます。もし我々が健在なのに旬号の表示がおかしくなっていたら久入すいうのTwitterまでご連絡ください。</p>
 
 <p>　以上、開発日記でした。無線のマウスを買い換えたら執筆中にスリープして操作不能になるので若干うざったいです。</p>
+
+<p>　追記：パスの指定法に問題があって一部ページで旬号暦が正しく表示されていませんでした。一応の修正はしましたが、もしサイトの一番上の赤いところにundefinedと書いてあるのを見たら、久入の誰かに伝えてください。</p>
 
     <hr>
     <nav>
