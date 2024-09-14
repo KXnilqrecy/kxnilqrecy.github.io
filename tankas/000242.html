@@ -24,11 +24,11 @@
 <meta property="og:title" content="璃月に差す朝焼けが心灼くお前の罪は世界と共に" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-09-14T01:59:22+09:00" />
+<meta property="article:published_time" content="2024-09-14T19:04:31+09:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="璃月に差す朝焼けが心灼くお前の罪は世界と共に" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-14T01:59:22+09:00","datePublished":"2024-09-14T01:59:22+09:00","headline":"璃月に差す朝焼けが心灼くお前の罪は世界と共に","mainEntityOfPage":{"@type":"WebPage","@id":"/tankas/000242.html"},"url":"/tankas/000242.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-14T19:04:31+09:00","datePublished":"2024-09-14T19:04:31+09:00","headline":"璃月に差す朝焼けが心灼くお前の罪は世界と共に","mainEntityOfPage":{"@type":"WebPage","@id":"/tankas/000242.html"},"url":"/tankas/000242.html"}</script>
 <!-- End Jekyll SEO tag -->
 
     <meta name="google-site-verification" content="1XS-_jxYV-ZnPNosmqWTDri7p8729Qo40Ylm4px0YWA" />
@@ -49,7 +49,7 @@ function digitSum(n){
 function parseCSV(data) {
     const jungos = data.split('\n');
     let nowdate = new Date();
-    let epochdate = new Date(2019, 4, 1, 18);
+    const epochdate = new Date(2019, 4, 1, 18);
     let deltadate = (nowdate.getTime() - epochdate.getTime()) / 1000 / 86400;
     let day = Math.floor(deltadate);
     let time = Math.floor((deltadate - day) * 96);
@@ -59,7 +59,13 @@ function parseCSV(data) {
     let hisui1 = ('00' + (hisuinum - (hisuinum % 1000)) / 1000).slice(-2);
     let hisui2 = ('00' + time).slice(-2);
     let cd = digitSum(String(koyominum1) + String(hisui1) + String(hisui2)) % 10;
-    document.getElementById('clock').textContent = `${nowjungo}:${koyominum1}-${cd}${hisui1}${hisui2}`;
+    const lunarepoch = new Date(2019, 4, 5, 7, 45);
+    let lunardelta = (nowdate.getTime() - lunarepoch.getTime()) / 1000 / 86400;
+    let lp = Math.floor(lunardelta - Math.floor(lunardelta / 29.530582990) * 29.530582990);
+    const xqepoch = new Date(2018, 8, 23, 10, 54);
+    let xqdelta = (nowdate.getTime() - xqepoch.getTime()) / 1000 / 86400;
+    let xq = Math.floor(Math.ceil(xqdelta / 365.242050827423) * 365.242050827423 - xqdelta);
+    document.getElementById('clock').textContent = `Xq${xq}Lp${lp}/${nowjungo}:${koyominum1}-${cd}${hisui1}${hisui2}　`;
 }
     </script>
 </div>
