@@ -46,10 +46,6 @@
         .then(response => response.text())
         .then(data => parseCSV(data));
 });
-function digitSum(n){
-     const nums = String(n).split('').map(Number);
-     return nums.reduce((a, c) => a + c);
-}
 function decToBase62(num_){
   if (num_ === null) return void 0;
   let num = Number(num_);
@@ -82,20 +78,18 @@ function parseCSV(data) {
     const epochdate = new Date(2019, 4, 1, 18);
     let deltadate = (nowdate.getTime() - epochdate.getTime()) / 1000 / 86400;
     let day = Math.floor(deltadate);
-    let time = Math.floor((deltadate - day) * 96);
-    let hisuinum = day + 5007;
+    let time = (deltadate - day);
+    let hisuiepoch = new Date(2005, 7, 15);
+    let hisuinum = Math.floor((nowdate.getTime() - hisuiepoch.getTime()) / 86400000);
     let nowjungo = jungos[day];
-    let koyominum1 = ('000' + (hisuinum % 1000)).slice(-3);
-    let hisui1 = ('00' + (hisuinum - (hisuinum % 1000)) / 1000).slice(-2);
-    let hisui2 = ('00' + time).slice(-2);
-    let cd = digitSum(String(koyominum1) + String(hisui1) + String(hisui2)) % 10;
+    let koku = Math.floor((time * 96) * 10) / 10;
     const lunarepoch = new Date(2019, 4, 5, 7, 45);
     let lunardelta = (nowdate.getTime() - lunarepoch.getTime()) / 1000 / 86400;
     let lp = Math.floor((lunardelta - Math.floor(lunardelta / 29.530582990) * 29.530582990) * 10) / 10;
     const xqepoch = new Date(2018, 8, 23, 10, 54);
     let xqdelta = (nowdate.getTime() - xqepoch.getTime()) / 1000 / 86400;
     let xq = Math.floor(Math.ceil(xqdelta / 365.242050827423) * 365.242050827423 - xqdelta);
-    document.getElementById('clock').textContent = `Xq${xq}Lp${lp}/${nowjungo}:${koyominum1}-${cd}${hisui1}${hisui2}　`;
+    document.getElementById('clock').textContent = `Xq${xq}Lp${lp}/${nowjungo}:&${hisuinum}-${koku}刻　`;
     const longepoch = new Date(-5513, 8, 26);
     let longdelta = nowdate.getTime() - longepoch.getTime();
     let long1 = ('0000' + decToBase62(longdelta % 14776334)).slice(-4);
@@ -123,6 +117,8 @@ function parseCSV(data) {
 <p>　一度見た文字列は、約151京0675兆9202億4503万4793年後に全く同じものが現れて、理論上はその間にもう一度見ることはできません。理論上。</p>
 
 <p>　たぶんその前にjavascriptの変数の桁数が足りなくなって計算不可になると思いますが、たぶんそれより前にこのサイトが使えなくなる(インターネットが壊れるとか、githubpagesがサ終するとか)方がはるかに確率が高いです。諸行無常。</p>
+
+<p>　追記：あの郵便番号みたいなやつですが、長期暦を追加したらただの下位互換になってしまったので廃止しました。代替として、どうせということで分かりやすさに振って、彼水数(伊那すいうが人工言語を作り始めた日から今日までの経過日数)と、旬号暦における一日の始まりからの24時間を96等分した「刻」を導入しました。</p>
 
     <hr>
     <nav>
