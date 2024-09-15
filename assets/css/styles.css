@@ -82,6 +82,8 @@ h1 {
   font-weight: 100;
   color: #fef4f4;
   background-color: #ba2636;
+  display: flex;
+  justify-content: space-between;
 }
 
 .blog {

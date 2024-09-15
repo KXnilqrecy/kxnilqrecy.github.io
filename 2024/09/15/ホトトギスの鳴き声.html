@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E4NPYH1T62"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E4NPYH1T62');
+</script>
+    <meta charset="utf-8">
+    <title>ホトトギスの鳴き声</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://kxnilqrecy.github.io/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link type="application/atom+xml" rel="alternate" href="/feed.xml" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>ホトトギスの鳴き声</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="ホトトギスの鳴き声" />
+<meta name="author" content="ina" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="　おめでたい場に一升瓶二本の酒を贈るのは「一升(一生)を共にする」という意味らしいですね。嘘です。伊那すいうです。" />
+<meta property="og:description" content="　おめでたい場に一升瓶二本の酒を贈るのは「一升(一生)を共にする」という意味らしいですね。嘘です。伊那すいうです。" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-09-15T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="ホトトギスの鳴き声" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"ina"},"dateModified":"2024-09-15T00:00:00+09:00","datePublished":"2024-09-15T00:00:00+09:00","description":"　おめでたい場に一升瓶二本の酒を贈るのは「一升(一生)を共にする」という意味らしいですね。嘘です。伊那すいうです。","headline":"ホトトギスの鳴き声","mainEntityOfPage":{"@type":"WebPage","@id":"/2024/09/15/%E3%83%9B%E3%83%88%E3%83%88%E3%82%AE%E3%82%B9%E3%81%AE%E9%B3%B4%E3%81%8D%E5%A3%B0.html"},"url":"/2024/09/15/%E3%83%9B%E3%83%88%E3%83%88%E3%82%AE%E3%82%B9%E3%81%AE%E9%B3%B4%E3%81%8D%E5%A3%B0.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="google-site-verification" content="1XS-_jxYV-ZnPNosmqWTDri7p8729Qo40Ylm4px0YWA" />
+  </head>
+  <body class="c7">
+    <div class="clock">
+    <div id="clock2">ここに長期暦を表示</div>
+    <div id="clock">ここに暦を表示</div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    fetch('https://kxnilqrecy.github.io/assets/csv/jungo.csv')
+        .then(response => response.text())
+        .then(data => parseCSV(data));
+});
+function digitSum(n){
+     const nums = String(n).split('').map(Number);
+     return nums.reduce((a, c) => a + c);
+}
+function decToBase62(num_){
+  if (num_ === null) return void 0;
+  let num = Number(num_);
+  if (isNaN(num)) return void 0;
+  if (Math.floor(num) !== num) return void 0;
+  
+  let is_negative = num < 0;
+  num = Math.abs(num);
+  
+  let ret = "", digit = 0;
+  while(true){
+    digit = num % 62;
+    if (digit < 10)
+      ret+=String(digit); //0-9
+    else if (digit < 36)
+      ret+=String.fromCharCode(digit + 55); //A-Z
+    else
+      ret+=String.fromCharCode(digit + 61); //a-z
+    if (num < 62)
+      break;
+    else
+      num = Math.floor(num / 62);
+  }
+  if (is_negative) ret+="-";
+  return ret.split("").reverse().join("");
+}
+function parseCSV(data) {
+    const jungos = data.split('\n');
+    let nowdate = new Date();
+    const epochdate = new Date(2019, 4, 1, 18);
+    let deltadate = (nowdate.getTime() - epochdate.getTime()) / 1000 / 86400;
+    let day = Math.floor(deltadate);
+    let time = Math.floor((deltadate - day) * 96);
+    let hisuinum = day + 5007;
+    let nowjungo = jungos[day];
+    let koyominum1 = ('000' + (hisuinum % 1000)).slice(-3);
+    let hisui1 = ('00' + (hisuinum - (hisuinum % 1000)) / 1000).slice(-2);
+    let hisui2 = ('00' + time).slice(-2);
+    let cd = digitSum(String(koyominum1) + String(hisui1) + String(hisui2)) % 10;
+    const lunarepoch = new Date(2019, 4, 5, 7, 45);
+    let lunardelta = (nowdate.getTime() - lunarepoch.getTime()) / 1000 / 86400;
+    let lp = Math.floor((lunardelta - Math.floor(lunardelta / 29.530582990) * 29.530582990) * 10) / 10;
+    const xqepoch = new Date(2018, 8, 23, 10, 54);
+    let xqdelta = (nowdate.getTime() - xqepoch.getTime()) / 1000 / 86400;
+    let xq = Math.floor(Math.ceil(xqdelta / 365.242050827423) * 365.242050827423 - xqdelta);
+    document.getElementById('clock').textContent = `Xq${xq}Lp${lp}/${nowjungo}:${koyominum1}-${cd}${hisui1}${hisui2}　`;
+    const longepoch = new Date(-5513, 8, 26);
+    let longdelta = nowdate.getTime() - longepoch.getTime();
+    let long1 = ('0000' + decToBase62(longdelta % 14776334)).slice(-4);
+    let long2 = ('0000' + decToBase62(longdelta % 14776331)).slice(-4);
+    let long3 = ('0000' + decToBase62(longdelta % 14776329)).slice(-4);
+    let long4 = ('0000' + decToBase62(longdelta % 14776327)).slice(-4);
+    document.getElementById('clock2').textContent = `　${long1}.${long2}.${long3}.${long4}`;
+}
+    </script>
+</div>
+    <h1>ホトトギスの鳴き声</h1>
+
+<p>
+  15 Sep 2024
+  
+  
+    - <a href="/authors/ina.html">伊那すいう</a>
+  
+</p>
+
+<p>　おめでたい場に一升瓶二本の酒を贈るのは「一升(一生)を共にする」という意味らしいですね。嘘です。伊那すいうです。</p>
+
+<p>　てかこういう祭りやらなんやらで物品の授受があるのってひょっとして田舎だけなんですかね？</p>
+
+<p>　ということで田舎のお話。私こと伊那すいうが住んでいる飛騨地方に伝わるお話を記録しておこうと思います。別に私が記録しなくてもどこかに残ってそうな気もしますが、飛騨弁のサイトの大きいところがジオシティーズの終了で吹っ飛んだといったような前例がありますし、バックアップはいくらあってもいいですからね。</p>
+
+<p>　ということで私のうろ覚えの話をここに書いていこうと思います。</p>
+
+<p>　――ある山奥にホトトギスの兄弟が住んでいました。</p>
+
+<p>　ホトトギスの弟は、川で魚を獲ってきて、家に帰ってきたところです。</p>
+
+<p>　弟は魚を焼いて、兄においしいところを残しておこうと、魚の内臓とかのあまりおいしくない部分だけ食べて寝ました。</p>
+
+<p>　遅れて帰ってきた兄。家にあるのはおいしいところだけ残った焼き魚と、寝ている弟。</p>
+
+<p>　そこで兄はあろうことか、「こんな魚のおいしいところだけ残しておくなんて、きっと弟はより良いものを食べたに違いない」と疑ってしまいます。</p>
+
+<p>　そして兄は、家にあった包丁で弟の腹を裂いてしまいます。</p>
+
+<p>　しかし、弟の腹からは魚の内臓しか出てきません。</p>
+
+<p>　後悔先に立たず、これを悔やんだ兄はこう鳴いたと言われています。</p>
+
+<p>「包丁欠けたか、弟切ったか」、「ホッチョカケタカ」と。しゃみしゃっきり。</p>
+
+<p>　――以上が私の住む周りで伝わる「ホトトギスの鳴き方に関するお話」です。「しゃみしゃっきり」とは、これも飛騨の言葉で「これでお話はおしまい」という意味だそうです。</p>
+
+    <hr>
+    <nav>
+    <div class="center">サイトナビゲーション<br>
+    
+      <a href="/" >Home</a>
+    
+      <a href="/subcontents/blog.html" >「久入すいう」のブログ</a>
+    
+      <a href="/subcontents/pseudrences.html" >夢似科学研究所</a>
+    
+      <a href="/subcontents/tankas.html" >千翠れいしの短歌集</a>
+    
+      <a href="/subcontents/ytigeets.html" >ユーティゲート測候所</a>
+    
+      <a href="/subcontents/conlangs.html" >久入言語研究室</a>
+    
+      <a href="/subcontents/staff.html" >構成員</a>
+    
+      <a href="/about.html" >恵生ニルクレシィについて</a>
+    
+    </div>
+</nav>
+  </body>
+</html>
