@@ -89,14 +89,14 @@ function parseCSV(data) {
     const xqepoch = new Date(2018, 8, 23, 10, 54);
     let xqdelta = (nowdate.getTime() - xqepoch.getTime()) / 1000 / 86400;
     let xq = Math.floor(Math.ceil(xqdelta / 365.242050827423) * 365.242050827423 - xqdelta);
-    document.getElementById('clock').textContent = `Xq${xq}Lp${lp}/${nowjungo}:&${hisuinum}-${koku}刻　`;
+    document.getElementById('clock').textContent = `Xq${xq}Lp${lp}/${nowjungo}:&${hisuinum}-${koku}刻`;
     const longepoch = new Date(-5513, 8, 26);
     let longdelta = nowdate.getTime() - longepoch.getTime();
     let long1 = ('0000' + decToBase62(longdelta % 14776334)).slice(-4);
     let long2 = ('0000' + decToBase62(longdelta % 14776331)).slice(-4);
     let long3 = ('0000' + decToBase62(longdelta % 14776329)).slice(-4);
     let long4 = ('0000' + decToBase62(longdelta % 14776327)).slice(-4);
-    document.getElementById('clock2').textContent = `　${long1}.${long2}.${long3}.${long4}`;
+    document.getElementById('clock2').textContent = `${long1}.${long2}.${long3}.${long4}`;
 }
     </script>
 </div>
