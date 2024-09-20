@@ -74,6 +74,7 @@ function decToBase62(num_){
 }
 function parseCSV(data) {
     const jungos = data.split('\n');
+    const lpmark = ['🌑', '🌒', '🌓', '🌔', '🌕', '🌖', '🌗', '🌘', '🌑'];
     let nowdate = new Date();
     const epochdate = new Date(2019, 4, 1, 18);
     let deltadate = (nowdate.getTime() - epochdate.getTime()) / 1000 / 86400;
@@ -86,10 +87,12 @@ function parseCSV(data) {
     const lunarepoch = new Date(2019, 4, 5, 7, 45);
     let lunardelta = (nowdate.getTime() - lunarepoch.getTime()) / 1000 / 86400;
     let lp = Math.floor((lunardelta - Math.floor(lunardelta / 29.530582990) * 29.530582990) * 10) / 10;
+    let lpmknum = Math.floor((lunardelta - Math.floor(lunardelta / 29.530582990) * 29.530582990) / 29.530582990 * 8);
+    let mk = lpmark[lpmknum];
     const xqepoch = new Date(2018, 8, 23, 10, 54);
     let xqdelta = (nowdate.getTime() - xqepoch.getTime()) / 1000 / 86400;
     let xq = Math.floor(Math.ceil(xqdelta / 365.242050827423) * 365.242050827423 - xqdelta);
-    document.getElementById('clock').textContent = `Xq${xq}Lp${lp}/${nowjungo}:&${hisuinum}-${koku}刻`;
+    document.getElementById('clock').textContent = `Xq${xq}Lp${lp}${mk}/${nowjungo}:&${hisuinum}-${koku}刻`;
     const longepoch = new Date(-5513, 8, 26);
     let longdelta = nowdate.getTime() - longepoch.getTime();
     let long1 = ('0000' + decToBase62(longdelta % 14776334)).slice(-4);
