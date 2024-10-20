@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://kxnilqrecy.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kxnilqrecy.github.io/" rel="alternate" type="text/html" /><updated>2024-10-19T14:39:20+09:00</updated><id>https://kxnilqrecy.github.io/feed.xml</id><entry><title type="html">原神プレイメモ2</title><link href="https://kxnilqrecy.github.io/2024/10/11/%E5%8E%9F%E7%A5%9E%E3%83%97%E3%83%AC%E3%82%A4%E3%83%A1%E3%83%A22.html" rel="alternate" type="text/html" title="原神プレイメモ2" /><published>2024-10-11T00:00:00+09:00</published><updated>2024-10-11T00:00:00+09:00</updated><id>https://kxnilqrecy.github.io/2024/10/11/%E5%8E%9F%E7%A5%9E%E3%83%97%E3%83%AC%E3%82%A4%E3%83%A1%E3%83%A22</id><content type="html" xml:base="https://kxnilqrecy.github.io/2024/10/11/%E5%8E%9F%E7%A5%9E%E3%83%97%E3%83%AC%E3%82%A4%E3%83%A1%E3%83%A22.html"><![CDATA[<p>　お久しぶりです、めをかです。今回はv5.1最新の魔神任務と見聞任務のネタバレを含みます。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://kxnilqrecy.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kxnilqrecy.github.io/" rel="alternate" type="text/html" /><updated>2024-10-20T22:25:28+09:00</updated><id>https://kxnilqrecy.github.io/feed.xml</id><entry><title type="html">ブログの大幅改善</title><link href="https://kxnilqrecy.github.io/2024/10/20/%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AE%E5%A4%A7%E5%B9%85%E6%94%B9%E5%96%84.html" rel="alternate" type="text/html" title="ブログの大幅改善" /><published>2024-10-20T00:00:00+09:00</published><updated>2024-10-20T00:00:00+09:00</updated><id>https://kxnilqrecy.github.io/2024/10/20/%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AE%E5%A4%A7%E5%B9%85%E6%94%B9%E5%96%84</id><content type="html" xml:base="https://kxnilqrecy.github.io/2024/10/20/%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AE%E5%A4%A7%E5%B9%85%E6%94%B9%E5%96%84.html"><![CDATA[<p>　蓮間ひさとの開発日記です。</p>
+
+<p>　今回は、ユーティゲート、人工言語、夢似科学のページを新しい方から順に並べるようにしました。</p>
+
+<p>　実は、それまではなんと「タイトルのUnicode順」に並んでいました。なんという有様。</p>
+
+<p>　最近は伊那が新笈霜語の進捗を出そうと頑張っているので、その頑張りがせめてページの表示順に現れるようにしてやりたかった、というのは後付けですが、日付順の方が皆さん見やすいでしょう。</p>
+
+<p>　なお、その関係で記事の最終更新日の管理が旬号から彼水数に変更になりました。旬号は電算上でのソート性が壊滅的なので仕方のない措置ですが、どうせ久入外の人間は旬号を見てもいつのことか分からないでしょうから、大して問題にはならないでしょう。もし要望があれば旬号と併記しますが。たぶん来ないでしょ。</p>
+
+<p>　……え、グレゴリオ暦と併記してくれ？　あーあーきこえないー。</p>]]></content><author><name>hasuma</name></author><summary type="html"><![CDATA[　蓮間ひさとの開発日記です。]]></summary></entry><entry><title type="html">原神プレイメモ2</title><link href="https://kxnilqrecy.github.io/2024/10/11/%E5%8E%9F%E7%A5%9E%E3%83%97%E3%83%AC%E3%82%A4%E3%83%A1%E3%83%A22.html" rel="alternate" type="text/html" title="原神プレイメモ2" /><published>2024-10-11T00:00:00+09:00</published><updated>2024-10-11T00:00:00+09:00</updated><id>https://kxnilqrecy.github.io/2024/10/11/%E5%8E%9F%E7%A5%9E%E3%83%97%E3%83%AC%E3%82%A4%E3%83%A1%E3%83%A22</id><content type="html" xml:base="https://kxnilqrecy.github.io/2024/10/11/%E5%8E%9F%E7%A5%9E%E3%83%97%E3%83%AC%E3%82%A4%E3%83%A1%E3%83%A22.html"><![CDATA[<p>　お久しぶりです、めをかです。今回はv5.1最新の魔神任務と見聞任務のネタバレを含みます。</p>
 
 <h3 id="導入">導入</h3>
 
@@ -850,36 +860,4 @@
 
 <p>　以上、開発日記でした。無線のマウスを買い換えたら執筆中にスリープして操作不能になるので若干うざったいです。</p>
 
-<p>　追記：パスの指定法に問題があって一部ページで旬号暦が正しく表示されていませんでした。一応の修正はしましたが、もしサイトの一番上の赤いところにundefinedと書いてあるのを見たら、久入の誰かに伝えてください。</p>]]></content><author><name>hasuma</name></author><summary type="html"><![CDATA[　プログラミング担当の蓮間ひさとです。恵生ニルクレシィのサイトにカレンダー機能を追加しました。]]></summary></entry><entry><title type="html">ブログ再開の報告</title><link href="https://kxnilqrecy.github.io/2024/09/13/%E3%83%96%E3%83%AD%E3%82%B0%E5%86%8D%E9%96%8B%E3%81%AE%E5%A0%B1%E5%91%8A.html" rel="alternate" type="text/html" title="ブログ再開の報告" /><published>2024-09-13T00:00:00+09:00</published><updated>2024-09-13T00:00:00+09:00</updated><id>https://kxnilqrecy.github.io/2024/09/13/%E3%83%96%E3%83%AD%E3%82%B0%E5%86%8D%E9%96%8B%E3%81%AE%E5%A0%B1%E5%91%8A</id><content type="html" xml:base="https://kxnilqrecy.github.io/2024/09/13/%E3%83%96%E3%83%AD%E3%82%B0%E5%86%8D%E9%96%8B%E3%81%AE%E5%A0%B1%E5%91%8A.html"><![CDATA[<p>　3ヶ月ぶりの更新です。3ヶ月経ってるのに未だにチョコレートが溶けるような暑さが続いているのは何なんでしょうね。伊那すいうです。</p>
-
-<p>　7月あたりから今日まで長いお休みを頂いておりました。ブログだけでなくTwitterとかも全部停止していました。</p>
-
-<p>　Twitterはちょっと前から復帰していたのですが、深夜の寝付けない焦燥感に急かされるまま界隈の話題(IPAの記法の話)にいっちょ噛みしたら微妙に広がってしまって、炎上というほどではないのですがFF外からの巻き込みリプが来るくらいには広がってしまい、SNSって怖いなと思ってしまったのでまたしばらくTwitterは見る専になります。何か思ったことがあったらブログにシタタめることにします。</p>
-
-<p>　……ちょっと話題が逸れるのですが、最近になってこのブログの過去ログを見てたら、結構面白かったんですよね。そりゃ自分で書いた文章だから自分の好みに合うのは当然なのかもしれませんけど……。</p>
-
-<p>　こほん。</p>
-
-<p>　で、休止していた理由ですが、単純に「SNS疲れ」と形容してしまっていいものだと思います。8月までTwitterは見ることすらしていなかったので界隈のトレンドとか相互さんのリアルの変化とか一切追えていません。あと、恵生ニルクレシィとは別口で所属している団体の方でちょっとしたゴタゴタがあって、それによる疲弊を避けるため、という理由もあります。</p>
-
-<p>　今は大体解消に向かいつつあって、それで私もTwitterを追えるくらいには復活してきたのですが、ブログは後回しになっていました。</p>
-
-<p>　何故かというと、書くことが特にないからです。</p>
-
-<p>　今日の更新も、実は新笈霜語の記事の修正のついでなんですよね。</p>
-
-<p>　いや、書き始めれば、今日みたいにある程度の文章を出力できるようになっているのかもしれません。その意味では書くことが特に「なかった」からという、過去形のほうが適切かもしれません。</p>
-
-<p>　ということで近況ですが、最近はユーティゲートとは別の(比較的軽めの)世界観をいくつか練っていて、その設定で小説を書いてみようかなといった感じです。</p>
-
-<p>　ユーティゲート世界観は、世界観そのものの創作としてはそこそこ面白いのですが、なにかそれで物語を起こそうと思うと若干世界観が重たい(雰囲気が暗いとかじゃなくて、考慮すべき事象が多いわりにそれを考慮することで得られる面白さが少ない)ので、ユーティゲートから要素をピックしてきて世界観に起こしたりしています。</p>
-
-<p>　人工言語も、Twitterの復帰に伴ってじわじわと進んでいます。まぁ進んでいるといっても特に原動力があるわけでもないので完全に惰力ですが。</p>
-
-<p>　一方――と言っていいのか微妙ですが、千翠れいしの活動、つまり短歌詠みは完全に止まっています。奴曰く、インプット圧をロストした結果アウトプット欲がなくなってしまったらしいです。インプット不足は久入メンバー全体の問題ですが、千翠にはそれがかなり顕著に表れたようです。</p>
-
-<p>　あと、千都沙和のアニメ鑑賞日記も止まっています。つまりアニメも最近はほぼ観れておりません。友人にオススメされた作品はいくつかあるのでインプット圧の強化策の一環としてアニメを観るという目標はあるのですが、義務感でアニメを見てもしゃあないので、もうしばらくお休みさせておこうと思います。</p>
-
-<p>　お知らせはこれくらいですかね。何か気になる点があったら、久入すいうのTwitterにご連絡ください。今なら復帰しているので。</p>
-
-<p>　……これ、うまくアップロードできるかしらん。</p>]]></content><author><name>ina</name></author><summary type="html"><![CDATA[　3ヶ月ぶりの更新です。3ヶ月経ってるのに未だにチョコレートが溶けるような暑さが続いているのは何なんでしょうね。伊那すいうです。]]></summary></entry></feed>
+<p>　追記：パスの指定法に問題があって一部ページで旬号暦が正しく表示されていませんでした。一応の修正はしましたが、もしサイトの一番上の赤いところにundefinedと書いてあるのを見たら、久入の誰かに伝えてください。</p>]]></content><author><name>hasuma</name></author><summary type="html"><![CDATA[　プログラミング担当の蓮間ひさとです。恵生ニルクレシィのサイトにカレンダー機能を追加しました。]]></summary></entry></feed>
