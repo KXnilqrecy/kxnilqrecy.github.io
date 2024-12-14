@@ -87,7 +87,10 @@ function parseCSV(data) {
     const xqepoch = new Date(2018, 8, 23, 10, 54);
     let xqdelta = (nowdate.getTime() - xqepoch.getTime()) / 1000 / 86400;
     let xq = Math.floor(Math.ceil(xqdelta / 365.242050827423) * 365.242050827423 - xqdelta);
-    document.getElementById('clock').textContent = `Xq${xq}Lp${lp}${mk}/${nowjungo}:&${hisuinum}-${koku}刻`;
+    const qiepoch = new Date(2005, 8, 23, 7, 23);
+    let qidelta = (nowdate.getTime() - qiepoch.getTime()) / 1000 / 86400;
+    let qi = Math.floor(qidelta / 52.177435832489);
+    document.getElementById('clock').textContent = `Xq${xq}Lp${lp}${mk}/${nowjungo}(第${qi}期):&${hisuinum}-${koku}刻`;
     const longepoch = new Date(-5513, 8, 26);
     let longdelta = nowdate.getTime() - longepoch.getTime();
     let long1 = ('0000' + decToBase62(longdelta % 14776334)).slice(-4);
