@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E4NPYH1T62"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E4NPYH1T62');
+</script>
+    <meta charset="utf-8">
+    <title>クリスマスですが</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://kxnilqrecy.github.io/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link type="application/atom+xml" rel="alternate" href="https://kxnilqrecy.github.io/feed.xml" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>クリスマスですが</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="クリスマスですが" />
+<meta name="author" content="hasuma" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="　開発担当の蓮間です。" />
+<meta property="og:description" content="　開発担当の蓮間です。" />
+<link rel="canonical" href="https://kxnilqrecy.github.io/2024/12/25/%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9%E3%81%A7%E3%81%99%E3%81%8C.html" />
+<meta property="og:url" content="https://kxnilqrecy.github.io/2024/12/25/%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9%E3%81%A7%E3%81%99%E3%81%8C.html" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-12-25T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="クリスマスですが" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"hasuma"},"dateModified":"2024-12-25T00:00:00+09:00","datePublished":"2024-12-25T00:00:00+09:00","description":"　開発担当の蓮間です。","headline":"クリスマスですが","mainEntityOfPage":{"@type":"WebPage","@id":"https://kxnilqrecy.github.io/2024/12/25/%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9%E3%81%A7%E3%81%99%E3%81%8C.html"},"url":"https://kxnilqrecy.github.io/2024/12/25/%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9%E3%81%A7%E3%81%99%E3%81%8C.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="google-site-verification" content="1XS-_jxYV-ZnPNosmqWTDri7p8729Qo40Ylm4px0YWA" />
+  </head>
+  <body class="c7">
+    <div class="clock">
+    <div id="clock2">ここに長期暦を表示</div>
+    <div id="clock">ここに暦を表示</div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    fetch('https://kxnilqrecy.github.io/assets/csv/jungo.csv')
+        .then(response => response.text())
+        .then(data => parseCSV(data));
+});
+function decToBase62(num_){
+  if (num_ === null) return void 0;
+  let num = Number(num_);
+  if (isNaN(num)) return void 0;
+  if (Math.floor(num) !== num) return void 0;
+  
+  let is_negative = num < 0;
+  num = Math.abs(num);
+  
+  let ret = "", digit = 0;
+  while(true){
+    digit = num % 62;
+    if (digit < 10)
+      ret+=String(digit); //0-9
+    else if (digit < 36)
+      ret+=String.fromCharCode(digit + 55); //A-Z
+    else
+      ret+=String.fromCharCode(digit + 61); //a-z
+    if (num < 62)
+      break;
+    else
+      num = Math.floor(num / 62);
+  }
+  if (is_negative) ret+="-";
+  return ret.split("").reverse().join("");
+}
+function parseCSV(data) {
+    const jungos = data.split('\n');
+    const lpmark = ['🌑', '🌒', '🌓', '🌔', '🌕', '🌖', '🌗', '🌘', '🌑'];
+    let nowdate = new Date();
+    const epochdate = new Date(2019, 4, 1, 18);
+    let deltadate = (nowdate.getTime() - epochdate.getTime()) / 1000 / 86400;
+    let day = Math.floor(deltadate);
+    let time = (deltadate - day);
+    let hisuiepoch = new Date(2005, 7, 15);
+    let hisuinum = Math.floor((nowdate.getTime() - hisuiepoch.getTime()) / 86400000);
+    let nowjungo = jungos[day];
+    let koku = Math.floor((time * 96) * 10) / 10;
+    const lunarepoch = new Date(2019, 4, 5, 7, 45);
+    let lunardelta = (nowdate.getTime() - lunarepoch.getTime()) / 1000 / 86400;
+    let lp = Math.floor((lunardelta - Math.floor(lunardelta / 29.530582990) * 29.530582990) * 10) / 10;
+    let lpmknum = Math.floor((lunardelta - Math.floor(lunardelta / 29.530582990) * 29.530582990) / 29.530582990 * 8 + 0.5);
+    let mk = lpmark[lpmknum];
+    const xqepoch = new Date(2018, 8, 23, 10, 54);
+    let xqdelta = (nowdate.getTime() - xqepoch.getTime()) / 1000 / 86400;
+    let xq = Math.floor(Math.ceil(xqdelta / 365.242050827423) * 365.242050827423 - xqdelta);
+    const qiepoch = new Date(2005, 8, 23, 7, 23);
+    let qidelta = (nowdate.getTime() - qiepoch.getTime()) / 1000 / 86400;
+    let qi = Math.floor(qidelta / 52.177435832489);
+    document.getElementById('clock').textContent = `Xq${xq}Lp${lp}${mk}/${nowjungo}(第${qi}期):&${hisuinum}-${koku}刻`;
+    const longepoch = new Date(-5513, 8, 26);
+    let longdelta = nowdate.getTime() - longepoch.getTime();
+    let long1 = ('0000' + decToBase62(longdelta % 14776334)).slice(-4);
+    let long2 = ('0000' + decToBase62(longdelta % 14776331)).slice(-4);
+    let long3 = ('0000' + decToBase62(longdelta % 14776329)).slice(-4);
+    let long4 = ('0000' + decToBase62(longdelta % 14776327)).slice(-4);
+    document.getElementById('clock2').textContent = `${long1}.${long2}.${long3}.${long4}`;
+}
+    </script>
+</div>
+    <h1>クリスマスですが</h1>
+
+<p>
+  25 Dec 2024
+  
+  
+    - <a href="/authors/hasuma.html">蓮間ひさと</a>
+  
+</p>
+
+<p>　開発担当の蓮間です。</p>
+
+<p>　世はクリスマスですが、そんなこと知ったこっちゃあない。ここひと月ほどブログを全く更新していなかったのであわてて更新しています。</p>
+
+<p>　まず、カレンダーに「第n期」という表示を追加しました。これで万が一同じ旬号が発布されても、区別が出来るようになりました。単体でも月と年の間くらいの役割として使えるかもしれません。</p>
+
+<p>　そして、千翠れいしの短歌集を更新。今回は20首くらい追加しました。</p>
+
+<p>　で、おまけで「でたらめ短歌」を追加しました。これは歌集の方のたまてばことは全然別の機能で、入力に従って31モーラのでたらめな短歌を出力するというものです。</p>
+
+<p>　以前「俳句データベース」というのが流行っていましたが、原理はあんな感じです。もしくは、バナナで俳句を詠むやつにも似ているかもしれません。しかし(しかも)、こちらは31文字(モーラ)です。</p>
+
+<p>　要するに、マトモに解釈できる歌はほぼ出ないと言っていいでしょう。</p>
+
+<p>　とはいえ、解読可能な短歌も出ないことはないので、暇つぶしにでも使ってください。</p>
+
+<p>　入力する文字列に困ったら、左上の16桁の英数字でも入れてみてください。何も起きないはずですけど、何か起きるかもしれませんよ。</p>
+
+    <hr>
+    <nav>
+    <div class="center">サイトナビゲーション<br>
+    
+      <a href="/" >Home</a>
+    
+      <a href="/subcontents/blog.html" >「久入すいう」のブログ</a>
+    
+      <a href="/subcontents/pseudrences.html" >夢似科学研究所</a>
+    
+      <a href="/subcontents/tankas.html" >千翠れいしの短歌集</a>
+    
+      <a href="/subcontents/ytigeets.html" >ユーティゲート測候所</a>
+    
+      <a href="/subcontents/conlangs.html" >久入言語研究室</a>
+    
+      <a href="/subcontents/staff.html" >構成員</a>
+    
+      <a href="/about.html" >恵生ニルクレシィについて</a>
+    
+    </div>
+</nav>
+  </body>
+</html>
