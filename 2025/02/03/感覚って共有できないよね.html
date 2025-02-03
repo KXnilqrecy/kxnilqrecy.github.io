@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E4NPYH1T62"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E4NPYH1T62');
+</script>
+    <meta charset="utf-8">
+    <title>感覚って共有できないよね</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://kxnilqrecy.github.io/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link type="application/atom+xml" rel="alternate" href="https://kxnilqrecy.github.io/feed.xml" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>感覚って共有できないよね</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="感覚って共有できないよね" />
+<meta name="author" content="ina" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="　今日の晩ご飯はカレーライスでした。伊那すいうです。" />
+<meta property="og:description" content="　今日の晩ご飯はカレーライスでした。伊那すいうです。" />
+<link rel="canonical" href="https://kxnilqrecy.github.io/2025/02/03/%E6%84%9F%E8%A6%9A%E3%81%A3%E3%81%A6%E5%85%B1%E6%9C%89%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E3%82%88%E3%81%AD.html" />
+<meta property="og:url" content="https://kxnilqrecy.github.io/2025/02/03/%E6%84%9F%E8%A6%9A%E3%81%A3%E3%81%A6%E5%85%B1%E6%9C%89%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E3%82%88%E3%81%AD.html" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-02-03T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="感覚って共有できないよね" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"ina"},"dateModified":"2025-02-03T00:00:00+09:00","datePublished":"2025-02-03T00:00:00+09:00","description":"　今日の晩ご飯はカレーライスでした。伊那すいうです。","headline":"感覚って共有できないよね","mainEntityOfPage":{"@type":"WebPage","@id":"https://kxnilqrecy.github.io/2025/02/03/%E6%84%9F%E8%A6%9A%E3%81%A3%E3%81%A6%E5%85%B1%E6%9C%89%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E3%82%88%E3%81%AD.html"},"url":"https://kxnilqrecy.github.io/2025/02/03/%E6%84%9F%E8%A6%9A%E3%81%A3%E3%81%A6%E5%85%B1%E6%9C%89%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E3%82%88%E3%81%AD.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="google-site-verification" content="1XS-_jxYV-ZnPNosmqWTDri7p8729Qo40Ylm4px0YWA" />
+  </head>
+  <body class="c7">
+    <div class="clock">
+    <div id="clock2">ここに長期暦を表示</div>
+    <div id="clock">ここに暦を表示</div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    fetch('https://kxnilqrecy.github.io/assets/csv/jungo.csv')
+        .then(response => response.text())
+        .then(data => parseCSV(data));
+});
+function decToBase62(num_){
+  if (num_ === null) return void 0;
+  let num = Number(num_);
+  if (isNaN(num)) return void 0;
+  if (Math.floor(num) !== num) return void 0;
+  
+  let is_negative = num < 0;
+  num = Math.abs(num);
+  
+  let ret = "", digit = 0;
+  while(true){
+    digit = num % 62;
+    if (digit < 10)
+      ret+=String(digit); //0-9
+    else if (digit < 36)
+      ret+=String.fromCharCode(digit + 55); //A-Z
+    else
+      ret+=String.fromCharCode(digit + 61); //a-z
+    if (num < 62)
+      break;
+    else
+      num = Math.floor(num / 62);
+  }
+  if (is_negative) ret+="-";
+  return ret.split("").reverse().join("");
+}
+function parseCSV(data) {
+    const jungos = data.split('\n');
+    const lpmark = ['🌑', '🌒', '🌓', '🌔', '🌕', '🌖', '🌗', '🌘', '🌑'];
+    let nowdate = new Date();
+    const epochdate = new Date(2019, 4, 1, 18);
+    let deltadate = (nowdate.getTime() - epochdate.getTime()) / 1000 / 86400;
+    let day = Math.floor(deltadate);
+    let time = (deltadate - day);
+    let hisuiepoch = new Date(2005, 7, 15);
+    let hisuinum = Math.floor((nowdate.getTime() - hisuiepoch.getTime()) / 86400000);
+    let nowjungo = jungos[day];
+    let koku = Math.floor((time * 96) * 10) / 10;
+    const lunarepoch = new Date(2019, 4, 5, 7, 45);
+    let lunardelta = (nowdate.getTime() - lunarepoch.getTime()) / 1000 / 86400;
+    let lp = Math.floor((lunardelta - Math.floor(lunardelta / 29.530582990) * 29.530582990) * 10) / 10;
+    let lpmknum = Math.floor((lunardelta - Math.floor(lunardelta / 29.530582990) * 29.530582990) / 29.530582990 * 8 + 0.5);
+    let mk = lpmark[lpmknum];
+    const xqepoch = new Date(2018, 8, 23, 10, 54);
+    let xqdelta = (nowdate.getTime() - xqepoch.getTime()) / 1000 / 86400;
+    let xq = Math.floor(Math.ceil(xqdelta / 365.242050827423) * 365.242050827423 - xqdelta);
+    const qiepoch = new Date(2005, 8, 23, 7, 23);
+    let qidelta = (nowdate.getTime() - qiepoch.getTime()) / 1000 / 86400;
+    let qi = Math.floor(qidelta / 52.177435832489);
+    document.getElementById('clock').textContent = `Xq${xq}Lp${lp}${mk}/${nowjungo}(第${qi}期):&${hisuinum}-${koku}刻`;
+    const longepoch = new Date(-5513, 8, 26);
+    let longdelta = nowdate.getTime() - longepoch.getTime();
+    let long1 = ('0000' + decToBase62(longdelta % 14776334)).slice(-4);
+    let long2 = ('0000' + decToBase62(longdelta % 14776331)).slice(-4);
+    let long3 = ('0000' + decToBase62(longdelta % 14776329)).slice(-4);
+    let long4 = ('0000' + decToBase62(longdelta % 14776327)).slice(-4);
+    document.getElementById('clock2').textContent = `${long1}.${long2}.${long3}.${long4}`;
+}
+    </script>
+</div>
+    <h1>感覚って共有できないよね</h1>
+
+<p>
+  03 Feb 2025
+  
+  
+    - <a href="/authors/ina.html">伊那すいう</a>
+  
+</p>
+
+<p>　今日の晩ご飯はカレーライスでした。伊那すいうです。</p>
+
+<p>　左耳が聞こえなくなって以来、薬(カルバマゼピン)をずっと飲んでいるのですが、どうもその薬の副作用で耳から入る全ての音が50セント(1/2半音)ほど下がって聞こえるようになってしまいました。</p>
+
+<p>　今日は月曜日だったので耳鼻科に連絡すると「薬剤師に連絡してください」とのこと。薬局に連絡すると「メーカーに問い合わせるので少々お待ちください」とのこと。</p>
+
+<p>　で、折り返しの電話によると私が服用している薬で音程が下がって聞こえるという現象が他にも報告があったらしく。「医院に連絡してください」と言われましたが既に今日の予約枠は取れず。結局今飲んでる薬が尽きて、それでも治らなかったらまた来てくださいと、そういう感じらしいです、ハイ。</p>
+
+<p>　別に私(伊那)は音楽の仕事をしているわけでもないし、絶対音感が狂うとかもない(そもそも絶対音感を持っていない)ので音が下がるくらい大したことはないのですが(耳が聞こえなくなったら流石にヤバいけど)、二つの意味で不安なことがありまして。</p>
+
+<p>　まず一つ。あらゆる音が微妙にマイナー調(短調)っぽく聞こえるということ。たぶん純正律とか平均律とかその辺の音楽理論が関わってくるのだと思いますけど、なんとなく全ての音楽がセピア色のフィルターを掛けられてしまっているような、そんな感じがします。</p>
+
+<p>　音楽によっては格好良く感じられたりするものもあります。感覚として「元々暗い曲はかっこよさが増す」ような気がします。</p>
+
+<p>　対して、警報音は不気味です。石油ストーブの三時間延長の警告音とか、テレビの速報音とかは、なんというか、怖いです。</p>
+
+<p>　この不気味さはどこから来るのだろうと、私もいくつか音楽を聴き比べたりしてみたのですが、どうも「単音に近い音色はより下がった感が出て、ドラムみたいな広い周波数帯域を持つ音色はあまり下がった感じがせず、その差と記憶の音色がちぐはぐに聞こえるのではないか」という感じがします。簡略のために「8bit音源の伴奏にボーカルがついている」という状況だとすると、ボーカルの音色の下がり具合に比べて伴奏の方がより低く感ぜられてしまい、その結果不協和音になるというか、微妙なピッチの差が明確になってしまうのではないかという仮説が自分の中であります。</p>
+
+<p>　なので、ゲームボーイアドバンスの頃のゲーム音楽とかを聴くと逆に「全部50セント下げただけで余り違和感がない」という状況になります。逆に、テレビのジングルみたいに妙にリッチな音源を聴くとこの低音化による違和感が生じやすいのではないかなぁ……という感想があります。まぁ、音楽も薬学もトーシロなので聞き流してください。</p>
+
+<p>　さて、不安の原因のもう一つは、自分がそういう音感になってしまっていることを他人に伝えることが出来ないということです。クオリアの概念を知った時も同じようなことを思いましたが、「音程全体が下がっているから自分の声に出して音程を伝えても相手は元の音程にしか聞こえないんだな……(絶対音感を持っててA4などの声を正確に出すことが出来ればそれで下がり具合を測定できたのですがそんな能力は当然持っていません)」とか「ひょっとして今聞こえている音のほうが正しかったのか……？」とか思い始めると、だんだん不安が募っていくのです。</p>
+
+<p>　いっそ「自分の作ってる人工言語に『耳から聞こえる音が記憶より若干低く感ぜられて、それによって生じる不安感』みたいな造語を導入するか」とか「不安感を覚えることを『音が下がる』というコロケーションで表してみようか」とか思うんですけど、そもそも今作ってる16代琮霜語はまだ感情の機微みたいな高級な語を造語して辞書に入れるようなところまで行程が進んでいないので、どうしようもありません。</p>
+
+<p>　古語に入れるのはアリかもしれません。旧インハ語(4代)の辞書は今でも造語時の指標になっているものなので、いっそここで古語辞書をリコンストラクトして、より使い勝手のいい辞書にしてしまうのは目標の一つにしてもいいかも。</p>
+
+<p>　……まぁ、そんな感じで、「元気してるか？」と尋ねられたらはいとは言いづらい状況ですが、何とか生きています。</p>
+
+<p>　最後にお知らせですが、ブログ右上のカレンダーを2027年度末まで対応させました。これで旬号更新を忘れてもしばらく動きます。</p>
+
+<p>　そういえば、そろそろバレンタインデーですね。ではでは。</p>
+
+    <hr>
+    <nav>
+    <div class="center">サイトナビゲーション<br>
+    
+      <a href="/" >Home</a>
+    
+      <a href="/subcontents/blog.html" >「久入すいう」のブログ</a>
+    
+      <a href="/subcontents/pseudrences.html" >夢似科学研究所</a>
+    
+      <a href="/subcontents/tankas.html" >千翠れいしの短歌集</a>
+    
+      <a href="/subcontents/conlangs.html" >久入言語研究室</a>
+    
+      <a href="/subcontents/staff.html" >構成員</a>
+    
+      <a href="/about.html" >恵生ニルクレシィについて</a>
+    
+    </div>
+</nav>
+  </body>
+</html>
