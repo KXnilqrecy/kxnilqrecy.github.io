@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E4NPYH1T62"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E4NPYH1T62');
+</script>
+    <meta charset="utf-8">
+    <title>笇樹</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://kxnilqrecy.github.io/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link type="application/atom+xml" rel="alternate" href="https://kxnilqrecy.github.io/feed.xml" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>笇樹</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="笇樹" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="概要" />
+<meta property="og:description" content="概要" />
+<link rel="canonical" href="https://kxnilqrecy.github.io/ytigeets/%E7%AC%87%E6%A8%B9.html" />
+<meta property="og:url" content="https://kxnilqrecy.github.io/ytigeets/%E7%AC%87%E6%A8%B9.html" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-03-23T21:24:10+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="笇樹" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-23T21:24:10+09:00","datePublished":"2025-03-23T21:24:10+09:00","description":"概要","headline":"笇樹","mainEntityOfPage":{"@type":"WebPage","@id":"https://kxnilqrecy.github.io/ytigeets/%E7%AC%87%E6%A8%B9.html"},"url":"https://kxnilqrecy.github.io/ytigeets/%E7%AC%87%E6%A8%B9.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="google-site-verification" content="1XS-_jxYV-ZnPNosmqWTDri7p8729Qo40Ylm4px0YWA" />
+  </head>
+  <body class="c7">
+    <div class="clock">
+    <div id="clock2">ここに長期暦を表示</div>
+    <div id="clock">ここに暦を表示</div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    fetch('https://kxnilqrecy.github.io/assets/csv/jungo.csv')
+        .then(response => response.text())
+        .then(data => parseCSV(data));
+});
+function decToBase62(num_){
+  if (num_ === null) return void 0;
+  let num = Number(num_);
+  if (isNaN(num)) return void 0;
+  if (Math.floor(num) !== num) return void 0;
+  
+  let is_negative = num < 0;
+  num = Math.abs(num);
+  
+  let ret = "", digit = 0;
+  while(true){
+    digit = num % 62;
+    if (digit < 10)
+      ret+=String(digit); //0-9
+    else if (digit < 36)
+      ret+=String.fromCharCode(digit + 55); //A-Z
+    else
+      ret+=String.fromCharCode(digit + 61); //a-z
+    if (num < 62)
+      break;
+    else
+      num = Math.floor(num / 62);
+  }
+  if (is_negative) ret+="-";
+  return ret.split("").reverse().join("");
+}
+function parseCSV(data) {
+    const jungos = data.split('\n');
+    const lpmark = ['🌑', '🌒', '🌓', '🌔', '🌕', '🌖', '🌗', '🌘', '🌑'];
+    let nowdate = new Date();
+    const epochdate = new Date(2019, 4, 1, 18);
+    let deltadate = (nowdate.getTime() - epochdate.getTime()) / 1000 / 86400;
+    let day = Math.floor(deltadate);
+    let time = (deltadate - day);
+    let hisuiepoch = new Date(2005, 7, 15);
+    let hisuinum = Math.floor((nowdate.getTime() - hisuiepoch.getTime()) / 86400000);
+    let nowjungo = jungos[day];
+    let koku = Math.floor((time * 96) * 10) / 10;
+    const lunarepoch = new Date(2019, 4, 5, 7, 45);
+    let lunardelta = (nowdate.getTime() - lunarepoch.getTime()) / 1000 / 86400;
+    let lp = Math.floor((lunardelta - Math.floor(lunardelta / 29.530582990) * 29.530582990) * 10) / 10;
+    let lpmknum = Math.floor((lunardelta - Math.floor(lunardelta / 29.530582990) * 29.530582990) / 29.530582990 * 8 + 0.5);
+    let mk = lpmark[lpmknum];
+    const xqepoch = new Date(2018, 8, 23, 10, 54);
+    let xqdelta = (nowdate.getTime() - xqepoch.getTime()) / 1000 / 86400;
+    let xq = Math.floor(Math.ceil(xqdelta / 365.242050827423) * 365.242050827423 - xqdelta);
+    const qiepoch = new Date(2005, 8, 23, 7, 23);
+    let qidelta = (nowdate.getTime() - qiepoch.getTime()) / 1000 / 86400;
+    let qi = Math.floor(qidelta / 52.177435832489);
+    document.getElementById('clock').textContent = `Xq${xq}Lp${lp}${mk}/${nowjungo}(第${qi}期):&${hisuinum}-${koku}刻`;
+    const longepoch = new Date(-5513, 8, 26);
+    let longdelta = nowdate.getTime() - longepoch.getTime();
+    let long1 = ('0000' + decToBase62(longdelta % 14776334)).slice(-4);
+    let long2 = ('0000' + decToBase62(longdelta % 14776331)).slice(-4);
+    let long3 = ('0000' + decToBase62(longdelta % 14776329)).slice(-4);
+    let long4 = ('0000' + decToBase62(longdelta % 14776327)).slice(-4);
+    document.getElementById('clock2').textContent = `${long1}.${long2}.${long3}.${long4}`;
+}
+    </script>
+</div>
+    <h1>ユーティゲート測候所</h1>
+    <h2 class="staff_h2">笇樹</h2>
+    <h3 class="staff_h3">タグ: 生物</h3>
+
+    <h2 id="概要">概要</h2>
+
+<p><strong>笇樹(さんじゅ)</strong>は、ユーティゲート惑星に自生している植物である。</p>
+
+<p>笇樹は中が空洞になっており、成長速度が極めて速い。しなやかな材質で、密度が小さく基本的に水に浮く。</p>
+
+<p>建材や炭、紙の原料になる。笇樹を伐採したものを笇材、炭にしたものを笇炭と呼ぶ。ただし食料としての利用はできない。</p>
+
+<p>また、笇樹を節の部分で切断して密閉された形状にしたものを笇節と呼び、燿液と組み合わせて空圧機構を構成するのに使われることがある。</p>
+
+<h2 id="製炭">製炭</h2>
+
+<p>基本的に酸素のない空間で加熱することで炭素分を分離し、それによって固形の笇炭を得る。揮発分はガスとして軽量の燃料や照明の燃料などに使われる。</p>
+
+<h2 id="燿液との関係">燿液との関係</h2>
+
+<p>土壌に<a href="./燿液.html">燿液</a>成分を含んでいる場所に自生している笇樹は、その燿液のエネルギーを利用して自らの節の中に高圧の空気を貯め込む性質がある。</p>
+
+<p>燿液自体を水と接触させる時と違って笇樹にため込まれるのは大気なので、燃焼でなく単純に空気圧を利用したい場合にこの笇樹の性質が利用される。</p>
+
+<p>燿液が枯渇しない限り節内の圧力は高まり続け、放出される空気とつり合う圧力を保ち続ける。このとき笇樹がオルガンの要領でその節の長さに応じた固定の音を生じる。</p>
+
+<p>その性質は切り取った笇節においても同様で、空気圧をぜんまいばねの様に一定量ずつ取り出す機構(空気発条)に笇節と燿液を組み合わせた装置が使われる。</p>
+
+    
+
+    
+    <hr>
+    <nav>
+    <div class="center">サイトナビゲーション<br>
+    
+      <a href="/" >Home</a>
+    
+      <a href="/subcontents/blog.html" >「久入すいう」のブログ</a>
+    
+      <a href="/subcontents/pseudrences.html" >夢似科学研究所</a>
+    
+      <a href="/subcontents/tankas.html" >千翠れいしの短歌集</a>
+    
+      <a href="/subcontents/conlangs.html" >久入言語研究室</a>
+    
+      <a href="/subcontents/staff.html" >構成員</a>
+    
+      <a href="/about.html" >恵生ニルクレシィについて</a>
+    
+    </div>
+</nav>
+  </body>
+</html>
