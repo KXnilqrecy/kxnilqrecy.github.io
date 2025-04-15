@@ -20,12 +20,6 @@ hr {
   border-width: 1px; /* 線の太さ */
 }
 
-h1 {
-  text-align: center;
-  color: #fef4f4;
-  background-color: #1e2a33;
-}
-
 .current {
   color: green;
 }
@@ -51,6 +45,12 @@ h1 {
 
 .center {
   text-align: center;
+}
+
+.c1 {
+  text-align: center;
+  color: #fef4f4;
+  background-color: #1e2a33;
 }
 
 .c2 {
