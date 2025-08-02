@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E4NPYH1T62"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E4NPYH1T62');
+</script>
+    <meta charset="utf-8">
+    <title>お久しぶりの敗北宣言</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://kxnilqrecy.github.io/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link type="application/atom+xml" rel="alternate" href="https://kxnilqrecy.github.io/feed.xml" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>お久しぶりの敗北宣言</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="お久しぶりの敗北宣言" />
+<meta name="author" content="ina" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="　けーにるのみんなで地元の花火大会に行ってきました。4か月ぶりの伊那すいうです。" />
+<meta property="og:description" content="　けーにるのみんなで地元の花火大会に行ってきました。4か月ぶりの伊那すいうです。" />
+<link rel="canonical" href="https://kxnilqrecy.github.io/2025/08/02/%E3%81%8A%E4%B9%85%E3%81%97%E3%81%B6%E3%82%8A%E3%81%AE%E6%95%97%E5%8C%97%E5%AE%A3%E8%A8%80.html" />
+<meta property="og:url" content="https://kxnilqrecy.github.io/2025/08/02/%E3%81%8A%E4%B9%85%E3%81%97%E3%81%B6%E3%82%8A%E3%81%AE%E6%95%97%E5%8C%97%E5%AE%A3%E8%A8%80.html" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-08-02T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="お久しぶりの敗北宣言" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"ina"},"dateModified":"2025-08-02T00:00:00+09:00","datePublished":"2025-08-02T00:00:00+09:00","description":"　けーにるのみんなで地元の花火大会に行ってきました。4か月ぶりの伊那すいうです。","headline":"お久しぶりの敗北宣言","mainEntityOfPage":{"@type":"WebPage","@id":"https://kxnilqrecy.github.io/2025/08/02/%E3%81%8A%E4%B9%85%E3%81%97%E3%81%B6%E3%82%8A%E3%81%AE%E6%95%97%E5%8C%97%E5%AE%A3%E8%A8%80.html"},"url":"https://kxnilqrecy.github.io/2025/08/02/%E3%81%8A%E4%B9%85%E3%81%97%E3%81%B6%E3%82%8A%E3%81%AE%E6%95%97%E5%8C%97%E5%AE%A3%E8%A8%80.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="google-site-verification" content="1XS-_jxYV-ZnPNosmqWTDri7p8729Qo40Ylm4px0YWA" />
+  </head>
+  <body class="c7">
+    <div class="clock">
+    <div id="clock2">ここに長期暦を表示</div>
+    <div id="clock">ここに暦を表示</div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    fetch('https://kxnilqrecy.github.io/assets/csv/jungo.csv')
+        .then(response => response.text())
+        .then(data => parseCSV(data));
+});
+function decToBase62(num_){
+  if (num_ === null) return void 0;
+  let num = Number(num_);
+  if (isNaN(num)) return void 0;
+  if (Math.floor(num) !== num) return void 0;
+  
+  let is_negative = num < 0;
+  num = Math.abs(num);
+  
+  let ret = "", digit = 0;
+  while(true){
+    digit = num % 62;
+    if (digit < 10)
+      ret+=String(digit); //0-9
+    else if (digit < 36)
+      ret+=String.fromCharCode(digit + 55); //A-Z
+    else
+      ret+=String.fromCharCode(digit + 61); //a-z
+    if (num < 62)
+      break;
+    else
+      num = Math.floor(num / 62);
+  }
+  if (is_negative) ret+="-";
+  return ret.split("").reverse().join("");
+}
+function parseCSV(data) {
+    const jungos = data.split('\n');
+    const lpmark = ['🌑', '🌒', '🌓', '🌔', '🌕', '🌖', '🌗', '🌘', '🌑'];
+    let nowdate = new Date();
+    const epochdate = new Date(2019, 4, 1, 18);
+    let deltadate = (nowdate.getTime() - epochdate.getTime()) / 1000 / 86400;
+    let day = Math.floor(deltadate);
+    let time = (deltadate - day);
+    let hisuiepoch = new Date(2005, 7, 15);
+    let hisuinum = Math.floor((nowdate.getTime() - hisuiepoch.getTime()) / 86400000);
+    let nowjungo = jungos[day];
+    let koku = Math.floor((time * 96) * 10) / 10;
+    const lunarepoch = new Date(2019, 4, 5, 7, 45);
+    let lunardelta = (nowdate.getTime() - lunarepoch.getTime()) / 1000 / 86400;
+    let lp = Math.floor((lunardelta - Math.floor(lunardelta / 29.530582990) * 29.530582990) * 10) / 10;
+    let lpmknum = Math.floor((lunardelta - Math.floor(lunardelta / 29.530582990) * 29.530582990) / 29.530582990 * 8 + 0.5);
+    let mk = lpmark[lpmknum];
+    const xqepoch = new Date(2018, 8, 23, 10, 54);
+    let xqdelta = (nowdate.getTime() - xqepoch.getTime()) / 1000 / 86400;
+    let xq = Math.floor(Math.ceil(xqdelta / 365.242050827423) * 365.242050827423 - xqdelta);
+    const qiepoch = new Date(2005, 8, 23, 7, 23);
+    let qidelta = (nowdate.getTime() - qiepoch.getTime()) / 1000 / 86400;
+    let qi = Math.floor(qidelta / 52.177435832489);
+    document.getElementById('clock').textContent = `Xq${xq}Lp${lp}${mk}/${nowjungo}(第${qi}期):&${hisuinum}-${koku}刻`;
+    const longepoch = new Date(-5513, 8, 26);
+    let longdelta = nowdate.getTime() - longepoch.getTime();
+    let long1 = ('0000' + decToBase62(longdelta % 14776334)).slice(-4);
+    let long2 = ('0000' + decToBase62(longdelta % 14776331)).slice(-4);
+    let long3 = ('0000' + decToBase62(longdelta % 14776329)).slice(-4);
+    let long4 = ('0000' + decToBase62(longdelta % 14776327)).slice(-4);
+    document.getElementById('clock2').textContent = `${long1}.${long2}.${long3}.${long4}`;
+}
+    </script>
+</div>
+    <h1 class="c1">お久しぶりの敗北宣言</h1>
+
+<p>
+  02 Aug 2025
+  
+  
+    - <a href="/authors/ina.html">伊那すいう</a>
+  
+</p>
+
+<p>　けーにるのみんなで地元の花火大会に行ってきました。4か月ぶりの伊那すいうです。</p>
+
+<p>　……4か月もブログほったらかして何してたの？　という話ですが、単純にモチベーションが尽きていました。</p>
+
+<p>　正直、一個前のブログが4月なのが信じられません。今5月じゃないの？　それにしては暑すぎるけども。</p>
+
+<p>　で、今回の題は「敗北宣言」ですが、別に創作全般に対する敗北というわけじゃないんです。もしくは伊那すいうとしてのモチベーション枯渇に対する敗北宣言でもありません。</p>
+
+<p>　では何に敗北宣言をするかというと……人工言語創作です。</p>
+
+<p>　別に人工言語を舐めてたとか、そういう話じゃないのです。</p>
+
+<p>　ただ、14年人工言語をこねくり回し続けて、ようやく今日得られた収穫。</p>
+
+<p>　――伊那すいうは、人工言語創作に向いていない。</p>
+
+<p>　もっと言うなら、人工言語以外に向いてる創作があって、たまたま惰性で人工言語を続けてただけで、本質的には(久入の創作タイムライン上では後発であるはずの)夢似科学とかそっちの方が自分の思考の切り分けに向いている、ということが判明してしまったわけです。</p>
+
+<p>　なんというか……年月を経るごとに自身の視座が低レイヤーになっていることに気付かされたのです。</p>
+
+<p>　じゃあ「低レイヤーな」言語を作ればいいじゃん、というそういう簡単な問題でもないのです。</p>
+
+<p>　人工言語も基本的には言語ですので、そこには「人間が実際に使える」という評価軸があるはずです。平たく言えば「実用性」ですね。</p>
+
+<p>　人工言語を創作するにあたって何が一番ウェイトを占めているかというと、それは「造語」です。</p>
+
+<p>　この語はリンゴでこの語はミカンで、それはレモンとは違う語で……みたいなところが作業のほぼ全てです。</p>
+
+<p>　……伊那すいうは、その作業に意味を見出せなくなってしまったのです。致命的です。</p>
+
+<p>　意味を見出せなくなったというのを簡便な言葉で言うなら、「目の前にあるのがリンゴでもミカンでも、大して変わらなくね？」という感覚です。</p>
+
+<p>　ちなみに最近の伊那が考えているのは「言語って『発話者の意図/文面の意味/聞き手の解釈』があって、意図は外から不可視であるから、解釈は絶対に聞き手の身勝手なものにならざるを得ないよね？」といった感じのことです。</p>
+
+<p>　別に、どっちが優れてるとか劣ってるとか、そういう話じゃないのです。ただ、噛み合いが悪すぎたというだけなのです。</p>
+
+<p>　夢似科学は結構抽象的な部分を多く取り扱いますし、学際的で定義もよくわかってないような独自用語が平気で飛び交う世界です。</p>
+
+<p>　それを議論するのには、母語ですらギリギリなのに、ロクに語の整備もされていない人工言語で、出来るはずがないのです。</p>
+
+<p>　もちろん、最終的には夢似科学を世界の視座とした哲学言語でも出来れば素敵な話だとは思います。でも、そこに実用性はほぼありません。</p>
+
+<p>　だって、夢似科学はけーにるの人間以外にはほぼ理解されていない「世界の切り分け方」なのですから。</p>
+
+<p>　じゃあ裾野を広げろよ、という話には同意しかねます。別に夢似科学は我々だけ理解できていれば極論として問題なくて、わざわざ作りかけの「足場が悪い」空間に他人を連れ込むのは不誠実でありましょう。</p>
+
+<p>　最近は、ブログの更新こそ進んではいませんが、夢似科学的思考の統合が進みつつあります。</p>
+
+<p>　それに基づく創作論なんかもできつつあります。</p>
+
+<p>　言ってしまえば、夢似科学的思考様式が身に染み込みすぎて、そこに人工言語が入り込む余地がなくなってきたのです。</p>
+
+<p>　ですから、私は今ここに宣言します。</p>
+
+<p>　実用的な人工言語なるものは、私には具体的過ぎて持て余した、と。</p>
+
+    <hr>
+    <nav>
+    <div class="center">サイトナビゲーション<br>
+    
+      <a href="/" >Home</a>
+    
+      <a href="/subcontents/blog.html" >「久入すいう」のブログ</a>
+    
+      <a href="/subcontents/ytigeets.html" >ユーティゲート測候所</a>
+    
+      <a href="/subcontents/pseudrences.html" >夢似科学研究所</a>
+    
+      <a href="/subcontents/tankas.html" >千翠れいしの短歌集</a>
+    
+      <a href="/subcontents/conlangs.html" >久入言語研究室</a>
+    
+      <a href="/subcontents/staff.html" >構成員</a>
+    
+      <a href="/about.html" >恵生ニルクレシィについて</a>
+    
+    </div>
+</nav>
+  </body>
+</html>
