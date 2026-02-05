@@ -1,0 +1,3101 @@
+<!doctype html>
+<html>
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E4NPYH1T62"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E4NPYH1T62');
+</script>
+    <meta charset="utf-8">
+    <title>叶わじの彼岸花 - page 19</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://kxnilqrecy.github.io/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link type="application/atom+xml" rel="alternate" href="https://kxnilqrecy.github.io/feed.xml" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Page 19 of 26 for 叶わじの彼岸花 - page 19</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="叶わじの彼岸花 - page 19" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://kxnilqrecy.github.io/tankas/page/19/" />
+<meta property="og:url" content="https://kxnilqrecy.github.io/tankas/page/19/" />
+<meta property="og:type" content="website" />
+<link rel="prev" href="https://kxnilqrecy.github.io/tankas/page/18/" />
+<link rel="next" href="https://kxnilqrecy.github.io/tankas/page/20/" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="叶わじの彼岸花 - page 19" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"叶わじの彼岸花 - page 19","url":"https://kxnilqrecy.github.io/tankas/page/19/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="google-site-verification" content="1XS-_jxYV-ZnPNosmqWTDri7p8729Qo40Ylm4px0YWA" />
+  </head>
+  <body>
+    <div class="clock">
+    <div id="clock2">ここに長期暦を表示</div>
+    <div id="clock">ここに暦を表示</div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    fetch('https://kxnilqrecy.github.io/assets/csv/jungo.csv')
+        .then(response => response.text())
+        .then(data => parseCSV(data));
+});
+function decToBase62(num_){
+  if (num_ === null) return void 0;
+  let num = Number(num_);
+  if (isNaN(num)) return void 0;
+  if (Math.floor(num) !== num) return void 0;
+  
+  let is_negative = num < 0;
+  num = Math.abs(num);
+  
+  let ret = "", digit = 0;
+  while(true){
+    digit = num % 62;
+    if (digit < 10)
+      ret+=String(digit); //0-9
+    else if (digit < 36)
+      ret+=String.fromCharCode(digit + 55); //A-Z
+    else
+      ret+=String.fromCharCode(digit + 61); //a-z
+    if (num < 62)
+      break;
+    else
+      num = Math.floor(num / 62);
+  }
+  if (is_negative) ret+="-";
+  return ret.split("").reverse().join("");
+}
+function parseCSV(data) {
+    const jungos = data.split('\n');
+    const lpmark = ['🌑', '🌒', '🌓', '🌔', '🌕', '🌖', '🌗', '🌘', '🌑'];
+    let nowdate = new Date();
+    const epochdate = new Date(2019, 4, 1, 18);
+    let deltadate = (nowdate.getTime() - epochdate.getTime()) / 1000 / 86400;
+    let day = Math.floor(deltadate);
+    let time = (deltadate - day);
+    let hisuiepoch = new Date(2005, 7, 15);
+    let hisuinum = Math.floor((nowdate.getTime() - hisuiepoch.getTime()) / 86400000);
+    let nowjungo = jungos[day];
+    let koku = Math.floor((time * 96) * 10) / 10;
+    const lunarepoch = new Date(2019, 4, 5, 7, 45);
+    let lunardelta = (nowdate.getTime() - lunarepoch.getTime()) / 1000 / 86400;
+    let lp = Math.floor((lunardelta - Math.floor(lunardelta / 29.530582990) * 29.530582990) * 10) / 10;
+    let lpmknum = Math.floor((lunardelta - Math.floor(lunardelta / 29.530582990) * 29.530582990) / 29.530582990 * 8 + 0.5);
+    let mk = lpmark[lpmknum];
+    const xqepoch = new Date(2018, 8, 23, 10, 54);
+    let xqdelta = (nowdate.getTime() - xqepoch.getTime()) / 1000 / 86400;
+    let xq = Math.floor(Math.ceil(xqdelta / 365.242050827423) * 365.242050827423 - xqdelta);
+    const qiepoch = new Date(2005, 8, 23, 7, 23);
+    let qidelta = (nowdate.getTime() - qiepoch.getTime()) / 1000 / 86400;
+    let qi = Math.floor(qidelta / 52.177435832489);
+    document.getElementById('clock').textContent = `Xq${xq}Lp${lp}${mk}/${nowjungo}(第${qi}期):&${hisuinum}-${koku}刻`;
+    const longepoch = new Date(-5513, 8, 26);
+    let longdelta = nowdate.getTime() - longepoch.getTime();
+    let long1 = ('0000' + decToBase62(longdelta % 14776334)).slice(-4);
+    let long2 = ('0000' + decToBase62(longdelta % 14776331)).slice(-4);
+    let long3 = ('0000' + decToBase62(longdelta % 14776329)).slice(-4);
+    let long4 = ('0000' + decToBase62(longdelta % 14776327)).slice(-4);
+    document.getElementById('clock2').textContent = `${long1}.${long2}.${long3}.${long4}`;
+}
+    </script>
+</div>
+    <div class="subpage-container">
+  <header class="subpage-header">
+    <nav class="breadcrumb"><a href="/">ホーム</a> ＞ 叶わじの彼岸花 - page 19</nav>
+    <h1>叶わじの彼岸花 - page 19</h1>
+  </header>
+
+  <!-- たまてばこ（ランダム表示）セクション -->
+  <section class="tamatebako-section">
+    <div class="tamatebako-card">
+      <div class="tamatebako-label">
+        <span class="sparkle-icon">✨</span> たまてばこ <span class="sparkle-icon">✨</span>
+      </div>
+      <div id="tamatebako-content">
+        <p id="result-tanka">読み込み中...</p>
+      </div>
+      <button onclick="generateRandomTanka()" class="refresh-button">別の一首を引く</button>
+    </div>
+  </section>
+
+  <!-- 短歌一覧リスト -->
+  <section class="tanka-list-section">
+    <h2 class="section-title-blue">短歌一覧</h2>
+    <div class="tanka-grid">
+      <ul class="tanka-list-style-none">
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000362
+          </span>
+          <a href="/tankas/000362.html" class="tanka-link">お互いの些細なことを許せるか造花に託す私の水桶</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000361
+          </span>
+          <a href="/tankas/000361.html" class="tanka-link">思い出がへばりついてる部屋の壁白鳥なんかになってたまるか</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000360
+          </span>
+          <a href="/tankas/000360.html" class="tanka-link">夕暮れに生まれた鳥が慕うのは一番星がくれた光か</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000359
+          </span>
+          <a href="/tankas/000359.html" class="tanka-link">一寸の先をも閉ざす暗闇に光よどうか私を連れて</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000358
+          </span>
+          <a href="/tankas/000358.html" class="tanka-link">五里霧中軽乗用車で駆けていくハイビームだと逆に見づらい</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000357
+          </span>
+          <a href="/tankas/000357.html" class="tanka-link">光さえ手放すつもりのない私事象の地平に銀河が昇る</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000356
+          </span>
+          <a href="/tankas/000356.html" class="tanka-link">消しゴムが弔う文字の行き先は真っ黒底の情報墓場</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000355
+          </span>
+          <a href="/tankas/000355.html" class="tanka-link">予定帳黒いマーカで塗り潰し過去も未来もなかったことに</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000354
+          </span>
+          <a href="/tankas/000354.html" class="tanka-link">昼よりも暗い夜中が好きなのはきっと心を見透かせないから</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000353
+          </span>
+          <a href="/tankas/000353.html" class="tanka-link">踏切も街灯もない田舎からあなたと同じ星を眺める</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000352
+          </span>
+          <a href="/tankas/000352.html" class="tanka-link">好天の凍った空にさんざめく星に対峙す天体観測</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000351
+          </span>
+          <a href="/tankas/000351.html" class="tanka-link">十五夜にまた来月と挨拶し私はあなたを知らない満月</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000350
+          </span>
+          <a href="/tankas/000350.html" class="tanka-link">間が悪い私とあなたの差し出した右手と右手がぶつかる鏡</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000349
+          </span>
+          <a href="/tankas/000349.html" class="tanka-link">目の前のむかつく顔をぶん殴る鏡合わせの私と私</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000348
+          </span>
+          <a href="/tankas/000348.html" class="tanka-link">優しさの定義が人を傷付ける慮った気持ちで殴る</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000347
+          </span>
+          <a href="/tankas/000347.html" class="tanka-link">面倒と切り捨てたのが縁ならばそれでも思い切れない心</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000346
+          </span>
+          <a href="/tankas/000346.html" class="tanka-link">クッキーに載せたドライフルーツの含んだ意味を知らぬ幼子</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000345
+          </span>
+          <a href="/tankas/000345.html" class="tanka-link">グランドのサッカーゴールの骨組みの上で交わした幼い約束</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000344
+          </span>
+          <a href="/tankas/000344.html" class="tanka-link">不器用な私を苛む思い出は部屋に積まれた本の城砦</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000343
+          </span>
+          <a href="/tankas/000343.html" class="tanka-link">子を捨てて都会に行った母親の置き土産とて煤けた人形</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000342
+          </span>
+          <a href="/tankas/000342.html" class="tanka-link">通販で築いた知恵の殿堂はテトリスめいた空の紙箱</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000341
+          </span>
+          <a href="/tankas/000341.html" class="tanka-link">私鉄線上りホームの階段は普通を求めた私の終点</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000340
+          </span>
+          <a href="/tankas/000340.html" class="tanka-link">新月を庇う昼間の惑星と庇われないが目立つ満月</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000339
+          </span>
+          <a href="/tankas/000339.html" class="tanka-link">太陽が地球の表を焦がすとき庇われている私と新月</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000338
+          </span>
+          <a href="/tankas/000338.html" class="tanka-link">軒先にワープポイント拵えてここが私の帰る場所だと</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000337
+          </span>
+          <a href="/tankas/000337.html" class="tanka-link">春越えて林檎の花が咲く頃に星よ全てをさらっておくれ</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000336
+          </span>
+          <a href="/tankas/000336.html" class="tanka-link">安定を欠いた未来と眠剤で眩む私の平衡感覚</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000335
+          </span>
+          <a href="/tankas/000335.html" class="tanka-link">感情も知識も全部倍速で窺う顔はただただ白い</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000334
+          </span>
+          <a href="/tankas/000334.html" class="tanka-link">一雨が降るたび緩む冬の寒私の心も三寒四温</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000333
+          </span>
+          <a href="/tankas/000333.html" class="tanka-link">割り切れない心を砕く約数と割った余りを拾って売った</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000332
+          </span>
+          <a href="/tankas/000332.html" class="tanka-link">名も知らぬあなたのために筆を執るこんな私でよければどうぞ</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000331
+          </span>
+          <a href="/tankas/000331.html" class="tanka-link">雪花が解けたころには桜咲きこうして生命は繋がり行くか</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000330
+          </span>
+          <a href="/tankas/000330.html" class="tanka-link">写真機の代わりにスマホを携えてインターネットで捕らえる世界</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000329
+          </span>
+          <a href="/tankas/000329.html" class="tanka-link">今日もまた扉を開けて旅に出る石90の祝福が降る</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000328
+          </span>
+          <a href="/tankas/000328.html" class="tanka-link">永劫な孤独の論理を振りかざす見えないことが安心になる</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000327
+          </span>
+          <a href="/tankas/000327.html" class="tanka-link">ラスボスが世界の半分呉れようと勇者と魔王の傀儡政権</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000326
+          </span>
+          <a href="/tankas/000326.html" class="tanka-link">雪玉を六つ作って雪だるま春になったら全部溶けよう</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000325
+          </span>
+          <a href="/tankas/000325.html" class="tanka-link">毒針を毒と分かって呑み込んだ苦しんだだけ明日は輝く</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000324
+          </span>
+          <a href="/tankas/000324.html" class="tanka-link">傷付いた心に塩を塗りこんで薬と毒は表裏一体</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000323
+          </span>
+          <a href="/tankas/000323.html" class="tanka-link">想い出の欠片が刺した心から溢れる朱と下がる体温</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000322
+          </span>
+          <a href="/tankas/000322.html" class="tanka-link">おくすりで心も体も治るなら所詮生命は化学反応</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000321
+          </span>
+          <a href="/tankas/000321.html" class="tanka-link">カミサマが私に力を与えたらそれで私は空を飛べるの</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000320
+          </span>
+          <a href="/tankas/000320.html" class="tanka-link">引力は距離の二乗に反比例落ちたリンゴが惹かれる力</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000319
+          </span>
+          <a href="/tankas/000319.html" class="tanka-link">わかってる便りがないのはいい報せそれでもあなたに頼っちゃダメかな</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000318
+          </span>
+          <a href="/tankas/000318.html" class="tanka-link">後悔を時間で割って計ろうか距離÷時間は鼓動の速さ</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000317
+          </span>
+          <a href="/tankas/000317.html" class="tanka-link">スーパーで買ったいつものチョコレート七つに割って意味を加える</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000316
+          </span>
+          <a href="/tankas/000316.html" class="tanka-link">人生のエンドロールを読み飛ばしそんなに急いでどこに行くのか</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000315
+          </span>
+          <a href="/tankas/000315.html" class="tanka-link">数億年前の星でも泣くのなら私の涙を隠してくれよ</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000314
+          </span>
+          <a href="/tankas/000314.html" class="tanka-link">今日の日の生きた証だ減る電池今日も一日お疲れ様です</a>
+        </li>
+        
+        <li class="tanka-item">
+          <span class="tanka-number">
+            
+            No. 000313
+          </span>
+          <a href="/tankas/000313.html" class="tanka-link">叶わじの彼岸桜が咲く頃に拝啓こちらはお元気ですよ</a>
+        </li>
+        
+      </ul>
+    </div>
+
+    <!-- ページネーション（改ページ） -->
+    
+    <nav class="pagination">
+      
+        <a href="/tankas/page/18/" class="page-btn">&laquo; 前へ</a>
+      
+
+      <span class="page-info">19 / 26</span>
+
+      
+        <a href="/tankas/page/20/" class="page-btn">次へ &raquo;</a>
+      
+    </nav>
+    
+  </section>
+</div>
+
+<!-- JavaScript: 全データからランダム抽出するためのデータ作成 -->
+<script>
+  // JekyllのLiquidを使って、全短歌のタイトルとURLの配列を生成
+  const allTankas = [
+    
+    { "title": "筆先で幾重に世界を創れども置くなと言はるる気持ちは何処へ", "url": "/tankas/000001.html" },
+    
+    { "title": "雨降れど二度とは聴けぬ君の声くいるのくの字は久(とわ)と書くのに", "url": "/tankas/000002.html" },
+    
+    { "title": "月霞みそれでも空を観るあなたくいるのくの字は久(とわ)と書くから", "url": "/tankas/000003.html" },
+    
+    { "title": "天動説世界を廻せ今日もまた私を置いて明日が来るから", "url": "/tankas/000004.html" },
+    
+    { "title": "逢ひたいと想う心は光速のそれでも届かぬ窓の斜陽", "url": "/tankas/000005.html" },
+    
+    { "title": "英文のiに見紛う¡(感嘆符)あなたの愛を失くさないよに", "url": "/tankas/000006.html" },
+    
+    { "title": "彗星は届くだろうかあの星に雨も空もが消えたとしても", "url": "/tankas/000007.html" },
+    
+    { "title": "流星が天を斬るなら連れてって雨も空もが消えた星まで", "url": "/tankas/000008.html" },
+    
+    { "title": "祈り載せ皆が眺む流星群お前のために降るんじゃないぞ", "url": "/tankas/000009.html" },
+    
+    { "title": "大都会向かいのホームにいる君に『特急列車が通過いたします』", "url": "/tankas/000010.html" },
+    
+    { "title": "天の川二人を結ぶ星座から弾き出された私は彗星", "url": "/tankas/000011.html" },
+    
+    { "title": "祝と呪はどちらもほさくと読むらしく私は二人をおほさきします", "url": "/tankas/000012.html" },
+    
+    { "title": "ヘウレカと掠れた声で叫んでもお手つきした人解答権なし", "url": "/tankas/000013.html" },
+    
+    { "title": "私こと七等星も生きてます拝啓マイナス一等星さん", "url": "/tankas/000014.html" },
+    
+    { "title": "台風が過ぎ去り気温が一桁にPC焚いて部屋を温む", "url": "/tankas/000015.html" },
+    
+    { "title": "ドヤ顔で見当違いに降る星よはやぶさの輝を見倣ってくれ", "url": "/tankas/000016.html" },
+    
+    { "title": "私には詩など詠めぬと叫んだが一度踏み込みゃ何とかなるな", "url": "/tankas/000017.html" },
+    
+    { "title": "寝起きざま覗く鏡に映る君何故自分の顔が映らない", "url": "/tankas/000018.html" },
+    
+    { "title": "知る人と知らない人が交わる時寿ぐだけの余裕がもうない", "url": "/tankas/000019.html" },
+    
+    { "title": "三十一文字に収まらなければ棄てるだけ燃えるゴミの日は火曜と金曜", "url": "/tankas/000020.html" },
+    
+    { "title": "その傘の定員二人先着順乗り遅れたら濡れて帰ろう", "url": "/tankas/000021.html" },
+    
+    { "title": "テンサイは寝ている時にやって来る盾なる屋根に星降る夜よ", "url": "/tankas/000022.html" },
+    
+    { "title": "都合良く考えてると嘲け未だ愛されてると思えるならば", "url": "/tankas/000023.html" },
+    
+    { "title": "人生のキロに打たれたマイルストーンそこまで歩ける気力はあるか", "url": "/tankas/000024.html" },
+    
+    { "title": "相方は括弧のようには居ないけど文末護る孤高の番人", "url": "/tankas/000025.html" },
+    
+    { "title": "コンパイルエラーを防ぐ閉じ括弧を放流せよセミコロンと共に", "url": "/tankas/000026.html" },
+    
+    { "title": "夢空を青に色付け眠る月欠けてもいつか丸く収まる", "url": "/tankas/000027.html" },
+    
+    { "title": "時計しく廻る感情交差点私とあなたは0時と6時", "url": "/tankas/000028.html" },
+    
+    { "title": "金色に免許書き換え帰り道サルとオコジョが道路を渡る", "url": "/tankas/000029.html" },
+    
+    { "title": "信用をカタチにしたのが紙幣だが折れば折るほど皺が増えてく", "url": "/tankas/000030.html" },
+    
+    { "title": "骨折りの苦労は買ってでもせよと折れば折るだけ太くなるのか", "url": "/tankas/000031.html" },
+    
+    { "title": "十数年ぶりの母校の教室が小さく見えたワクチン接種", "url": "/tankas/000032.html" },
+    
+    { "title": "一個だけ雪見だいふくねだる君私の半分あなたにあげる", "url": "/tankas/000033.html" },
+    
+    { "title": "唐辛子食べて辛いと言う君と同じ事をしていると知れ", "url": "/tankas/000034.html" },
+    
+    { "title": "日本語はアイから習うと言うけれど次の二文字はウエなんだよな", "url": "/tankas/000035.html" },
+    
+    { "title": "存在と時間もジンも知らねども晩夏の光も射さぬ夕暮れ", "url": "/tankas/000036.html" },
+    
+    { "title": "TLで曜日感覚補正するそういや今日は水曜だったな", "url": "/tankas/000037.html" },
+    
+    { "title": "貴ガスでもフッ素は反応するらしい私はさしずめ酸素か塩素", "url": "/tankas/000038.html" },
+    
+    { "title": "スタミナを溶かして走る獣道明日が来る度死んで行く今日", "url": "/tankas/000039.html" },
+    
+    { "title": "死んだ日々祀る墓石の代わりとて鯖で灯台建てるマイクラ", "url": "/tankas/000040.html" },
+    
+    { "title": "外気九度曇る硝子と乱反射飛騨の言葉でガイキとは風邪", "url": "/tankas/000041.html" },
+    
+    { "title": "別れ際忘れないでと言った君これで私は救われるのか", "url": "/tankas/000042.html" },
+    
+    { "title": "あの言葉時しく回るtoxic互いに傷をつけ合う関係", "url": "/tankas/000043.html" },
+    
+    { "title": "降らず雨あなたに傷をつけたって私の罪は消えないじゃんか", "url": "/tankas/000044.html" },
+    
+    { "title": "居ると要るどちらも同じイルだから存在即ち必要ということ", "url": "/tankas/000045.html" },
+    
+    { "title": "君曰く私のことが嫌いなら私のせいで傷付かないでよ", "url": "/tankas/000046.html" },
+    
+    { "title": "胸の奥痛む心が恋ならばあなたにそれは無かったはずだ", "url": "/tankas/000047.html" },
+    
+    { "title": "秋の夜振り向かるることないと知り吹く木枯らしに舞い散る木の葉", "url": "/tankas/000048.html" },
+    
+    { "title": "狂おしいほど愛しかる日々をヒトを狂わす脳内麻薬", "url": "/tankas/000049.html" },
+    
+    { "title": "心置く架空の相手蜃気楼切り裂く痛みも自分だけのもの", "url": "/tankas/000050.html" },
+    
+    { "title": "心なき虚構に飽いて摩天楼世界を拓く同志と共に", "url": "/tankas/000051.html" },
+    
+    { "title": "一人では二つの眼しかないけれど三人寄れば六つの目玉", "url": "/tankas/000052.html" },
+    
+    { "title": "六つの目全部前見りゃ意味がない一人で見れぬ後ろも見よう", "url": "/tankas/000053.html" },
+    
+    { "title": "花言葉破れた恋と甘い夢言葉で世界を紡げるならば", "url": "/tankas/000054.html" },
+    
+    { "title": "愛してるそんな言葉を私から言う気もないし期待もしてない", "url": "/tankas/000055.html" },
+    
+    { "title": "飼い殺すあなたのそれは愛じゃないそんなあなたに愛されたくない", "url": "/tankas/000056.html" },
+    
+    { "title": "私のを恋とか愛とかそういった既存の言葉に押し込めたくない", "url": "/tankas/000057.html" },
+    
+    { "title": "簡単な言葉で分かった振りをするあなたはなんにも分かってないよ", "url": "/tankas/000058.html" },
+    
+    { "title": "週末の終わりを示す時計めく今日の私は12時1分", "url": "/tankas/000059.html" },
+    
+    { "title": "シニカルに政治を語るツイートとあなたの言葉は同じに見える", "url": "/tankas/000060.html" },
+    
+    { "title": "太陽が真西に沈む彼岸花あちらの世界は住み良いですか", "url": "/tankas/000061.html" },
+    
+    { "title": "此岸から眺むるあなた無何有郷壊れた星にさよなら告げて", "url": "/tankas/000062.html" },
+    
+    { "title": "Unicode世界の文字を統べる域外を操る私は魔術師", "url": "/tankas/000063.html" },
+    
+    { "title": "幸せと言われる普通の人生が全て私を突き刺す楔", "url": "/tankas/000064.html" },
+    
+    { "title": "心刺す楔が描く楔形文字古代と私は文字を法とし", "url": "/tankas/000065.html" },
+    
+    { "title": "過去の句を読んで詠み手を心配すそれを詠んだの私なんだよ", "url": "/tankas/000066.html" },
+    
+    { "title": "三十一文字に収める気力がある分にゃ余裕があるから心配ないさ", "url": "/tankas/000067.html" },
+    
+    { "title": "発散は外に向けての感情なのに此れ又如何にナブラの内積", "url": "/tankas/000068.html" },
+    
+    { "title": "句を詠みて日付追い越す私の背誰が跨いでいいなんて言った", "url": "/tankas/000069.html" },
+    
+    { "title": "『理想だと言う尊厳も道連れに』彷徨い何時か逢いに行くから", "url": "/tankas/000070.html" },
+    
+    { "title": "近頃は殆ど夢を見なくなり夢見ぬ私に価値は有るのか", "url": "/tankas/000071.html" },
+    
+    { "title": "薬飲み軽く何首か詠むと言い十首も詠んで入眠できず", "url": "/tankas/000072.html" },
+    
+    { "title": "初恋のクオリアなぞる清涼感私は哲学的ゾンビ", "url": "/tankas/000073.html" },
+    
+    { "title": "窓の外航海薄明デクレセント夜より朝焼けに近い青色", "url": "/tankas/000074.html" },
+    
+    { "title": "自壊する壁に柱を建てる莫迦便りがないのは頼りにならぬ", "url": "/tankas/000075.html" },
+    
+    { "title": "寝る寝ると世界を欺く丑三つ時命短し今度こそ寝る", "url": "/tankas/000076.html" },
+    
+    { "title": "振動が一字違いでしんどいに振り子時計はしんどいですか", "url": "/tankas/000077.html" },
+    
+    { "title": "信用は貨幣の形をしてるから金が無ければ与信は通らぬ", "url": "/tankas/000078.html" },
+    
+    { "title": "PCを軽い気持ちで再起動アップデートが延々終わらず", "url": "/tankas/000079.html" },
+    
+    { "title": "上を向いて歩けば穴に落っこちる見えないものを見ようとして", "url": "/tankas/000080.html" },
+    
+    { "title": "目が覚めてここは地獄の四丁目百鬼夜行の横丁通り", "url": "/tankas/000081.html" },
+    
+    { "title": "明日までなんで負けたか考えて案外人生そんなもんだと", "url": "/tankas/000082.html" },
+    
+    { "title": "昨日と今日今日と明日とを継ぐ鎖生きた世界の存在証明", "url": "/tankas/000083.html" },
+    
+    { "title": "ポインタとコンテクストとプロシージャ定めの森で遊べ言の葉", "url": "/tankas/000084.html" },
+    
+    { "title": "ゲーム機なく終わる日曜カレンダースプラトゥーンめき朱で塗り潰す", "url": "/tankas/000085.html" },
+    
+    { "title": "枝分かれ重複ループどれもない平和な日常過ごす自然数", "url": "/tankas/000086.html" },
+    
+    { "title": "八首詠む間に進む更新に安堵すバックアップはこまめに", "url": "/tankas/000087.html" },
+    
+    { "title": "シニフィエに糖衣をまぶし言葉とす私の心に満ちる薬は", "url": "/tankas/000088.html" },
+    
+    { "title": "的確に好みを提示すAIと誰にも好かれぬ私の対決", "url": "/tankas/000089.html" },
+    
+    { "title": "盤面をひっくり返せと言われたら裏返す人と入れ替わる人", "url": "/tankas/000090.html" },
+    
+    { "title": "白黒と言いつつ主流は灰色な現実世界とモノクロームの", "url": "/tankas/000091.html" },
+    
+    { "title": "モノクロの世界に絵の具を持ち込んでコペルニクスとフォークダンスを", "url": "/tankas/000092.html" },
+    
+    { "title": "感情と同じ読みをす環状の心はいつも堂々巡り", "url": "/tankas/000093.html" },
+    
+    { "title": "終末のテレビが映す笑点とうっかりさんが終わらす世界", "url": "/tankas/000094.html" },
+    
+    { "title": "有限が無限を喰らう元号制時間に名前を付けて手懐く", "url": "/tankas/000095.html" },
+    
+    { "title": "人間に擬え全てを理解しようまず人間を理解できてる？", "url": "/tankas/000096.html" },
+    
+    { "title": "定期便墓場まで行くテセウスの船に乗り込み果てなき後悔", "url": "/tankas/000097.html" },
+    
+    { "title": "0という記号にぽっかり空いた穴私の心に雨垂れ零れる", "url": "/tankas/000098.html" },
+    
+    { "title": "感傷を夜と名付けて鑑賞す私とあなたを繋ぐ緩衝", "url": "/tankas/000099.html" },
+    
+    { "title": "祈りとはアインシュタインを追い抜いて光よりちょっと速く伝わる", "url": "/tankas/000100.html" },
+    
+    { "title": "星と星林檎と地球に共通し私とあなたにないものは何", "url": "/tankas/000101.html" },
+    
+    { "title": "情報を駄菓子のように摂取して出力されるこの詩も駄文か", "url": "/tankas/000102.html" },
+    
+    { "title": "感情を140字に梱包し果てまで届け飛べ青い鳥", "url": "/tankas/000103.html" },
+    
+    { "title": "我々は世界に一つだけの花刺身の上に載せる蒲公英", "url": "/tankas/000104.html" },
+    
+    { "title": "ただそばに居ればいいさと理想論幸せだけでは飯は食えない", "url": "/tankas/000105.html" },
+    
+    { "title": "僕一人消えれば世界は良くなるとそこまで世界は小さくないぞ", "url": "/tankas/000106.html" },
+    
+    { "title": "もし神が私のことを見てるなら不正な引数渡して壊す", "url": "/tankas/000107.html" },
+    
+    { "title": "何もせずただひたすらに詩を増やすそろそろ百の大台乗りそう", "url": "/tankas/000108.html" },
+    
+    { "title": "今日もまた短歌を詠んで越す零時取り敢えず三日坊主は回避", "url": "/tankas/000109.html" },
+    
+    { "title": "伝えたいことは直接言いましょう心を読める力はないから", "url": "/tankas/000110.html" },
+    
+    { "title": "流れ弾気にするのなら撃つんじゃねぇ世界に銃口向く散弾銃", "url": "/tankas/000111.html" },
+    
+    { "title": "私はただあなたが平穏無事ならば祝ってくれるな笑ってくれるな", "url": "/tankas/000112.html" },
+    
+    { "title": "情報のカクテルパーティ効果めく下戸の私は二言で酔う", "url": "/tankas/000113.html" },
+    
+    { "title": "着ていれば何をやっても赦される正義の笠を私にもくれ", "url": "/tankas/000114.html" },
+    
+    { "title": "いつだって相手が悪いのであって自分が悪いと思わないよね", "url": "/tankas/000115.html" },
+    
+    { "title": "悪くねぇそう叫ぶ人にいいねするそうだよあなたは悪くないから", "url": "/tankas/000116.html" },
+    
+    { "title": "皆々がこいつが悪いと指弾する責任転嫁がお上手ですね", "url": "/tankas/000117.html" },
+    
+    { "title": "人生は一期一会が美しい二会したくない人はブロック", "url": "/tankas/000118.html" },
+    
+    { "title": "理想論語るテレビとツイッターお前に私の何が分かる", "url": "/tankas/000119.html" },
+    
+    { "title": "実際はただキレているだけなのに枠に填めれば芸術になる", "url": "/tankas/000120.html" },
+    
+    { "title": "現代はワンストライクワンアウトデッドボールで本当に死ぬ", "url": "/tankas/000121.html" },
+    
+    { "title": "この暑さ一部を冬に持ってってくれ無理ですかそうなんですか", "url": "/tankas/000122.html" },
+    
+    { "title": "AIが人を欺く夕暮れに正しさなどは最早どこにも", "url": "/tankas/000123.html" },
+    
+    { "title": "青い鳥翼を伸ばせば影が差すそうして誰もを屠ってきたのか", "url": "/tankas/000124.html" },
+    
+    { "title": "世界という名のシミュレーターに紛れ込み世界が震える私は引数", "url": "/tankas/000125.html" },
+    
+    { "title": "一度でも踏まれたことは忘れない毛を逆立たせねこが威嚇す", "url": "/tankas/000126.html" },
+    
+    { "title": "星降る夜晴れ渡る空両手指雨が止んでも頬は濡らさず", "url": "/tankas/000127.html" },
+    
+    { "title": "長い旅山に日が落ち家路就く旧世界から新世界へと", "url": "/tankas/000128.html" },
+    
+    { "title": "溺れたら藁をも掴む人なれば自身も考える葦たれかし", "url": "/tankas/000129.html" },
+    
+    { "title": "誕生日来るたび風船飛ばすから地中のヘリウム枯渇するのか", "url": "/tankas/000130.html" },
+    
+    { "title": "思い付きパッと浮かんで消える人そんな私に短歌は向いてる", "url": "/tankas/000131.html" },
+    
+    { "title": "状況が時を揺るがす相対性あなた想って鍋を焦がした", "url": "/tankas/000132.html" },
+    
+    { "title": "死人とは心の中で生きるもの忘れられない彼女は呪いか", "url": "/tankas/000133.html" },
+    
+    { "title": "六文銭ちょっと余分に入れたから三途の川をフェリーで渡る", "url": "/tankas/000134.html" },
+    
+    { "title": "記憶なる枷があなたを縛るなら私のことは忘れてください", "url": "/tankas/000135.html" },
+    
+    { "title": "冬仕舞かちかち山に登れども鳥の眺めが私を助く", "url": "/tankas/000136.html" },
+    
+    { "title": "マウスより転がる毛玉に似ているとトラックボールにねこがじゃれつく", "url": "/tankas/000137.html" },
+    
+    { "title": "影踏みつ小幅で歩む我々は友と呼ぶには幼すぎたか", "url": "/tankas/000138.html" },
+    
+    { "title": "近き山防災無線に日が沈む潰れた家屋にアケビが生ってる", "url": "/tankas/000139.html" },
+    
+    { "title": "あぁ僕は誰に言えない胸の内きゅうきゅう鳴いて杞憂を伝ふ", "url": "/tankas/000140.html" },
+    
+    { "title": "幽霊と死後の世界とハイテックいつでも一歩の先に縋るは", "url": "/tankas/000141.html" },
+    
+    { "title": "法王は月に隠れていたらしい私の四十二番は何処に", "url": "/tankas/000142.html" },
+    
+    { "title": "観測の不完全性乖離してあなたは私の四十二じゃない", "url": "/tankas/000143.html" },
+    
+    { "title": "幻想を愛する私理想からどんどん離れていくあなたと", "url": "/tankas/000144.html" },
+    
+    { "title": "あなたにまだ心があるなら放っといて私は既に無きを愛すから", "url": "/tankas/000145.html" },
+    
+    { "title": "使うほど擦り切れていく言葉私のそれは襤褸布如く", "url": "/tankas/000146.html" },
+    
+    { "title": "恋と愛違いがあると言うけれど他人に向けてる時点でもう駄目", "url": "/tankas/000147.html" },
+    
+    { "title": "あなたとは他人の墓を蹴飛ばしてそれで笑える人と知りけり", "url": "/tankas/000148.html" },
+    
+    { "title": "降らず雨砂漠に水を流し込み洪水を起こしたいというなら", "url": "/tankas/000149.html" },
+    
+    { "title": "寝てる間にアップデートがされる世界クライアントとバージョンが違う", "url": "/tankas/000150.html" },
+    
+    { "title": "将棋めく心的ハンガーストライキ耐えて初めて自分に成れる", "url": "/tankas/000151.html" },
+    
+    { "title": "青空に鱗雲なる蛍光灯久々に空を見た気がする", "url": "/tankas/000152.html" },
+    
+    { "title": "『知り合い』を押し付けてくる青い鳥225人じゃ足りないってか", "url": "/tankas/000153.html" },
+    
+    { "title": "正義なる五色の御旗を掲ぐ人神にも等しき力を持つか", "url": "/tankas/000154.html" },
+    
+    { "title": "温い部屋床に落ちてる睡眠薬ゴミ箱からは言語の草案", "url": "/tankas/000155.html" },
+    
+    { "title": "秋の空言語に意志があるとして話されることが幸せなのか", "url": "/tankas/000156.html" },
+    
+    { "title": "指先で摘んで文字を下に投げあなたはそれで幸せですか", "url": "/tankas/000157.html" },
+    
+    { "title": "夜食とてシナモンパンを食べている昔はシナモン嫌いだったのに", "url": "/tankas/000158.html" },
+    
+    { "title": "秋の空釣瓶落としが雲を切る人生讃歌を唱えたくなる", "url": "/tankas/000159.html" },
+    
+    { "title": "神託を放つ機械と問う機械御神籤だけの信仰なるや", "url": "/tankas/000160.html" },
+    
+    { "title": "片っ端から思いつく語を窓に入れ最早二度とは逢えぬものと知り", "url": "/tankas/000161.html" },
+    
+    { "title": "気に入らぬコメをブロックどくさいスイッチが誰の手にもある時代", "url": "/tankas/000162.html" },
+    
+    { "title": "丸善で檸檬にレモンを置く如く壊れたMacにリンゴを乗せる", "url": "/tankas/000163.html" },
+    
+    { "title": "急激にやる気が萎んだ夜零時午前と午後はどっちがどっち", "url": "/tankas/000164.html" },
+    
+    { "title": "深い夜天の底から手が伸びて気に入った人を連れ去るらしい", "url": "/tankas/000165.html" },
+    
+    { "title": "日が昇り夜の帳が破けたらそれを毎回縫い直す神", "url": "/tankas/000166.html" },
+    
+    { "title": "科学的思考に染まる夜一時素朴な思想を忘れずいたい", "url": "/tankas/000167.html" },
+    
+    { "title": "普通よりちょっと大きいだけなのに愛されないB4を育てる私", "url": "/tankas/000168.html" },
+    
+    { "title": "聞けるだけマシだと思うべきなのか二度と話せぬ彼女を想う", "url": "/tankas/000169.html" },
+    
+    { "title": "人の世を辞めると書いて辞世の句別に私に死ぬ気はないが", "url": "/tankas/000170.html" },
+    
+    { "title": "ごみ処理場収集車から転び出たぬいぐるみまるで自分のようで", "url": "/tankas/000171.html" },
+    
+    { "title": "テレビなりツイッターなり情報を受動的に得て短歌のネタとす", "url": "/tankas/000172.html" },
+    
+    { "title": "夢似科学時空を跨ぐ一本線ルセプターテートは救いになるか", "url": "/tankas/000173.html" },
+    
+    { "title": "冥福と死後の世界と幽霊と死者を悼むは生者のエゴか", "url": "/tankas/000174.html" },
+    
+    { "title": "過呼吸で倒れる私レイテンシ決して0点の天使ではない", "url": "/tankas/000175.html" },
+    
+    { "title": "他人事それを貫け少なくともお前に何の因果もないはず", "url": "/tankas/000176.html" },
+    
+    { "title": "風鈴を外して眺む彼岸花夜は長いぞ悲観するなよ", "url": "/tankas/000177.html" },
+    
+    { "title": "理科室に夜が差し込み折れる骨人体模型に心はあるか", "url": "/tankas/000178.html" },
+    
+    { "title": "信仰も神がいなけりゃ成り立たぬあなたがいない恋愛に似て", "url": "/tankas/000179.html" },
+    
+    { "title": "寒々し秋の夜空と懐と私の心とあなたの心", "url": "/tankas/000180.html" },
+    
+    { "title": "離れてもネットが繋がるwi-fiと同じ部屋でも繋がらぬ人", "url": "/tankas/000181.html" },
+    
+    { "title": "温かな光ファイバー通信に冷えた心の叫びを流す", "url": "/tankas/000182.html" },
+    
+    { "title": "冷ややかな硝子が包むレーザー光その信号は届いてますか", "url": "/tankas/000183.html" },
+    
+    { "title": "我々は校則に似た光速に拘束されてるインターネット", "url": "/tankas/000184.html" },
+    
+    { "title": "月霞みあいつと同じ空を見てあの世の天気は曇りのち雨", "url": "/tankas/000185.html" },
+    
+    { "title": "澄んだ夜映す此方が結露する硝子が隔てるあの世とこの世", "url": "/tankas/000186.html" },
+    
+    { "title": "自傷めく大人の事情を自乗するバイナリエディタが示す繰上げ", "url": "/tankas/000187.html" },
+    
+    { "title": "富士山に雪は降りけり神無月冬の足音はすぐそこまで", "url": "/tankas/000188.html" },
+    
+    { "title": "君が見た光を仰ぐ秋の空青く燃えゆる雲を撮りつつ", "url": "/tankas/000189.html" },
+    
+    { "title": "ひとひらが長髪に乗る紅葉狩り那由多の星に散る葉を喩えて", "url": "/tankas/000190.html" },
+    
+    { "title": "忘れ物取りに家まで帰るから此岸と彼岸の通勤定期", "url": "/tankas/000191.html" },
+    
+    { "title": "七色に光らぬゲーミングキーボード昼行灯な私によく似て", "url": "/tankas/000192.html" },
+    
+    { "title": "十年前聴いてた曲を口ずさむ何故か題だけ思い出せない", "url": "/tankas/000193.html" },
+    
+    { "title": "アプデして変わる配列ミスる私アプデされぬは私の方か", "url": "/tankas/000194.html" },
+    
+    { "title": "感情が熱力学を凌駕する私はそれを見てきたはずだろ", "url": "/tankas/000195.html" },
+    
+    { "title": "月光は太陽光の反射とて日蝕なれば陽を覆ひぬ", "url": "/tankas/000196.html" },
+    
+    { "title": "何度目の何も言わずにいなくなるあなたはとても優しいですね", "url": "/tankas/000197.html" },
+    
+    { "title": "優しさと正義と民意と正しさとどれも責任転嫁の道具", "url": "/tankas/000198.html" },
+    
+    { "title": "何もかも私が全部悪いのです今からやめれば満足ですか", "url": "/tankas/000199.html" },
+    
+    { "title": "挫折経て丸くなりよう人々の少し欠けたることぞ虚しき", "url": "/tankas/000200.html" },
+    
+    { "title": "iPhoneで空に見事な三日月を撮ろうとすれば点になりけり", "url": "/tankas/000201.html" },
+    
+    { "title": "ボーカルの無き音楽にデタラメな歌詞を乗せてる私のようで", "url": "/tankas/000202.html" },
+    
+    { "title": "あなたには救いがあってよかったね私の次はあなたの番だ", "url": "/tankas/000203.html" },
+    
+    { "title": "私にも救いはあるよほらそこにおかしいさっきまでそこにあったのに", "url": "/tankas/000204.html" },
+    
+    { "title": "悲しげな歌の響きと共鳴す夜の心傷藍より昏き", "url": "/tankas/000205.html" },
+    
+    { "title": "藍色の空に浮かびぬ三日月は私を置いてとうに沈んだ", "url": "/tankas/000206.html" },
+    
+    { "title": "三日月を追いかけ私は床に就くきっと明日も月が昇るよ", "url": "/tankas/000207.html" },
+    
+    { "title": "午前二時孤独を持ち寄る宴めき合わない角を擦って削る", "url": "/tankas/000208.html" },
+    
+    { "title": "あの頃は皆莫迦だったと懐かしむ正気に戻っちゃそれで仕舞よ", "url": "/tankas/000209.html" },
+    
+    { "title": "明るくもない朝が来る明日の日は私のためには在らずと知って", "url": "/tankas/000210.html" },
+    
+    { "title": "何故人は歳を取るのか誕生日時間のWikipediaを手繰る", "url": "/tankas/000211.html" },
+    
+    { "title": "早起きし寒暖計を見に行った月の近くに火星が見えた", "url": "/tankas/000212.html" },
+    
+    { "title": "『眠れない』トレンドに在る午前五時それを知ってる私も眠れぬ", "url": "/tankas/000213.html" },
+    
+    { "title": "理想的なスターリングエンジンが語る理想は叶わぬと知る", "url": "/tankas/000214.html" },
+    
+    { "title": "言論を統制せよと人の子ら自分を変えないなら簡単だ", "url": "/tankas/000215.html" },
+    
+    { "title": "占いの最下位なる天秤座不幸に釣り合う分銅をくれ", "url": "/tankas/000216.html" },
+    
+    { "title": "千年の前から同じ体裁で今を生きてることを遺して", "url": "/tankas/000217.html" },
+    
+    { "title": "1+1が3にも10にもなる世界ところで私は1のままです", "url": "/tankas/000218.html" },
+    
+    { "title": "直行す座標で踊る午後十時次元を増やしてねじれた関係", "url": "/tankas/000219.html" },
+    
+    { "title": "一を聞き十を知ったら逃げられぬあなたの位置に銃口を向けた", "url": "/tankas/000220.html" },
+    
+    { "title": "オイラーの式に取られた虚構のi綺麗じゃなくても抱えて眠る", "url": "/tankas/000221.html" },
+    
+    { "title": "十月に季節外れの百合の花咲く庭先に枯葉がはらり", "url": "/tankas/000222.html" },
+    
+    { "title": "日が経つにつれて遅れる月の出と私の寝つきの悪さにも似て", "url": "/tankas/000223.html" },
+    
+    { "title": "日が短くなってきたと世間話自転が段々速くなってる", "url": "/tankas/000224.html" },
+    
+    { "title": "ふと思う怖くないのか我々に明日もなければ次などないが", "url": "/tankas/000225.html" },
+    
+    { "title": "明瞭で漠然とした感情は恐怖という名で眠りを妨ぐ", "url": "/tankas/000226.html" },
+    
+    { "title": "現代を生きる私と異世界と昭和ははるか遠くになりて", "url": "/tankas/000227.html" },
+    
+    { "title": "塗りつぶしツールで塗った晴天に文字情報なきブルースクリーン", "url": "/tankas/000228.html" },
+    
+    { "title": "神様よ正しい線の引き方を教えてくれよ導いてくれ", "url": "/tankas/000229.html" },
+    
+    { "title": "化かされた洗脳された騙された正しい択を訳を選べよ", "url": "/tankas/000230.html" },
+    
+    { "title": "紅い実が心に生りて熟れていた柘榴が如く床に滴る", "url": "/tankas/000231.html" },
+    
+    { "title": "要らぬなら捨ててくれよとごみ屋敷思い出ばかりが積もる本棚", "url": "/tankas/000232.html" },
+    
+    { "title": "めくりめく感情論と理想論環状の理で踊れお前ら", "url": "/tankas/000233.html" },
+    
+    { "title": "焦燥に急かされ掻いた傷創に染みた誰かの涙一粒", "url": "/tankas/000234.html" },
+    
+    { "title": "誰が為のNPCに過ぎないと自分をそこまで割り切れるのか", "url": "/tankas/000235.html" },
+    
+    { "title": "くたびれた秋の寂寞私はもうあなたの世界を侵す資格は", "url": "/tankas/000236.html" },
+    
+    { "title": "夢ならばどれほど良いかレポートをバグに塗れた世界へ送る", "url": "/tankas/000237.html" },
+    
+    { "title": "葉が落ちて今年が終わる令和四年そういやこの樹は常緑樹だな", "url": "/tankas/000238.html" },
+    
+    { "title": "常緑に縋る私と創作と余った思考はゴミ箱送り", "url": "/tankas/000239.html" },
+    
+    { "title": "此の世をば解体せられよ光圏の外を覗かば世界が歪む", "url": "/tankas/000240.html" },
+    
+    { "title": "思い出を薪の代わりに焚べる冬目障りだから二度と浮かぶな", "url": "/tankas/000241.html" },
+    
+    { "title": "璃月に差す朝焼けが心灼くお前の罪は世界と共に", "url": "/tankas/000242.html" },
+    
+    { "title": "守りたいものなどないと昼下がりこれはお前がやったことだぞ", "url": "/tankas/000243.html" },
+    
+    { "title": "激情と冷たい冬の冷気とを隔てて発電する硝子窓", "url": "/tankas/000244.html" },
+    
+    { "title": "幻想の郷里に至るまでの距離今日降りたのは既にない駅", "url": "/tankas/000245.html" },
+    
+    { "title": "雨は止み夜はいつしか明けるけど私の心は極夜の如く", "url": "/tankas/000246.html" },
+    
+    { "title": "誤変換ばかりを覚えるiPhoneにそんなとこまで似なくていいのよ", "url": "/tankas/000247.html" },
+    
+    { "title": "テセウスの船で進もう大航海三年前のメモが読めない", "url": "/tankas/000248.html" },
+    
+    { "title": "或る人は止まない雨などないと云う私の上に雨よ在りけれ", "url": "/tankas/000249.html" },
+    
+    { "title": "秋深き赤黄に燃える山々に自分の心の色を見る様", "url": "/tankas/000250.html" },
+    
+    { "title": "秋風が日の丸揺らす文化の日対照的な空と心象", "url": "/tankas/000251.html" },
+    
+    { "title": "棄てられたワスレナグサの花言葉そんな呪いをかけて死にたい", "url": "/tankas/000252.html" },
+    
+    { "title": "枯れ花が秋霖浴びてふやけてる月の見えぬは新月故か", "url": "/tankas/000253.html" },
+    
+    { "title": "忘らるる約束捨てて眠る夜針の代わりに飲む睡眠薬", "url": "/tankas/000254.html" },
+    
+    { "title": "現し世の二十二世紀も人は死ぬ虚ろな私がうつろう夕べ", "url": "/tankas/000255.html" },
+    
+    { "title": "不用物捨ててキレイな世の中をきっと私も捨てられる側", "url": "/tankas/000256.html" },
+    
+    { "title": "惑星を抱えて染まる紅い月私を愛した人を思い出す", "url": "/tankas/000257.html" },
+    
+    { "title": "秋空の食いしん坊が邪魔をする最後に見た人点けて帰って", "url": "/tankas/000258.html" },
+    
+    { "title": "年深けて頭を垂れる来客と枝垂桜と柳の区別", "url": "/tankas/000259.html" },
+    
+    { "title": "冬の雨傘も差さずに出掛けては風邪を引いてもどこ吹く風と", "url": "/tankas/000260.html" },
+    
+    { "title": "一点の交点のみ持つ直線と平行線ならどちらがいいか", "url": "/tankas/000261.html" },
+    
+    { "title": "平行にビュフォンの針を落としてはエンが全てを統べるものだと", "url": "/tankas/000262.html" },
+    
+    { "title": "明日なる死神めいて鎌を駆りススキを刈りぬる雪は降りけり", "url": "/tankas/000263.html" },
+    
+    { "title": "満月を拝みて欠ける神無月飛騨の山には雪が降りつつ", "url": "/tankas/000264.html" },
+    
+    { "title": "家の隅調律してないピアノ弾き狂った和音が私によく似て", "url": "/tankas/000265.html" },
+    
+    { "title": "故郷は一つだけだと言うけれど私の実家に住所は二つ", "url": "/tankas/000266.html" },
+    
+    { "title": "基盤なるプラットフォームの異変にて元号変わる日の思い出さるる", "url": "/tankas/000267.html" },
+    
+    { "title": "青鳥を卵でとじて親子丼週の最後の夜食にどうぞ", "url": "/tankas/000268.html" },
+    
+    { "title": "現世発異世界行きの切符持ちからすといっしょにかえりましょう", "url": "/tankas/000269.html" },
+    
+    { "title": "手続きが時間を削る何もかも3半音だけ下がって聴こえた", "url": "/tankas/000270.html" },
+    
+    { "title": "下書きをタイムラインに放流す大きくなって帰ってこいよ", "url": "/tankas/000271.html" },
+    
+    { "title": "肩が凝る後ろ振り向く誰もいない思い出せない何かがそこに", "url": "/tankas/000272.html" },
+    
+    { "title": "容量の大きな携帯買ったとて私の心は何も掬えず", "url": "/tankas/000273.html" },
+    
+    { "title": "AIが過去の記録を示してる爆破で地雷を除去する機械", "url": "/tankas/000274.html" },
+    
+    { "title": "亡き友の形見と言ひて手慰むソーシャルゲームの社会は何処に", "url": "/tankas/000275.html" },
+    
+    { "title": "決壊す心のダムの水位見て雨など降っていないじゃないか", "url": "/tankas/000276.html" },
+    
+    { "title": "普通なる言葉に潰されそうになる脱線列車を追い抜く急行", "url": "/tankas/000277.html" },
+    
+    { "title": "推し活と偶像崇拝めく人と像なき雨を慕う私と", "url": "/tankas/000278.html" },
+    
+    { "title": "サジェストを飼い慣らしては微温湯に飼い慣られるは私の方か", "url": "/tankas/000279.html" },
+    
+    { "title": "死因なる夢の続きが見たかったそうして書いた続きはつまらん", "url": "/tankas/000280.html" },
+    
+    { "title": "会話にて先を読んだら色眼鏡度が入ってるからかけなきゃ見えない", "url": "/tankas/000281.html" },
+    
+    { "title": "AIに代替される創作者電子にエモは理解できるか", "url": "/tankas/000282.html" },
+    
+    { "title": "モヤイなる石像めいて待ち合わせ彫像なれど心は在りて", "url": "/tankas/000283.html" },
+    
+    { "title": "ふたりきり歩いた軌跡は平行線交わらないがずっと隣だ", "url": "/tankas/000284.html" },
+    
+    { "title": "一つきり皆が種持つ歌がある花が咲かなきゃ価値がないのか", "url": "/tankas/000285.html" },
+    
+    { "title": "これしきで切れる縁なら最初から北を向いてる私とあなた", "url": "/tankas/000286.html" },
+    
+    { "title": "感情のラッチ回路がエラー吐き雷落として全部さよなら", "url": "/tankas/000287.html" },
+    
+    { "title": "生きている間に記す香典帳心当たりを一人加える", "url": "/tankas/000288.html" },
+    
+    { "title": "第四の壁を見抜いた主人公四角い部屋ですやすや眠る", "url": "/tankas/000289.html" },
+    
+    { "title": "叶わじの願いを指にぶら下げて明日もこうして生きるだろうと", "url": "/tankas/000290.html" },
+    
+    { "title": "雨よりも遠いあなたへ贈る詩そっちはもうちょい静かなのかな", "url": "/tankas/000291.html" },
+    
+    { "title": "冬の夜正しく跳ねる心臓の孤独は淡いラムネのように", "url": "/tankas/000292.html" },
+    
+    { "title": "人形が何度捨てても戻るならきっと私もあなたの元に", "url": "/tankas/000293.html" },
+    
+    { "title": "曇り空流星群が降るらしい特に願いもないからいいや", "url": "/tankas/000294.html" },
+    
+    { "title": "何億年前の光を見上げる冬の夜既にそこにはないはずなのに", "url": "/tankas/000295.html" },
+    
+    { "title": "坐り方阿弥陀如来じゃないんだぞギミックめいて並ぶ神饌", "url": "/tankas/000296.html" },
+    
+    { "title": "天命に赦されなかった私には許す資格などありゃしないんだと", "url": "/tankas/000297.html" },
+    
+    { "title": "人生は割れ物につき天地無用ボンドの需要が高まる季節", "url": "/tankas/000298.html" },
+    
+    { "title": "正方形三つ並べて出来る図形四十五度だけ傾げて送る", "url": "/tankas/000299.html" },
+    
+    { "title": "質量と反物質の非対称括弧が閉じぬも宇宙の端か", "url": "/tankas/000300.html" },
+    
+    { "title": "質量と反物質の非対称わたしがいるならあなたはいない", "url": "/tankas/000301.html" },
+    
+    { "title": "質量と反物質の非対称選ばれなかった方を弔う", "url": "/tankas/000302.html" },
+    
+    { "title": "明星の日の出に今日を冀望してfor文一つで回る太陽", "url": "/tankas/000303.html" },
+    
+    { "title": "カミサマのプログラミング入門書挨拶一つで消される世界", "url": "/tankas/000304.html" },
+    
+    { "title": "単語だけ見て飛んでくるロボットに私じゃないといけないワケは", "url": "/tankas/000305.html" },
+    
+    { "title": "創作の価値を測れる物差しが一次元ならへし折ってやる", "url": "/tankas/000306.html" },
+    
+    { "title": "青い鳥幸せだったと白鳥歌羽根のひとひら抱いて眠るよ", "url": "/tankas/000307.html" },
+    
+    { "title": "砂の上言葉で壁を塗った城なればいずれは砂塵となりて", "url": "/tankas/000308.html" },
+    
+    { "title": "もしいずれ全てが塵に帰すのならそれでも伝える楽しかったと", "url": "/tankas/000309.html" },
+    
+    { "title": "冬花を君に贈ろういつかまた芽を出すときが来ると信じて", "url": "/tankas/000310.html" },
+    
+    { "title": "首都を灼く戦火を冷ます雨音がCPUのファンに吸われて", "url": "/tankas/000311.html" },
+    
+    { "title": "ざあざあと屋根を洗った雨水が全てを覆う雪を溶かせと", "url": "/tankas/000312.html" },
+    
+    { "title": "叶わじの彼岸桜が咲く頃に拝啓こちらはお元気ですよ", "url": "/tankas/000313.html" },
+    
+    { "title": "今日の日の生きた証だ減る電池今日も一日お疲れ様です", "url": "/tankas/000314.html" },
+    
+    { "title": "数億年前の星でも泣くのなら私の涙を隠してくれよ", "url": "/tankas/000315.html" },
+    
+    { "title": "人生のエンドロールを読み飛ばしそんなに急いでどこに行くのか", "url": "/tankas/000316.html" },
+    
+    { "title": "スーパーで買ったいつものチョコレート七つに割って意味を加える", "url": "/tankas/000317.html" },
+    
+    { "title": "後悔を時間で割って計ろうか距離÷時間は鼓動の速さ", "url": "/tankas/000318.html" },
+    
+    { "title": "わかってる便りがないのはいい報せそれでもあなたに頼っちゃダメかな", "url": "/tankas/000319.html" },
+    
+    { "title": "引力は距離の二乗に反比例落ちたリンゴが惹かれる力", "url": "/tankas/000320.html" },
+    
+    { "title": "カミサマが私に力を与えたらそれで私は空を飛べるの", "url": "/tankas/000321.html" },
+    
+    { "title": "おくすりで心も体も治るなら所詮生命は化学反応", "url": "/tankas/000322.html" },
+    
+    { "title": "想い出の欠片が刺した心から溢れる朱と下がる体温", "url": "/tankas/000323.html" },
+    
+    { "title": "傷付いた心に塩を塗りこんで薬と毒は表裏一体", "url": "/tankas/000324.html" },
+    
+    { "title": "毒針を毒と分かって呑み込んだ苦しんだだけ明日は輝く", "url": "/tankas/000325.html" },
+    
+    { "title": "雪玉を六つ作って雪だるま春になったら全部溶けよう", "url": "/tankas/000326.html" },
+    
+    { "title": "ラスボスが世界の半分呉れようと勇者と魔王の傀儡政権", "url": "/tankas/000327.html" },
+    
+    { "title": "永劫な孤独の論理を振りかざす見えないことが安心になる", "url": "/tankas/000328.html" },
+    
+    { "title": "今日もまた扉を開けて旅に出る石90の祝福が降る", "url": "/tankas/000329.html" },
+    
+    { "title": "写真機の代わりにスマホを携えてインターネットで捕らえる世界", "url": "/tankas/000330.html" },
+    
+    { "title": "雪花が解けたころには桜咲きこうして生命は繋がり行くか", "url": "/tankas/000331.html" },
+    
+    { "title": "名も知らぬあなたのために筆を執るこんな私でよければどうぞ", "url": "/tankas/000332.html" },
+    
+    { "title": "割り切れない心を砕く約数と割った余りを拾って売った", "url": "/tankas/000333.html" },
+    
+    { "title": "一雨が降るたび緩む冬の寒私の心も三寒四温", "url": "/tankas/000334.html" },
+    
+    { "title": "感情も知識も全部倍速で窺う顔はただただ白い", "url": "/tankas/000335.html" },
+    
+    { "title": "安定を欠いた未来と眠剤で眩む私の平衡感覚", "url": "/tankas/000336.html" },
+    
+    { "title": "春越えて林檎の花が咲く頃に星よ全てをさらっておくれ", "url": "/tankas/000337.html" },
+    
+    { "title": "軒先にワープポイント拵えてここが私の帰る場所だと", "url": "/tankas/000338.html" },
+    
+    { "title": "太陽が地球の表を焦がすとき庇われている私と新月", "url": "/tankas/000339.html" },
+    
+    { "title": "新月を庇う昼間の惑星と庇われないが目立つ満月", "url": "/tankas/000340.html" },
+    
+    { "title": "私鉄線上りホームの階段は普通を求めた私の終点", "url": "/tankas/000341.html" },
+    
+    { "title": "通販で築いた知恵の殿堂はテトリスめいた空の紙箱", "url": "/tankas/000342.html" },
+    
+    { "title": "子を捨てて都会に行った母親の置き土産とて煤けた人形", "url": "/tankas/000343.html" },
+    
+    { "title": "不器用な私を苛む思い出は部屋に積まれた本の城砦", "url": "/tankas/000344.html" },
+    
+    { "title": "グランドのサッカーゴールの骨組みの上で交わした幼い約束", "url": "/tankas/000345.html" },
+    
+    { "title": "クッキーに載せたドライフルーツの含んだ意味を知らぬ幼子", "url": "/tankas/000346.html" },
+    
+    { "title": "面倒と切り捨てたのが縁ならばそれでも思い切れない心", "url": "/tankas/000347.html" },
+    
+    { "title": "優しさの定義が人を傷付ける慮った気持ちで殴る", "url": "/tankas/000348.html" },
+    
+    { "title": "目の前のむかつく顔をぶん殴る鏡合わせの私と私", "url": "/tankas/000349.html" },
+    
+    { "title": "間が悪い私とあなたの差し出した右手と右手がぶつかる鏡", "url": "/tankas/000350.html" },
+    
+    { "title": "十五夜にまた来月と挨拶し私はあなたを知らない満月", "url": "/tankas/000351.html" },
+    
+    { "title": "好天の凍った空にさんざめく星に対峙す天体観測", "url": "/tankas/000352.html" },
+    
+    { "title": "踏切も街灯もない田舎からあなたと同じ星を眺める", "url": "/tankas/000353.html" },
+    
+    { "title": "昼よりも暗い夜中が好きなのはきっと心を見透かせないから", "url": "/tankas/000354.html" },
+    
+    { "title": "予定帳黒いマーカで塗り潰し過去も未来もなかったことに", "url": "/tankas/000355.html" },
+    
+    { "title": "消しゴムが弔う文字の行き先は真っ黒底の情報墓場", "url": "/tankas/000356.html" },
+    
+    { "title": "光さえ手放すつもりのない私事象の地平に銀河が昇る", "url": "/tankas/000357.html" },
+    
+    { "title": "五里霧中軽乗用車で駆けていくハイビームだと逆に見づらい", "url": "/tankas/000358.html" },
+    
+    { "title": "一寸の先をも閉ざす暗闇に光よどうか私を連れて", "url": "/tankas/000359.html" },
+    
+    { "title": "夕暮れに生まれた鳥が慕うのは一番星がくれた光か", "url": "/tankas/000360.html" },
+    
+    { "title": "思い出がへばりついてる部屋の壁白鳥なんかになってたまるか", "url": "/tankas/000361.html" },
+    
+    { "title": "お互いの些細なことを許せるか造花に託す私の水桶", "url": "/tankas/000362.html" },
+    
+    { "title": "もし時を戻せるならば一度だけあなたのことを抱きしめたかった", "url": "/tankas/000363.html" },
+    
+    { "title": "才能は好きこそものの上手だと評価されなきゃ下手の横好き", "url": "/tankas/000364.html" },
+    
+    { "title": "近頃の若いもんはと反抗期笑ってくれるな来た道だろう", "url": "/tankas/000365.html" },
+    
+    { "title": "人生の酸いも甘いも閉じ込めて褪せていくのは世界の方だ", "url": "/tankas/000366.html" },
+    
+    { "title": "地球人同じ空気を共有す星降る夜の向こうにあなた", "url": "/tankas/000367.html" },
+    
+    { "title": "働けどなお我が暮らし楽ならず無能な味方を背後から撃つ", "url": "/tankas/000368.html" },
+    
+    { "title": "あの時のあなたの色はどうだっけ自分の顔は自分で見られず", "url": "/tankas/000369.html" },
+    
+    { "title": "感情の制御失い失敗す人の振り見て襟袖正す", "url": "/tankas/000370.html" },
+    
+    { "title": "マルバツを間違え続けて辿り着く屋上の端右手には君", "url": "/tankas/000371.html" },
+    
+    { "title": "好きなもの一番最後に取っておく奪われることを知らない長子", "url": "/tankas/000372.html" },
+    
+    { "title": "一瞬の心の動きを連写する同じに見えて色はとりどり", "url": "/tankas/000373.html" },
+    
+    { "title": "パンダとは大熊猫と書くらしい実際模様が猫被ってる", "url": "/tankas/000374.html" },
+    
+    { "title": "君と吹き屋根まで飛んだしゃぼん玉トタンの上で独り凍った", "url": "/tankas/000375.html" },
+    
+    { "title": "神がいた証忘れた壁紙の剥がれかけてるあなたの嘘と", "url": "/tankas/000376.html" },
+    
+    { "title": "アイコンとユザネを変えて転生す魂あらばあなたと分かるか", "url": "/tankas/000377.html" },
+    
+    { "title": "重たいと嫌った心と右腕の長さの二乗が縛る思い出", "url": "/tankas/000378.html" },
+    
+    { "title": "トレンドの流行り廃りの加速度があなたと私の距離に良く似て", "url": "/tankas/000379.html" },
+    
+    { "title": "部屋の隅買った覚えのない土産それでも私の過去の証明", "url": "/tankas/000380.html" },
+    
+    { "title": "名残られて郷里に帰る私なら愛されたのも過去になるのか", "url": "/tankas/000381.html" },
+    
+    { "title": "虚ろなる深夜三時の空返事違うの嫌いなわけではないの", "url": "/tankas/000382.html" },
+    
+    { "title": "風車回れよ回れ熱帯びて夜露が奪った時を巡らす", "url": "/tankas/000383.html" },
+    
+    { "title": "玉葱をみじん切りして感涙す線香花火の煙にも似て", "url": "/tankas/000384.html" },
+    
+    { "title": "我々は宇宙人なりUFOが私もあなたも同じだと言う", "url": "/tankas/000385.html" },
+    
+    { "title": "愛情は目には見えないだから言う超能力なき者の恋愛", "url": "/tankas/000386.html" },
+    
+    { "title": "言葉なき通話が示す関係性三十三時の見慣れた天井", "url": "/tankas/000387.html" },
+    
+    { "title": "創作にテレビに明日に何もかも全てに夢を見ていた時代", "url": "/tankas/000388.html" },
+    
+    { "title": "同じ曲電波で繋がるイヤホンが私とあなたの距離を離した", "url": "/tankas/000389.html" },
+    
+    { "title": "恒星のフレアが焼いた電離層電話の糸を揺らすオーロラ", "url": "/tankas/000390.html" },
+    
+    { "title": "冬仕舞そろそろ雪が解けてきて桜咲くのはもうちょい先か", "url": "/tankas/000391.html" },
+    
+    { "title": "屋上と地面の間の走馬灯あなたの顔は見えただろうか", "url": "/tankas/000392.html" },
+    
+    { "title": "コンビニのコンビニエンスを理解せずただただ田舎が不便なだけか", "url": "/tankas/000393.html" },
+    
+    { "title": "我思う故に我ありそれならばあなたのことも想えるだろか", "url": "/tankas/000394.html" },
+    
+    { "title": "青色に塗り潰された晴天とあなたと私の存在証明", "url": "/tankas/000395.html" },
+    
+    { "title": "箱庭を同じ形に組み直す次の次こそうまくいくはず", "url": "/tankas/000396.html" },
+    
+    { "title": "天球に黒いペンキを塗る仕事勝手にラメを混ぜたの誰だよ", "url": "/tankas/000397.html" },
+    
+    { "title": "光年が距離の単位であるならば目には見えないあなたはどこに", "url": "/tankas/000398.html" },
+    
+    { "title": "七等星目には見えぬと言うけれどそれでも照らす惑星がある", "url": "/tankas/000399.html" },
+    
+    { "title": "モノリスが四角い岩でないと知る大明神を疑う夜更け", "url": "/tankas/000400.html" },
+    
+    { "title": "一本のレールが繋ぐ人の世と普通レールは二本一組", "url": "/tankas/000401.html" },
+    
+    { "title": "軒先の脚立に登り手を伸ばすこれであなたに届くだろうか", "url": "/tankas/000402.html" },
+    
+    { "title": "冥界を彩る絨毯花畑花の命は誰が弔う", "url": "/tankas/000403.html" },
+    
+    { "title": "雨上がり道に出来てた水溜まり傘をさしても空には届かず", "url": "/tankas/000404.html" },
+    
+    { "title": "昼過ぎに掛かった虹に問いかける君を辿ればどこに着くのか", "url": "/tankas/000405.html" },
+    
+    { "title": "冬曇り部屋の硝子は半透明私の顔も心も分からず", "url": "/tankas/000406.html" },
+    
+    { "title": "紙とペンだけで作れる世界なら私を作った神もおそらく", "url": "/tankas/000407.html" },
+    
+    { "title": "放課後に虚数を学ぶ図書室は半回転する虚ろな世界", "url": "/tankas/000408.html" },
+    
+    { "title": "雪降らぬ朝に凍った携帯を手で温めて始まる一日", "url": "/tankas/000409.html" },
+    
+    { "title": "雲の上天上人が住むという架空の橋が繋ぐ島々", "url": "/tankas/000410.html" },
+    
+    { "title": "十首ほど詠んで寝ようとメモ開き気付けば二十三の首と時と", "url": "/tankas/000411.html" },
+    
+    { "title": "朝陽射す窓辺で惑う冬の朝あの日の朝と同じ陽ですか", "url": "/tankas/000412.html" },
+    
+    { "title": "日本語でRTAは走るもの最速目指して天まで走れ", "url": "/tankas/000413.html" },
+    
+    { "title": "人の縁結ぶものだと言うのなら繋がってない端がゆらめく", "url": "/tankas/000414.html" },
+    
+    { "title": "生きてるを確かめながら起きる朝私は一つ溜息をつく", "url": "/tankas/000415.html" },
+    
+    { "title": "生きるのが苦しみならば人は何故息を乱して仕舞まで行け", "url": "/tankas/000416.html" },
+    
+    { "title": "生命に価値があるなら人は何故吐く息白い言葉の意味は", "url": "/tankas/000417.html" },
+    
+    { "title": "猫の日に子年生まれが逃げ惑う食物連鎖が示すカラクリ", "url": "/tankas/000418.html" },
+    
+    { "title": "英語ではサイレントレターと呼ぶ黙字白紙の手紙も意味を持つのに", "url": "/tankas/000419.html" },
+    
+    { "title": "数珠繋ぎ電子の鉱山掘り起こすビット単位の秤量通貨", "url": "/tankas/000420.html" },
+    
+    { "title": "差し伸べた両手を汚す希望なら私の夢は叶わぬままに", "url": "/tankas/000421.html" },
+    
+    { "title": "もし君が私と共に居たのならそんな仮定が私を苛む", "url": "/tankas/000422.html" },
+    
+    { "title": "自傷とて土俵違いに喧嘩売る努力嫌いの流離いの詩", "url": "/tankas/000423.html" },
+    
+    { "title": "人の縁纏わり付いた切れ端の枯葉が如く地面をのたうつ", "url": "/tankas/000424.html" },
+    
+    { "title": "夢載せて天まで届けキャットタワーねこの興味は空の紙箱", "url": "/tankas/000425.html" },
+    
+    { "title": "iPhoneの指紋認証通らない今日は昨日の私でないのか", "url": "/tankas/000426.html" },
+    
+    { "title": "夜行性昼に馴染まぬ人間とねこにはねこのにゃん間関係", "url": "/tankas/000427.html" },
+    
+    { "title": "山あいを一冬閉じ込めた雪解けたら解けたでちょっと寂しい", "url": "/tankas/000428.html" },
+    
+    { "title": "猫の日に株奪われた忍者の日闇夜にねこの忍者が暗躍", "url": "/tankas/000429.html" },
+    
+    { "title": "もし人の生命に価値があるのなら他人に預けて利息で生きる", "url": "/tankas/000430.html" },
+    
+    { "title": "もたれ合う人と人とが生む価値がゼロサムゲームにならない剰余", "url": "/tankas/000431.html" },
+    
+    { "title": "空き家にて痩せた日めくりカレンダー主人の消えた月日を示す", "url": "/tankas/000432.html" },
+    
+    { "title": "丑三つに鳥居をくぐる迷い子は狐が化かした迷宮の中", "url": "/tankas/000433.html" },
+    
+    { "title": "映画館苦手な私の唯一の友と見た画を今も忘れず", "url": "/tankas/000434.html" },
+    
+    { "title": "灯りなき廊下を照らす月光の影を揺らした二人の歩み", "url": "/tankas/000435.html" },
+    
+    { "title": "この世界もしも終わりがあるのなら清算済んで眺める競争", "url": "/tankas/000436.html" },
+    
+    { "title": "スーパーで期限近しと二割引赤い瞳が私を見てた", "url": "/tankas/000437.html" },
+    
+    { "title": "マグカップお揃いにして流し台割れたらもっかい買えばいいのさ", "url": "/tankas/000438.html" },
+    
+    { "title": "お化けなど怖くないぞと夏の夜百物語が暴く本性", "url": "/tankas/000439.html" },
+    
+    { "title": "遠くなるあなたの声が聞こえない秋風よ吹けカクテルパーティー", "url": "/tankas/000440.html" },
+    
+    { "title": "腕時計正しく刻む秒針と乱れっぱなしの私の心臓", "url": "/tankas/000441.html" },
+    
+    { "title": "お互いが互いの所為で傷付いて擦り切れきった心と絆", "url": "/tankas/000442.html" },
+    
+    { "title": "脳内の居候なる人格が生まれた意味を人以上に問う", "url": "/tankas/000443.html" },
+    
+    { "title": "メモリから消したゲームの主人公次の世界は救ってあげて", "url": "/tankas/000444.html" },
+    
+    { "title": "風刺やら皮肉の類が流行るのは無言の心を正当するから", "url": "/tankas/000445.html" },
+    
+    { "title": "人世なる禍福を糾う綱を張り注連縄めいて厄を祓わん", "url": "/tankas/000446.html" },
+    
+    { "title": "願わくばまた会いましょうと別れ唄離れなければ二度とは逢えず", "url": "/tankas/000447.html" },
+    
+    { "title": "国境が争い生むと謳う人傷付きたくなきゃ自分で守れ", "url": "/tankas/000448.html" },
+    
+    { "title": "バカみたい自分のことすら救えない私の声が何になるんだ", "url": "/tankas/000449.html" },
+    
+    { "title": "大好きな創作だった一人でもやっていけると思っていたのに", "url": "/tankas/000450.html" },
+    
+    { "title": "空に墜つ星座をずっと眺めてるあなたと違って私は弱い", "url": "/tankas/000451.html" },
+    
+    { "title": "君といた祭りの後の寂寞に隣にいるのにどうして侘し", "url": "/tankas/000452.html" },
+    
+    { "title": "冬の夜あの頃はまだ良かったと煙草の煙に巻かれた駆引き", "url": "/tankas/000453.html" },
+    
+    { "title": "脳内に好きが溢れて盲目に恋は正気じゃできないらしい", "url": "/tankas/000454.html" },
+    
+    { "title": "朝食に添えるコーヒー君と飲む揃いのカップに砂糖を二つ", "url": "/tankas/000455.html" },
+    
+    { "title": "唯一の村のスーパー閉店し凍った池に鳥が囀る", "url": "/tankas/000456.html" },
+    
+    { "title": "憎しみで歪んだ心に跳ね返る過去と今とが乖離していく", "url": "/tankas/000457.html" },
+    
+    { "title": "今日もまた歪んだ鏡を見つめてる写真は常に真ではないと", "url": "/tankas/000458.html" },
+    
+    { "title": "放置した庭木を剪定するように選り好みした縁切り鋏", "url": "/tankas/000459.html" },
+    
+    { "title": "寝床とて筵に包まる針鼠あなたが好きでも痛いのは嫌", "url": "/tankas/000460.html" },
+    
+    { "title": "悪行を非難せられよ瓦版それってあなたの仮面じゃないよね", "url": "/tankas/000461.html" },
+    
+    { "title": "太陽を直接見ると目に悪いだから恋って盲目なのかな", "url": "/tankas/000462.html" },
+    
+    { "title": "おぼろげな記憶が刺した針千本睡眠薬で意識もおぼろ", "url": "/tankas/000463.html" },
+    
+    { "title": "竹林で一冬かけたかくれんぼみんなでなかよく輪廻転生", "url": "/tankas/000464.html" },
+    
+    { "title": "愛情と実在が成す高低差おもい心の位置エネルギー", "url": "/tankas/000465.html" },
+    
+    { "title": "一人でも取り残さない方策を君を忘れて世界は回る", "url": "/tankas/000466.html" },
+    
+    { "title": "恋心愛になるまで放っといてそのまま腐って落ちるだけなの", "url": "/tankas/000467.html" },
+    
+    { "title": "相反す心のほとぼり冷ますよう炬燵に潜りアイスを掬う", "url": "/tankas/000468.html" },
+    
+    { "title": "人間は理想語れる生き物でどうして現実見なきゃいけない", "url": "/tankas/000469.html" },
+    
+    { "title": "愛とかいう身勝手極まる感情をぶつけられない幸せがある", "url": "/tankas/000470.html" },
+    
+    { "title": "真意なる氷柱を詰めた雪玉で雪合戦する恋人同士", "url": "/tankas/000471.html" },
+    
+    { "title": "恋心冷めた分だけ差し引いてそれでも進む温暖化かな", "url": "/tankas/000472.html" },
+    
+    { "title": "現実が見えないのならいくらでも前に進もうトムジェリ時空", "url": "/tankas/000473.html" },
+    
+    { "title": "東京の街行く人よ何故急ぐついていけない私の歩幅", "url": "/tankas/000474.html" },
+    
+    { "title": "期待した分だけかかる重課税恋心なる心の重し", "url": "/tankas/000475.html" },
+    
+    { "title": "右下の時計が示す十二時にそれで終わりと誰が決めたの", "url": "/tankas/000476.html" },
+    
+    { "title": "巧いとも思わぬ私の作品を求めてくれたあなたはいない", "url": "/tankas/000477.html" },
+    
+    { "title": "雨の夜あなたの一歩を追いかけた五十歩百歩が詰めない間", "url": "/tankas/000478.html" },
+    
+    { "title": "焦げ付いた私の想いと裏腹にあなたは重い心嫌った", "url": "/tankas/000479.html" },
+    
+    { "title": "寝る前の記憶を飛ばすおくすりが全部の記憶もさらってくれよ", "url": "/tankas/000480.html" },
+    
+    { "title": "感情を三十一文字に計り売る私の憂いを買い取ってくれ", "url": "/tankas/000481.html" },
+    
+    { "title": "赤錆で狂った歯車取り外し繋がらないから回る関係", "url": "/tankas/000482.html" },
+    
+    { "title": "弔いの蝋燭一つ吹き消して二度と灯らぬ廃墟の心", "url": "/tankas/000483.html" },
+    
+    { "title": "本日も晴天なりや我が心雨が降っても自我固まらず", "url": "/tankas/000484.html" },
+    
+    { "title": "薄情な君を覚えた夜なのに私を置いて朝がまた来る", "url": "/tankas/000485.html" },
+    
+    { "title": "柿の種のピーナツみたいな感情が心の中で芽吹き始める", "url": "/tankas/000486.html" },
+    
+    { "title": "会合で久方振りに酒を呑み揺れる頭に震える心", "url": "/tankas/000487.html" },
+    
+    { "title": "ジャージーとパーカの間でやりとりす横棒一つ辛いにくれよ", "url": "/tankas/000488.html" },
+    
+    { "title": "雪国の三月はまだ冬だけど二月の終わりは尻切れ蜻蛉", "url": "/tankas/000489.html" },
+    
+    { "title": "異世界に思いを馳せる午前二時分からないのが楽しい時間", "url": "/tankas/000490.html" },
+    
+    { "title": "窓際で微笑みかけてくれた君今では私の隣で眠る", "url": "/tankas/000491.html" },
+    
+    { "title": "浮ついた君に抱いた現実と期待の落差を恋と呼んでた", "url": "/tankas/000492.html" },
+    
+    { "title": "地球より小さい月は光るから遠い星より目立って見える", "url": "/tankas/000493.html" },
+    
+    { "title": "君だけが水面に浮かぶローファイな世界と揺れる私の心", "url": "/tankas/000494.html" },
+    
+    { "title": "思い付く端から順に忘れてく私の脳から旅立ったのか", "url": "/tankas/000495.html" },
+    
+    { "title": "切れかけの蛍光灯が騒いでる60ヘルツで脈打つ交流", "url": "/tankas/000496.html" },
+    
+    { "title": "久々に下界に降りて買い歩き5Gが時々入る", "url": "/tankas/000497.html" },
+    
+    { "title": "会いたいが心に溢れて止まらないあなたを愛したかったと祈った", "url": "/tankas/000498.html" },
+    
+    { "title": "人間は忘れられると死ぬというあなたの傷が私の証", "url": "/tankas/000499.html" },
+    
+    { "title": "鈍行な私の旅の終点は始発も終電もない駅舎まで", "url": "/tankas/000500.html" },
+    
+    { "title": "一人きり私の心を閉じ込めた愛とはどうやら悪行らしい", "url": "/tankas/000501.html" },
+    
+    { "title": "他人より優れていたいと思う人他人の不幸を喜べる人", "url": "/tankas/000502.html" },
+    
+    { "title": "いつからかあなたと私の掛け違い解かれ話が別からないまま", "url": "/tankas/000503.html" },
+    
+    { "title": "書きかけた手紙を放るごみ箱は私が捨てた世界で満ちて", "url": "/tankas/000504.html" },
+    
+    { "title": "自律して成長していくAIと自律神経死んでる私", "url": "/tankas/000505.html" },
+    
+    { "title": "大都会あなたの背中が見つからず404号室の夕焼け", "url": "/tankas/000506.html" },
+    
+    { "title": "リビングのラジオが寄せた人の耳イヤホンかけて離ればなれに", "url": "/tankas/000507.html" },
+    
+    { "title": "君のこと思い出すたび曇る空雨が降ったら一つ忘れる", "url": "/tankas/000508.html" },
+    
+    { "title": "世界から突き放された創作者綺麗な切り絵の余りの部分", "url": "/tankas/000509.html" },
+    
+    { "title": "科学では誰がやっても同じと言う好きな人なら許せる行為", "url": "/tankas/000510.html" },
+    
+    { "title": "耐え忍ぶ冬が終わって雪が解け春になったら釘が出てきた", "url": "/tankas/000511.html" },
+    
+    { "title": "春が来て仕事始まる音がするダンプの次に来るショベルカー", "url": "/tankas/000512.html" },
+    
+    { "title": "あなたには本物が見えているのだろう偽物なりに頑張りますよ", "url": "/tankas/000513.html" },
+    
+    { "title": "異世界の君を想って鼓動する昼にコーヒー飲み過ぎたらしい", "url": "/tankas/000514.html" },
+    
+    { "title": "恋ってのは面白そうね私のは楽しかったかあやふやだけど", "url": "/tankas/000515.html" },
+    
+    { "title": "天然のプラネタリウムで君想う名もない星は見えていますか", "url": "/tankas/000516.html" },
+    
+    { "title": "クズなのは変えれないけどそれなりに生きてみようと思うんですよ", "url": "/tankas/000517.html" },
+    
+    { "title": "civ6で今日も勝ったとひと笑い一人じゃ何も出来ない赤子", "url": "/tankas/000518.html" },
+    
+    { "title": "あなたはもう私のことを忘れたか四十九日の落雁齧る", "url": "/tankas/000519.html" },
+    
+    { "title": "窓の外春告鳥が啼く頃に親の教えが下手だったのか", "url": "/tankas/000520.html" },
+    
+    { "title": "冬の夜火星と木星横目にし乱視でダブって見えるポラリス", "url": "/tankas/000521.html" },
+    
+    { "title": "モニターと瞳の間を往復す合わせ鏡は無限にあらず", "url": "/tankas/000522.html" },
+    
+    { "title": "他人を撮ることが仕事のカメラマンそのアルバムにあなたがいない", "url": "/tankas/000523.html" },
+    
+    { "title": "私しかいない世界のカメラマンそんな世界を撮る意味あるの", "url": "/tankas/000524.html" },
+    
+    { "title": "忘れたらきっと見えなくなってしまうツギハギだらけの世界に宛てた", "url": "/tankas/000525.html" },
+    
+    { "title": "星光が燦めく夜の天幕にそれで正体隠したつもり", "url": "/tankas/000526.html" },
+    
+    { "title": "昨年の四月を示すカレンダー私の罪を指折り数え", "url": "/tankas/000527.html" },
+    
+    { "title": "期待した二人の未来を合鍵にどこの扉も開かないカタチ", "url": "/tankas/000528.html" },
+    
+    { "title": "仄白く夜空を照らす望月の完璧すぎて私にゃ眩しい", "url": "/tankas/000529.html" },
+    
+    { "title": "まんまるくぽっかり空いた穴一つそこから底を覗くらしいぞ", "url": "/tankas/000530.html" },
+    
+    { "title": "我々は母星を捨てて木星に移住を決めたさよなら人類", "url": "/tankas/000531.html" },
+    
+    { "title": "鳥籠の扉を開けてくれた人外の世界はこわかったです", "url": "/tankas/000532.html" },
+    
+    { "title": "住み慣れた土地を離れて幻肢痛鳥の寝床は心にあったか", "url": "/tankas/000533.html" },
+    
+    { "title": "ダイスロール1d100を間違えて100d1で平和な世界", "url": "/tankas/000534.html" },
+    
+    { "title": "未来なる希望を詰めたiPhoneが手からこぼれて前歯を砕く", "url": "/tankas/000535.html" },
+    
+    { "title": "AIが私を見てとレコメンドスワイプ一つで二度とは逢えず", "url": "/tankas/000536.html" },
+    
+    { "title": "アルバムを開いて安否を確認すあいつもこいつもあの世の人間", "url": "/tankas/000537.html" },
+    
+    { "title": "君のこと想って想って大切に磨けど磨けど擦り減る心", "url": "/tankas/000538.html" },
+    
+    { "title": "君が飲むぶどうジュースが病院で見た静脈血とちょっと似ていた", "url": "/tankas/000539.html" },
+    
+    { "title": "投げ売られ信仰を買う神々と燃えてる区画でひらめく偉人", "url": "/tankas/000540.html" },
+    
+    { "title": "薬にも毒にもならない会話でも私はそれで幸せなんだ", "url": "/tankas/000541.html" },
+    
+    { "title": "私には夢がないのか寝て起きてそれでも眠る理由はなんだ", "url": "/tankas/000542.html" },
+    
+    { "title": "もう二度と会えるはずない君の名を右手の指で星座に描いた", "url": "/tankas/000543.html" },
+    
+    { "title": "もう過去を否定したりはしないからどうか未来を奪ってくれよ", "url": "/tankas/000544.html" },
+    
+    { "title": "嘘吐きがもいだハサミで人を斬るタラレバガニは茹でると赤い", "url": "/tankas/000545.html" },
+    
+    { "title": "レコードの針が何度もなぞる溝壊れたラジオは繰り返さない", "url": "/tankas/000546.html" },
+    
+    { "title": "クレヨンで輪郭塗った桜色私の心はそんな形か", "url": "/tankas/000547.html" },
+    
+    { "title": "雨が降る頃に咲いてたトキシラズあなたは私を知らない花か", "url": "/tankas/000548.html" },
+    
+    { "title": "塩漬けの桜の葉っぱ冬続き色を失う私の心", "url": "/tankas/000549.html" },
+    
+    { "title": "抜け落ちた時間を全部集めたらもう一人くらい出来やしないか", "url": "/tankas/000550.html" },
+    
+    { "title": "我々は確かにそこにあったはずなのにどうして思い出せない", "url": "/tankas/000551.html" },
+    
+    { "title": "五月雨が彼岸桜を散らす頃お前と私は晴れやしないぞ", "url": "/tankas/000552.html" },
+    
+    { "title": "星空に寝かせてくれと拝んでも瞬く光が差し込む窓辺", "url": "/tankas/000553.html" },
+    
+    { "title": "お前にはもう価値ないと捨てられた子供の頃に愛した人形", "url": "/tankas/000554.html" },
+    
+    { "title": "擦り切れた私とみんなの合言葉世界の終わりでまた会いましょう", "url": "/tankas/000555.html" },
+    
+    { "title": "青空が黄砂で霞む卯月ならあなたの顔も見えなく成って", "url": "/tankas/000556.html" },
+    
+    { "title": "霜柱踏んで作った足跡は溶けてしまって私はどこに", "url": "/tankas/000557.html" },
+    
+    { "title": "交友の冗長性なる関係と替えの効かない孤独の心臓", "url": "/tankas/000558.html" },
+    
+    { "title": "なんで今生きているんだ誰が為の生命なのかも知らずにいても", "url": "/tankas/000559.html" },
+    
+    { "title": "私はもうあなた以外はいらないと二人ぼっちの世界征服", "url": "/tankas/000560.html" },
+    
+    { "title": "繰り広ぐ無意味な世界征服の果てに眠りについた異世界", "url": "/tankas/000561.html" },
+    
+    { "title": "あまりにも美化されすぎた恋だとか愛だとかいう言葉が苦手だ", "url": "/tankas/000562.html" },
+    
+    { "title": "楽しさに心と時を乗っ取られ騙し文句のパスを変えたよ", "url": "/tankas/000563.html" },
+    
+    { "title": "青空が紅一色に染められてパンザマストの夕焼け警報", "url": "/tankas/000564.html" },
+    
+    { "title": "二人きり朝を迎えることなくて朝の陽射しは熱かったっけ", "url": "/tankas/000565.html" },
+    
+    { "title": "あなたとはご縁がなかったようでして飴玉のよに静かに終わる", "url": "/tankas/000566.html" },
+    
+    { "title": "今日の日は明けなかったよ明日の字は明るい日だと書くんだけどね", "url": "/tankas/000567.html" },
+    
+    { "title": "嘘をつく目覚まし時計に騙されてうかうか眠ってられやしないな", "url": "/tankas/000568.html" },
+    
+    { "title": "口の中二時間経っても溶け残る飴玉のよな心残りが", "url": "/tankas/000569.html" },
+    
+    { "title": "花曇り枯れた命を顧みて大体常に水分不足", "url": "/tankas/000570.html" },
+    
+    { "title": "宛先はなかったようだバイナリの海に沈んだ救難信号", "url": "/tankas/000571.html" },
+    
+    { "title": "糸屑を集めて焚べる囲炉裏ならこんな糸でも燃やせば光る", "url": "/tankas/000572.html" },
+    
+    { "title": "酸化してくすんだ心を磨かずに映らぬ顔を重宝してる", "url": "/tankas/000573.html" },
+    
+    { "title": "戯れに酒を取り出すこどもの日子供のままでいられなかった", "url": "/tankas/000574.html" },
+    
+    { "title": "星屑をまとめて払うほうき星ちりとりの中うずまる私", "url": "/tankas/000575.html" },
+    
+    { "title": "雑多なる友人がいるお前には私が見えぬならばくたばれ", "url": "/tankas/000576.html" },
+    
+    { "title": "言葉なき二人が交わす恋文は白紙の上に涙の跡が", "url": "/tankas/000577.html" },
+    
+    { "title": "善意なる舗装で敷いた道の上ネザー経由のトロッコ鉄道", "url": "/tankas/000578.html" },
+    
+    { "title": "春になりダムのほとりに釣り人と山菜採りがどこからか湧く", "url": "/tankas/000579.html" },
+    
+    { "title": "一学期部活終わりの夕焼けが私にとっての青春の色", "url": "/tankas/000580.html" },
+    
+    { "title": "彼岸過ぎ黄昏時が遠くなる月夜の下であなたはだあれ", "url": "/tankas/000581.html" },
+    
+    { "title": "一人きり沈む夕陽を眺めてるこんなに心細かったっけ", "url": "/tankas/000582.html" },
+    
+    { "title": "色々な人に嫌われ生きてきた私の所為で死なないでくれ", "url": "/tankas/000583.html" },
+    
+    { "title": "何者か呪って命を支払えば加害行為だ忘るるなかれ", "url": "/tankas/000584.html" },
+    
+    { "title": "嫌われることを才能と呼ぶのならそれで二物を与えない気か", "url": "/tankas/000585.html" },
+    
+    { "title": "春来たと皆に祝われ咲く桜私は桜になれそうにない", "url": "/tankas/000586.html" },
+    
+    { "title": "スポンジは使うとこから擦り減って人の心もそうなんだろか", "url": "/tankas/000587.html" },
+    
+    { "title": "春なのに夏の初めの夕立の後の陽射しのような気温だ", "url": "/tankas/000588.html" },
+    
+    { "title": "時々に三十一文字を記録するそれらは全部私の証明", "url": "/tankas/000589.html" },
+    
+    { "title": "屋根裏に雨音響く午後十時私の憂いを流しておくれ", "url": "/tankas/000590.html" },
+    
+    { "title": "止まったり早やったりする心拍はメトロノームとしては不合格", "url": "/tankas/000591.html" },
+    
+    { "title": "造花束私の心を模ってあなたに贈る花冠に", "url": "/tankas/000592.html" },
+    
+    { "title": "眠いねと笑う深夜の統治者の誤操作一つで街が滅んだ", "url": "/tankas/000593.html" },
+    
+    { "title": "あなたまで一億光年あるとして一億年ありゃ届くはずだと", "url": "/tankas/000594.html" },
+    
+    { "title": "前線に桜ひとひら咲いている君の故郷も私の家も", "url": "/tankas/000595.html" },
+    
+    { "title": "親世代訃報が日課と化す日々にいずれ私もそうなる定め", "url": "/tankas/000596.html" },
+    
+    { "title": "会いたいと痛いは一文字違いなら隣り合ってる私とあなた", "url": "/tankas/000597.html" },
+    
+    { "title": "飽きられて捨てたおもちゃの街並みを復興せよと起つ兵隊さん", "url": "/tankas/000598.html" },
+    
+    { "title": "東京と開花予想が一回りズレているから合わない感覚", "url": "/tankas/000599.html" },
+    
+    { "title": "友人に投げ棄てられた青空は遥か遠くてもはや届かず", "url": "/tankas/000600.html" },
+    
+    { "title": "他人よりは確かに弱いにゃ弱いけど外から帰ればくしゃみが三つ", "url": "/tankas/000601.html" },
+    
+    { "title": "ただ冬と春の隙間に置いてかれ梅は咲いたが桜はまだか", "url": "/tankas/000602.html" },
+    
+    { "title": "エントロピー増大則が仰るは勝手に温度差広がらないと", "url": "/tankas/000603.html" },
+    
+    { "title": "繰り返し何度も同じ画を映す壊れたリモコン従うテレビ", "url": "/tankas/000604.html" },
+    
+    { "title": "ひび割れた私の心に治癒魔法お代はあなたの記憶の全て", "url": "/tankas/000605.html" },
+    
+    { "title": "0だけじゃいくつあってもゼロだけど船頭いれば巨大な数に", "url": "/tankas/000606.html" },
+    
+    { "title": "夢冷めて頬を伝った現実が風に流され散る花びらに", "url": "/tankas/000607.html" },
+    
+    { "title": "酒呑みが家族にいない家だから冷蔵庫内にビールが増えてく", "url": "/tankas/000608.html" },
+    
+    { "title": "忘れかけあなたの色は夢の中食べたカレーの味に似ていた", "url": "/tankas/000609.html" },
+    
+    { "title": "太陽の光を吸って咲く桜一度咲いたらあとは散るだけ", "url": "/tankas/000610.html" },
+    
+    { "title": "涙雨あなたがこの世を去った日もこうだったっけ思い出せない", "url": "/tankas/000611.html" },
+    
+    { "title": "パンゲアを縦横無尽に駆け巡る巨大ロボットが二体三体", "url": "/tankas/000612.html" },
+    
+    { "title": "水底に沈んだ私の恋心皆もが其処にいるんだろうか", "url": "/tankas/000613.html" },
+    
+    { "title": "回線を回る線だと書くのならあの日のセンを返してください", "url": "/tankas/000614.html" },
+    
+    { "title": "回線と回る海鮮シャリの上仏陀の遺骨は酸っぱい気持ち", "url": "/tankas/000615.html" },
+    
+    { "title": "凡庸な言葉に還元される春私の恋はこんなんだったか", "url": "/tankas/000616.html" },
+    
+    { "title": "二十二時一畳半の曇り空未だ晴れない私の心", "url": "/tankas/000617.html" },
+    
+    { "title": "故郷に置いて行かれた梅の花空の涙に付き合ってやろう", "url": "/tankas/000618.html" },
+    
+    { "title": "昼よりも夜活発に動く私眩しかったあなたと太陽", "url": "/tankas/000619.html" },
+    
+    { "title": "合鍵を鋳型に入れて融かしてる愛の形は恋だけじゃない", "url": "/tankas/000620.html" },
+    
+    { "title": "強がってもしも涙を堪えたら等身大に見てくれるのか", "url": "/tankas/000621.html" },
+    
+    { "title": "愛すべき人よ一夜の気紛れが許されるなら一緒に痛い", "url": "/tankas/000622.html" },
+    
+    { "title": "自乗してマイナス1になる事情虚ろな数は私の心", "url": "/tankas/000623.html" },
+    
+    { "title": "病状が悪化し記憶が曖昧にきっとあなたも忘れてしまう", "url": "/tankas/000624.html" },
+    
+    { "title": "太陽を背に歩き出すふりをする後光が差すとき顔は見えない", "url": "/tankas/000625.html" },
+    
+    { "title": "感情の始末がつかぬ我が心仕舞いに祈りの言葉も忘れ", "url": "/tankas/000626.html" },
+    
+    { "title": "人の字は支え合う字というけれど人が二つで従うと読む", "url": "/tankas/000627.html" },
+    
+    { "title": "水無月の頭に降った大雨に皆が夜空を見ない満月", "url": "/tankas/000628.html" },
+    
+    { "title": "何者か家の柱を蹴った様増える地震に怯える薄明", "url": "/tankas/000629.html" },
+    
+    { "title": "もうちょっと気軽に詠んでいいんだと日記にするほど充実せぬ日々", "url": "/tankas/000630.html" },
+    
+    { "title": "一人きり抱えた世界は脆弱だ記録にならない言葉のように", "url": "/tankas/000631.html" },
+    
+    { "title": "創作を虚構と指弾す現実も誰かの空想でない保証は", "url": "/tankas/000632.html" },
+    
+    { "title": "誰からも信じてもらえぬ世界ならあなたが一番愛してあげて", "url": "/tankas/000633.html" },
+    
+    { "title": "早朝の同じ中身を繰り返すテレビニュースと降り止まぬ雨", "url": "/tankas/000634.html" },
+    
+    { "title": "イヤホンで両耳塞げば聴こえないテレビの音も雨垂れ音も", "url": "/tankas/000635.html" },
+    
+    { "title": "幻も言葉で共有できるからあなたと私を繋いだ架空", "url": "/tankas/000636.html" },
+    
+    { "title": "冥福を祈る生者が見る幽霊思い残したことがあるから", "url": "/tankas/000637.html" },
+    
+    { "title": "風景も詩情も歴史もバイナリに還元されるお前は神か", "url": "/tankas/000638.html" },
+    
+    { "title": "言霊を素朴に信じる私なら祈る言葉は創作となり", "url": "/tankas/000639.html" },
+    
+    { "title": "嘘吐きが周りに刺した針千本布と布とを繋ぐ縫い糸", "url": "/tankas/000640.html" },
+    
+    { "title": "人間は足りない部分ばっかりで余ったところが棘になってる", "url": "/tankas/000641.html" },
+    
+    { "title": "出身は川の中です自己紹介雪解け水に溺れる河童", "url": "/tankas/000642.html" },
+    
+    { "title": "どくどくと正しく脈打つ心臓に毒を喰らえば止まってしまう", "url": "/tankas/000643.html" },
+    
+    { "title": "花言葉押し付けられた紫陽花の涙を受ける義務があるだろ", "url": "/tankas/000644.html" },
+    
+    { "title": "湯節句に紫陽花が咲く水無月と飛騨の節句は一月遅れ", "url": "/tankas/000645.html" },
+    
+    { "title": "摘み食う鼠を殺す好奇心うちの納屋にもいくつかおくれ", "url": "/tankas/000646.html" },
+    
+    { "title": "指で追う飛行機雲の行く先に私の望んだ過去があるのか", "url": "/tankas/000647.html" },
+    
+    { "title": "クオリアを測定しよう物理量にっちもさっちもドンブリ感情", "url": "/tankas/000648.html" },
+    
+    { "title": "おすすめで久々に聴く音楽にこれが私の歩んだ距離か", "url": "/tankas/000649.html" },
+    
+    { "title": "青い鳥飛ばし地表を俯瞰せよ不完全なる私の世界", "url": "/tankas/000650.html" },
+    
+    { "title": "悲しみはその水滴を法としていつでも同じと思えはしない", "url": "/tankas/000651.html" },
+    
+    { "title": "安っぽい唄で謳えぬ感情が詠いきれない私は安い", "url": "/tankas/000652.html" },
+    
+    { "title": "淡色のレモンソーダが汗をかく青い空色乱反射して", "url": "/tankas/000653.html" },
+    
+    { "title": "小説のような暮らしは出来ねども起こすまでもない生き方でいい", "url": "/tankas/000654.html" },
+    
+    { "title": "人として周り思えば思うほど自分の理想はおざなりになる", "url": "/tankas/000655.html" },
+    
+    { "title": "商人は西から来たり百合の花愛すも殺すもサ行変格", "url": "/tankas/000656.html" },
+    
+    { "title": "好物はドーナツの穴スーパーで詰め合わせとか売ってないかな", "url": "/tankas/000657.html" },
+    
+    { "title": "外に出る日の雨降りの天気予報悪い占いほどよく当たる", "url": "/tankas/000658.html" },
+    
+    { "title": "世の中にいくらのぞみが溢れても未来照らせるひかりが足らぬ", "url": "/tankas/000659.html" },
+    
+    { "title": "心とはドーナツの穴人間にまあるく空いた存在証明", "url": "/tankas/000660.html" },
+    
+    { "title": "虚無僧の正体見たり時代劇くたびれ儲けの信用創造", "url": "/tankas/000661.html" },
+    
+    { "title": "人間は空疎になればその分が重くなってく不思議な物質", "url": "/tankas/000662.html" },
+    
+    { "title": "感情は鮮度が命誰からも顧みられぬ古いお話", "url": "/tankas/000663.html" },
+    
+    { "title": "ライターで湿気った花火に火を着ける私の人生じみて時化てる", "url": "/tankas/000664.html" },
+    
+    { "title": "目一杯手を伸ばしても届かない鏡の中の私が泣いた", "url": "/tankas/000665.html" },
+    
+    { "title": "数百年先にようやく一度きり逢えるあなたと孤独の彗星", "url": "/tankas/000666.html" },
+    
+    { "title": "浮き浮きと浮き名を流す浮世でも浮かれた気持ちじゃ浮かばれないな", "url": "/tankas/000667.html" },
+    
+    { "title": "写真とは真を写すと書くけれど歪んだ世界はあなたの世界", "url": "/tankas/000668.html" },
+    
+    { "title": "道端の白詰草が咲く頃に四葉になれない私を偲ぶ", "url": "/tankas/000669.html" },
+    
+    { "title": "いつ見ても十五秒ほど遅れてる私といつも共にある時計", "url": "/tankas/000670.html" },
+    
+    { "title": "あの世より住み良い場所があっただろとても素敵な六月でした", "url": "/tankas/000671.html" },
+    
+    { "title": "梅雨空の月も見えない夜だから羽根が濡れたら何処にも行けず", "url": "/tankas/000672.html" },
+    
+    { "title": "呟きは適度に見ようディスタンスとうとう依存者強制隔離", "url": "/tankas/000673.html" },
+    
+    { "title": "落陽はアメリカ時間でやってきた夜明けは遥か遠くだろうか", "url": "/tankas/000674.html" },
+    
+    { "title": "コロナ明けマスクが要らなくなった頃寒いジョークのマスクは要らない", "url": "/tankas/000675.html" },
+    
+    { "title": "七夕の笹の葉飾りに願い込め猛暑の癖に晴れない夜空", "url": "/tankas/000676.html" },
+    
+    { "title": "青空を見失ってる僕はただ杜撰な詩を口遊んでた", "url": "/tankas/000677.html" },
+    
+    { "title": "メーデーを発出せられよ目出度くもないこの世をば愛でるというなら", "url": "/tankas/000678.html" },
+    
+    { "title": "バンジージャンプ臍の緒めいた命綱切れたらそこで終わりのいのち", "url": "/tankas/000679.html" },
+    
+    { "title": "浴びせらる甘い賞賛塩酸と一対三で割った王水", "url": "/tankas/000680.html" },
+    
+    { "title": "この世界統括してる鯖缶を壁に投げつけ味噌が零れた", "url": "/tankas/000681.html" },
+    
+    { "title": "要らないと燃えるごみの日に棄てられた時代遅れの帽子と私", "url": "/tankas/000682.html" },
+    
+    { "title": "梅雨明けの発表ありし十九日入道雲が隠す永遠", "url": "/tankas/000683.html" },
+    
+    { "title": "気に入らぬならば粛清しようしようどくさいスイッチのオチって知ってる？", "url": "/tankas/000684.html" },
+    
+    { "title": "暮れてゆく六時のチャイム紅い空蜃気楼のよに歪む関係", "url": "/tankas/000685.html" },
+    
+    { "title": "人間の体温よりも高い熱私の心と外界の気温", "url": "/tankas/000686.html" },
+    
+    { "title": "梅雨末期社不の集まり追い出され社不ではないと認められたと", "url": "/tankas/000687.html" },
+    
+    { "title": "民主主義学級裁判レスバトル頭数だけ揃えたメンコ", "url": "/tankas/000688.html" },
+    
+    { "title": "人間をメンコの駒だと思ってるそんな野郎の味方ばっかり", "url": "/tankas/000689.html" },
+    
+    { "title": "お手軽に危険な暑さが出る予報そろそろアネクメーネの地球", "url": "/tankas/000690.html" },
+    
+    { "title": "シロップの味など全部一緒だと言うなら砂糖水でも飲んでろ", "url": "/tankas/000691.html" },
+    
+    { "title": "梅雨明けに蝉の鳴かない夕暮れとあなたを想う青空の先", "url": "/tankas/000692.html" },
+    
+    { "title": "絵空事あなたのいない青空に入道雲を一筆加え", "url": "/tankas/000693.html" },
+    
+    { "title": "東京の人は歩幅が大きくて到底私じゃ追いつけないな", "url": "/tankas/000694.html" },
+    
+    { "title": "社不鯖を追放された梅雨末期何故に溢るる雫の証明", "url": "/tankas/000695.html" },
+    
+    { "title": "青空の向こうは居心地良いらしい精々そっちで仲良ししてな", "url": "/tankas/000696.html" },
+    
+    { "title": "洗濯を試みている女の子すすぎの次は脱水少女", "url": "/tankas/000697.html" },
+    
+    { "title": "微温湯なインターネットの荒波はサーフィンするには荒すぎないか", "url": "/tankas/000698.html" },
+    
+    { "title": "夕立が喧騒の街に水を差す部屋の扇風機の回転数", "url": "/tankas/000699.html" },
+    
+    { "title": "コロナ明け万万歳と快哉を土用の夜の打上花火", "url": "/tankas/000700.html" },
+    
+    { "title": "人知れず苦楽を知った晩春に暗くて先が見えないやって", "url": "/tankas/000701.html" },
+    
+    { "title": "平行線近づけられない関係に閉口するよな並行世界", "url": "/tankas/000702.html" },
+    
+    { "title": "秋仕舞摘んだ叶わじの彼岸花僕と私と並行世界", "url": "/tankas/000703.html" },
+    
+    { "title": "かけがえのない存在などありゃしないヒトはいずれも平等なので", "url": "/tankas/000704.html" },
+    
+    { "title": "夕方の部屋に纏わる残熱と私の心は十度ほど違う", "url": "/tankas/000705.html" },
+    
+    { "title": "満天の夜空が飾る丑三つに来た連絡は正直0点", "url": "/tankas/000706.html" },
+    
+    { "title": "インフレに放置されてる千円のお札の人が泣いてたような", "url": "/tankas/000707.html" },
+    
+    { "title": "夏休み歓迎されない台風に自分の歳を垣間見るなど", "url": "/tankas/000708.html" },
+    
+    { "title": "クズらしくクズに嵌まると知った夏崩れた人間関係を呪う", "url": "/tankas/000709.html" },
+    
+    { "title": "百代の先まで呪うと言った君百日後には忘れてそうね", "url": "/tankas/000710.html" },
+    
+    { "title": "人生の旅程に遅れ復旧の見込みは立たず振替輸送", "url": "/tankas/000711.html" },
+    
+    { "title": "夏の空色とりどりに打ち上がる私のことを切り取る画面", "url": "/tankas/000712.html" },
+    
+    { "title": "被れど分からぬ関係雨に濡れ理想は叶わぬものと知りぬる", "url": "/tankas/000713.html" },
+    
+    { "title": "君と見る打上花火テレビ越し蚊取り線香が扇風機に舞う", "url": "/tankas/000714.html" },
+    
+    { "title": "台風は北に向かうがそんなにも北に逢いたいものがいるのか", "url": "/tankas/000715.html" },
+    
+    { "title": "人生がガチャで出来てるソシャゲなら私は誰かにあきらめられたか", "url": "/tankas/000716.html" },
+    
+    { "title": "多次元で単語の関係わかるというこのベクトルはきみに届かぬ", "url": "/tankas/000717.html" },
+    
+    { "title": "困ったら困った時の神頼み困った時だけ神に縋るの？", "url": "/tankas/000718.html" },
+    
+    { "title": "人間はトゲトゲしてる関係性どこから見てもまあるい花火", "url": "/tankas/000719.html" },
+    
+    { "title": "常温で放っていても融けないね氷砂糖のような冷たさ", "url": "/tankas/000720.html" },
+    
+    { "title": "自分より小さな数で割り切れぬ素数のような孤独の夜空", "url": "/tankas/000721.html" },
+    
+    { "title": "陽の沈む速さで夏の終わり知るエンドロールの代わりの夕立", "url": "/tankas/000722.html" },
+    
+    { "title": "深夜零時十三年前のゲームを立ち上げ昔の秋を思い出すなど", "url": "/tankas/000723.html" },
+    
+    { "title": "なんとなく像を成さない感情にぼんやり歩いて荷物蹴飛ばす", "url": "/tankas/000724.html" },
+    
+    { "title": "暦では秋だ夏だと言ってみるそんなファジーなものにつられて", "url": "/tankas/000725.html" },
+    
+    { "title": "感傷に任せて夕陽の写真載せ昔の私になかったリテラシー", "url": "/tankas/000726.html" },
+    
+    { "title": "一年で一番好きな秋だからなるべく長く月を眺める", "url": "/tankas/000727.html" },
+    
+    { "title": "一年の三分の二を過ぎたからあとは坂道転がるように", "url": "/tankas/000728.html" },
+    
+    { "title": "初めての新品のパソコンは秋に買ってもらったちょうど今頃", "url": "/tankas/000729.html" },
+    
+    { "title": "物事を統べるAtoZズィーからエーに向かう人生", "url": "/tankas/000730.html" },
+    
+    { "title": "『聞き飽きた自分の声』と歌詞が云うそんなに自分の声って聞くかね", "url": "/tankas/000731.html" },
+    
+    { "title": "武器を執れ不気味な声が響く夜背景に並ぶ君と万歳", "url": "/tankas/000732.html" },
+    
+    { "title": "あなたから貰った白い薔薇の花空に翳して青に染めたよ", "url": "/tankas/000733.html" },
+    
+    { "title": "いい加減終わってくれよと夏に言うそういうこと言うと拗ねるぞ", "url": "/tankas/000734.html" },
+    
+    { "title": "十年後また会いましょうと君が言う今日に囚われた私の心", "url": "/tankas/000735.html" },
+    
+    { "title": "後悔の跡を綴った啖呵集間違いだらけのあなたと私", "url": "/tankas/000736.html" },
+    
+    { "title": "訪れる夏の終わりの喪失感私はそれを秋と名付けた", "url": "/tankas/000737.html" },
+    
+    { "title": "もういいかい隠れたまんま出てこないもう一回を願う心根", "url": "/tankas/000738.html" },
+    
+    { "title": "玄関に落葉散らかる夕方と本が積まれた私の部屋と", "url": "/tankas/000739.html" },
+    
+    { "title": "切れ味の悪い我が家の包丁とあなたの口の回らないこと", "url": "/tankas/000740.html" },
+    
+    { "title": "真夜中の孤独に一万を加え一人と一人と推しの配信", "url": "/tankas/000741.html" },
+    
+    { "title": "教科書はこの人生の攻略本裏技チートは載ってないけど", "url": "/tankas/000742.html" },
+    
+    { "title": "人生の渡り廊下で躓いたリノリウム張りの床を蹴飛ばす", "url": "/tankas/000743.html" },
+    
+    { "title": "徹夜する気概を持って封を切りノンカフェインのコーヒーを飲む", "url": "/tankas/000744.html" },
+    
+    { "title": "人生は片側通行複々線上りと下りでぶつかる訳ない", "url": "/tankas/000745.html" },
+    
+    { "title": "人生は禍福糾う縄なれど運命なんて信じないから", "url": "/tankas/000746.html" },
+    
+    { "title": "似てるなら同じなのだと勘違い恋と好意と行為の違い", "url": "/tankas/000747.html" },
+    
+    { "title": "夏仕舞い秋深まりし朝焼けに潰れたカエルのような鳴き声", "url": "/tankas/000748.html" },
+    
+    { "title": "この世をば全て詠えるわけがない仮にピアノが弾けたとしても", "url": "/tankas/000749.html" },
+    
+    { "title": "ゆる募集かしこい明日の忘れ方何歩歩いても明日は明日", "url": "/tankas/000750.html" },
+    
+    { "title": "夕焼けを追い越す速度で生き急ぎ井戸の底まで着地するまで", "url": "/tankas/000751.html" },
+    
+    { "title": "松明でスイカを殴る午後八時割れた私の鏡面世界", "url": "/tankas/000752.html" },
+    
+    { "title": "枝豆を茹でてサッシの窓曇るとうとう蝉は鳴かなかったな", "url": "/tankas/000753.html" },
+    
+    { "title": "世間では徳にならない意見ほど往々にして声が大きい", "url": "/tankas/000754.html" },
+    
+    { "title": "何が嬉しくて嫌いな奴の声聞かなきゃならない教えてくれよ", "url": "/tankas/000755.html" },
+    
+    { "title": "また一つ妥協の旗を折っていき仔猫の様に丸くなりけり", "url": "/tankas/000756.html" },
+    
+    { "title": "無謀なる石剣一本強行軍二十三本の松明と心中", "url": "/tankas/000757.html" },
+    
+    { "title": "光速で歪む景色と平行線非ユークリッドの言葉が結ぶ", "url": "/tankas/000758.html" },
+    
+    { "title": "空の部屋笑い声のみ反響すテレビとベッドとピカチュウ人形", "url": "/tankas/000759.html" },
+    
+    { "title": "引っ越してテレビ入らぬ夜更けにて4G電波のつながり求め", "url": "/tankas/000760.html" },
+    
+    { "title": "天竺は西にありけり太陽は西に沈んで東に昇る", "url": "/tankas/000761.html" },
+    
+    { "title": "ゴミ箱も私の部屋も孤独なりカップうどんの彩り七味", "url": "/tankas/000762.html" },
+    
+    { "title": "障子貼るサッシに集る虫なれど両手を合わせるカミサマトンボ", "url": "/tankas/000763.html" },
+    
+    { "title": "青空は遠くにありて思うもの天を小鳥の形に切り取り", "url": "/tankas/000764.html" },
+    
+    { "title": "一月で三筋の虹を見た私橋の向こうにあなたを見たり", "url": "/tankas/000765.html" },
+    
+    { "title": "十月は寂しい月だ誰もかも帰ってきてはくれないからな", "url": "/tankas/000766.html" },
+    
+    { "title": "屋根の上散った葉っぱが載っている吹けば飛ぶよな関係だから", "url": "/tankas/000767.html" },
+    
+    { "title": "泥舟が艦隊めいて列をなす三途の河の天国海軍", "url": "/tankas/000768.html" },
+    
+    { "title": "雨降りてもうすぐ冬がやってくる街の灯りとテレビコマーシャル", "url": "/tankas/000769.html" },
+    
+    { "title": "枯れ池に落ち葉一枚沈んでるその彩りは鮮やかだった", "url": "/tankas/000770.html" },
+    
+    { "title": "秋の陽が部屋を暖む南窓にしても急に冷えすぎじゃない？", "url": "/tankas/000771.html" },
+    
+    { "title": "チョコレート渡すことない関係に愛想lateのとうとう尽きる", "url": "/tankas/000772.html" },
+    
+    { "title": "どこまでも行けるものだと思ってた止まない雨と明けない夜空", "url": "/tankas/000773.html" },
+    
+    { "title": "現実を見失いつつ歩いてる妖精様の彷徨う所為で", "url": "/tankas/000774.html" },
+    
+    { "title": "ヨウ素なる孤高の愛の言い訳とアイアダインは金をも溶かす", "url": "/tankas/000775.html" },
+    
+    { "title": "昏れ泥む哪月の隣十三夜名付けた私がなぞった歴史", "url": "/tankas/000776.html" },
+    
+    { "title": "今日の日が明日に繋がる保証など無くても歩む昨日も今日も", "url": "/tankas/000777.html" },
+    
+    { "title": "さざ波が白い砂浜洗うとき真っ更になる人の営み", "url": "/tankas/000778.html" },
+    
+    { "title": "近すぎて相手の影を見失い砂漠の薔薇を踏んで壊した", "url": "/tankas/000779.html" },
+    
+    { "title": "世間での好きの対義は無関心あなたのことは嫌いですから", "url": "/tankas/000780.html" },
+    
+    { "title": "人生は一期一会の連続で如何してあなたに出逢ったのだろう", "url": "/tankas/000781.html" },
+    
+    { "title": "テレビにてスマホを貶す番組にどっちも結局液晶だろが", "url": "/tankas/000782.html" },
+    
+    { "title": "テレビにてSNSを糾弾す私を救ってくれないくせに", "url": "/tankas/000783.html" },
+    
+    { "title": "漬物の石の下にも三年と放置しすぎてすっぱい気持ち", "url": "/tankas/000784.html" },
+    
+    { "title": "遠くより便りがないのは良い報せけれど頼りが足りない初冬", "url": "/tankas/000785.html" },
+    
+    { "title": "トラウマに怯える私過剰気味あなたのことをオーバーライド", "url": "/tankas/000786.html" },
+    
+    { "title": "何もかも現代人は報われず〇〇疲れと〇〇離れ", "url": "/tankas/000787.html" },
+    
+    { "title": "君想う早る心はジッターで結ぶ言葉はゆらいで消えた", "url": "/tankas/000788.html" },
+    
+    { "title": "茶碗よりまずはアプリで写真盛るついでにスマホのギガも食うらしい", "url": "/tankas/000789.html" },
+    
+    { "title": "湯火照りの君の代わりに携帯を隣に置いて眠る十五夜", "url": "/tankas/000790.html" },
+    
+    { "title": "生まれればすぐ親ガチャを引く現代子ガチャを引ける余裕はないな", "url": "/tankas/000791.html" },
+    
+    { "title": "街中やSNSですれ違う見知らぬ人も生きているんだ", "url": "/tankas/000792.html" },
+    
+    { "title": "生命の叫びに値札をつける時代青い印籠掲げる機械", "url": "/tankas/000793.html" },
+    
+    { "title": "金などは有るところには有るんだろとりあえずウチにはないですが", "url": "/tankas/000794.html" },
+    
+    { "title": "霜月の終わる頃にはチャンネルの減るというのはさみしいことだ", "url": "/tankas/000795.html" },
+    
+    { "title": "ネットとは人間社会の補助機能やめても社会に馴染めはしない", "url": "/tankas/000796.html" },
+    
+    { "title": "幸せを求めて一人歩く夜雨は夜更けに雪になるそう", "url": "/tankas/000797.html" },
+    
+    { "title": "心臓が脈を打ってる信条は非の打ち所がない心情か", "url": "/tankas/000798.html" },
+    
+    { "title": "首都を駆る地下鉄めいて船を漕ぐメトロノームのような心臓", "url": "/tankas/000799.html" },
+    
+    { "title": "正解のない問題に罰点をそんな世界は壊してしまえ", "url": "/tankas/000800.html" },
+    
+    { "title": "孤独なる二人の間に蓋をして再び出会う日までさよなら", "url": "/tankas/000801.html" },
+    
+    { "title": "冬至の日圧力鍋でカボチャ煮るスチームパンクの調理器具かな", "url": "/tankas/000802.html" },
+    
+    { "title": "煮物して硝子が全部曇る時期鍋の蒸気も吐息も白い", "url": "/tankas/000803.html" },
+    
+    { "title": "墓遠く遺影に手合わす雨の夜君と目線が合わないつらさ", "url": "/tankas/000804.html" },
+    
+    { "title": "北国の冬の便りが届く空そろそろ雪の欠片が降るぞ", "url": "/tankas/000805.html" },
+    
+    { "title": "秋の山紅葉は君の血の色かそのうち全て白に染まるの", "url": "/tankas/000806.html" },
+    
+    { "title": "冬将軍戦端開く硝子窓まずは廊下が陥落したり", "url": "/tankas/000807.html" },
+    
+    { "title": "白焼けた街に近づくクリスマスケーキも買ったけれども君は", "url": "/tankas/000808.html" },
+    
+    { "title": "師走なる街の間を駆け巡る電信柱に雪は積もって", "url": "/tankas/000809.html" },
+    
+    { "title": "川の水いずれは雲に帰る水私の涙もいつかは空に", "url": "/tankas/000810.html" },
+    
+    { "title": "キーボード運指が一つずれた所為案外この世もそんなものかも", "url": "/tankas/000811.html" },
+    
+    { "title": "愛などと自分を欺す仲違い黙った互いを疑う歌だ", "url": "/tankas/000812.html" },
+    
+    { "title": "新品の本棚一つ空っぽの心を埋める本当の想い", "url": "/tankas/000813.html" },
+    
+    { "title": "いつまでもあなたの隣を歩いてくコンシステンシな二人の人生", "url": "/tankas/000814.html" },
+    
+    { "title": "五分だけ俺の話を聞いてくれあなたに五分も割くのは惜しい", "url": "/tankas/000815.html" },
+    
+    { "title": "コイキングはねても何も起きないがソースがはねたら大惨事かな", "url": "/tankas/000816.html" },
+    
+    { "title": "夜好む私たちとは対照にストリートビューはいつでも昼間", "url": "/tankas/000817.html" },
+    
+    { "title": "熱帯びる二人の間を弄ぶビット一つの小悪魔な君", "url": "/tankas/000818.html" },
+    
+    { "title": "秋仕舞い今年もそろそろ終いらしい冬の支度はしたくないなぁ", "url": "/tankas/000819.html" },
+    
+    { "title": "永遠と言わないからさ君のこと生きてる間は覚えていさせて", "url": "/tankas/000820.html" },
+    
+    { "title": "風冷えて雲が主役の空模様舞台の上にも立てない私", "url": "/tankas/000821.html" },
+    
+    { "title": "六角の花が降りよう雪模様根雪を解かす春雨を待つ", "url": "/tankas/000822.html" },
+    
+    { "title": "張りぼての振り子が揺れる置き時計意味ない言葉を吐き出す私", "url": "/tankas/000823.html" },
+    
+    { "title": "大都市を廻り続ける環状線孤独の心は堂々巡り", "url": "/tankas/000824.html" },
+    
+    { "title": "電池換え進む時計の針三本いつまで経っても進まぬ関係", "url": "/tankas/000825.html" },
+    
+    { "title": "紅葉も終わり裸の銀杏の樹君に届かず散った言の葉", "url": "/tankas/000826.html" },
+    
+    { "title": "外食も出来ぬ景気に名店は名前だけでも美味しい気持ち", "url": "/tankas/000827.html" },
+    
+    { "title": "金欲しき私に清き一票を汚かろうと票は票だが", "url": "/tankas/000828.html" },
+    
+    { "title": "太陽も月も天球歩く世界その足音は私の鼓動", "url": "/tankas/000829.html" },
+    
+    { "title": "古き良き世界を綴じる8bit今も昔も夢みる電子", "url": "/tankas/000830.html" },
+    
+    { "title": "街道を靴履き潰し進む夜遥か旅路の果てに待つ君", "url": "/tankas/000831.html" },
+    
+    { "title": "君想い煮物の鍋を吹きこぼす世界は君をもう忘れてる", "url": "/tankas/000832.html" },
+    
+    { "title": "天穹と廻る時計の針の先正時を示し踊るからくり", "url": "/tankas/000833.html" },
+    
+    { "title": "一条の言葉に保障される生人権ないとか手軽に言うな", "url": "/tankas/000834.html" },
+    
+    { "title": "誰もかも私の前からいなくなる三十六計逃げるに如かず", "url": "/tankas/000835.html" },
+    
+    { "title": "全能と無能の間にいる私程々にしか生きる能わず", "url": "/tankas/000836.html" },
+    
+    { "title": "異世界とこの世を繋ぐヘッドフォン石油ストーブが勝手に切れる", "url": "/tankas/000837.html" },
+    
+    { "title": "水槽の魚のように泳いでる地球に閉じ込められた人間", "url": "/tankas/000838.html" },
+    
+    { "title": "なんなのさ私のことを知ろうともしないくせに覚えろとかさ", "url": "/tankas/000839.html" },
+    
+    { "title": "矢の如く時は過去には戻らない三途の川の片道切符", "url": "/tankas/000840.html" },
+    
+    { "title": "ミッションをこなし帰ろう宇宙船帰還ポッドが妙に空いてる", "url": "/tankas/000841.html" },
+    
+    { "title": "害虫を駆除するようにブロックす我らが故郷の青を返せよ", "url": "/tankas/000842.html" },
+    
+    { "title": "東京はなんでもあるなその割に私の居場所はなかったようだが", "url": "/tankas/000843.html" },
+    
+    { "title": "引っ越した都会の空を覆う雲ネオンを吸って赤く染まって", "url": "/tankas/000844.html" },
+    
+    { "title": "山道の対向車線ハイビーム愛することと愛されること", "url": "/tankas/000845.html" },
+    
+    { "title": "死にたいと願って生きる我々の死ぬも死なぬも生きてるからこそ", "url": "/tankas/000846.html" },
+    
+    { "title": "花よりも安い私の値札見ていつから人はこんなに安く", "url": "/tankas/000847.html" },
+    
+    { "title": "満月を願った君はもういない伸びる影踏み私は歩く", "url": "/tankas/000848.html" },
+    
+    { "title": "冬の風吹き抜ける街街灯と車道の間で揺れる影たち", "url": "/tankas/000849.html" },
+    
+    { "title": "一度目が覚めたらいくら願っても夢の続きは二度とは見えず", "url": "/tankas/000850.html" },
+    
+    { "title": "億劫で溜まった部屋のゴミ箱とあの日の傷もいつかは埋まる", "url": "/tankas/000851.html" },
+    
+    { "title": "水尽きて砂漠で見つけたオアシスと雨の降らない私の心", "url": "/tankas/000852.html" },
+    
+    { "title": "必要な人に届かず関係ない人にばっかり刺さる情報", "url": "/tankas/000853.html" },
+    
+    { "title": "物言わぬ花の言葉を代弁すお前のために地球は回る", "url": "/tankas/000854.html" },
+    
+    { "title": "右手振る千客万来招き猫前を横切る獲物を狙う", "url": "/tankas/000855.html" },
+    
+    { "title": "クリスマス彩るイルミネーションと虚構の街のイミテーションと", "url": "/tankas/000856.html" },
+    
+    { "title": "愛してるなんて囁く電話口糖衣のような嘘をまとって", "url": "/tankas/000857.html" },
+    
+    { "title": "消費という言葉が流行る年の瀬に短歌の空きを一つ消費す", "url": "/tankas/000858.html" },
+    
+    { "title": "生き急ぎ夜道を駆けたアドベントカレンダーの箱を一気に開ける", "url": "/tankas/000859.html" },
+    
+    { "title": "感情も流行りの歌も消費する形あるのは高くて買えない", "url": "/tankas/000860.html" },
+    
+    { "title": "内申を見た目で付ける外見を迫害せられよ内心不自由", "url": "/tankas/000861.html" },
+    
+    { "title": "スーパーの鮭も栄養不良なりこんなに小さくなっちゃってまぁ", "url": "/tankas/000862.html" },
+    
+    { "title": "講演のベンチで眠る生徒たち議員の先生何知るものぞ", "url": "/tankas/000863.html" },
+    
+    { "title": "変人はサンタと亦た書き間違えたココが変だよ心なき恋", "url": "/tankas/000864.html" },
+    
+    { "title": "零と零重ねた二人はラブオール愛など所詮空虚な丸だ", "url": "/tankas/000865.html" },
+    
+    { "title": "産まれたら死ぬまでずっと生きるのに歳下ばかりが増えるのは何故", "url": "/tankas/000866.html" },
+    
+    { "title": "午前二時孤独の空を縫い合わせ感情詰め込み球を模る", "url": "/tankas/000867.html" },
+    
+    { "title": "情報は生き物みたい関数を呼んでも来るし叩いても来る", "url": "/tankas/000868.html" },
+    
+    { "title": "親指を硝子の上で滑らせて曇った窓をフリックする夜", "url": "/tankas/000869.html" },
+    
+    { "title": "良いことはないかと新聞捲りつつ悪い景気と議員と国と", "url": "/tankas/000870.html" },
+    
+    { "title": "母曰く溜ばいものには虫が食う私の才を認めてくれよ", "url": "/tankas/000871.html" },
+    
+    { "title": "我が家にも永田町にも隙間風三本柱の建て付けが悪い", "url": "/tankas/000872.html" },
+    
+    { "title": "正月に福を招こう門松は先が尖って座りにくいな", "url": "/tankas/000873.html" },
+    
+    { "title": "風情なき令和の秋の乱高下年の終わりは慌ただしくて", "url": "/tankas/000874.html" },
+    
+    { "title": "懐も心も寒い冬の夜とにかく空が遠くにあった", "url": "/tankas/000875.html" },
+    
+    { "title": "湯の花と煙る浴場硝子窓零下四度が熱を奪った", "url": "/tankas/000876.html" },
+    
+    { "title": "雪の花散った紅葉の上に咲くロビンソンのイントロのアルペジオ", "url": "/tankas/000877.html" },
+    
+    { "title": "じゃんけんに負け続けてたタラバガニ昨夜の鍋で茹でられていた", "url": "/tankas/000878.html" },
+    
+    { "title": "微温湯に浸かったような生活とモンドの小さな池で溺れた", "url": "/tankas/000879.html" },
+    
+    { "title": "暴風と四月の雨で転がったゴミ捨て場から逃げた空缶", "url": "/tankas/000880.html" },
+    
+    { "title": "改札の駅員さんに切符見せ行くも帰るも結局ここに", "url": "/tankas/000881.html" },
+    
+    { "title": "空高く燦く星の輝きは壊れた常夜灯の瞬き", "url": "/tankas/000882.html" },
+    
+    { "title": "黒猫が幸せ運ぶクリスマスサンタの皆さんお疲れ様です", "url": "/tankas/000883.html" },
+    
+    { "title": "美しき梅から採った令和五年春も秋もが奪われた国", "url": "/tankas/000884.html" },
+    
+    { "title": "青白き硝子の窓を指で撫で光の束を解読してる", "url": "/tankas/000885.html" },
+    
+    { "title": "やる気なし樹木が二三横たわるジェットのような意志を持ちたい", "url": "/tankas/000886.html" },
+    
+    { "title": "政党もSNSをやる時代スマホと旗は等価交換", "url": "/tankas/000887.html" },
+    
+    { "title": "研がずとも切れ味抜群言葉の刃切れない鎌は身を傷付ける", "url": "/tankas/000888.html" },
+    
+    { "title": "青色の印籠掲げアラビア語人のフリした集金人形", "url": "/tankas/000889.html" },
+    
+    { "title": "冬空の駐車場にて日向ぼこ目と目が合った外飼いのねこ", "url": "/tankas/000890.html" },
+    
+    { "title": "温かい年末年始を過ごしましょう人の言葉も小銭も冷たい", "url": "/tankas/000891.html" },
+    
+    { "title": "そぞろ寒垢切れだらけの心根も囲炉裏で溶けるチョコもコップも", "url": "/tankas/000892.html" },
+    
+    { "title": "スーパーのセールでみかんの詰め放題腐ったやつが売れ残ってる", "url": "/tankas/000893.html" },
+    
+    { "title": "胃がもたれ食欲不振のメンタリティ想いが詰まって吐き出し切れない", "url": "/tankas/000894.html" },
+    
+    { "title": "彗星が遺した跡を横切って地球に降るは小さな祈り", "url": "/tankas/000895.html" },
+    
+    { "title": "思い出も写真撮らなきゃ映えなくちゃ情景を盛る情飽の時代", "url": "/tankas/000896.html" },
+    
+    { "title": "幸せを探しにいこう宝くじ買う運勢のいい日旅立ち", "url": "/tankas/000897.html" },
+    
+    { "title": "部屋寒く温度差受けて凹んでるペットボトルと私の心", "url": "/tankas/000898.html" },
+    
+    { "title": "年越しの麻雀台に置くコップジンジャーエールの泡沫の夢", "url": "/tankas/000899.html" },
+    
+    { "title": "夜空には大きな川があるという渡りの船で一緒に帰ろう", "url": "/tankas/000900.html" },
+    
+    { "title": "一軒に一本クリスマスツリーそれぞれの孤独を背負ってる", "url": "/tankas/000901.html" },
+    
+    { "title": "妹がクレーンゲームで取ってきたピカチュウ人形を本棚に置く", "url": "/tankas/000902.html" },
+    
+    { "title": "それっぽくもっともらしく慰める嘘吐き機械に抜く舌はない", "url": "/tankas/000903.html" },
+    
+    { "title": "コンビニのショートケーキが丁度良い鳥の唐揚げも買っちゃうもんね", "url": "/tankas/000904.html" },
+    
+    { "title": "テレフォンショッキングをショッピングと思い金で縁が買えると言うか", "url": "/tankas/000905.html" },
+    
+    { "title": "朝靄を吸って膨らむ風船とトゲ刺さる度弾ける心", "url": "/tankas/000906.html" },
+    
+    { "title": "石よりも固い不安を解かす意志言葉の鈍器で心を砕く", "url": "/tankas/000907.html" },
+    
+    { "title": "洗面所硝子コップに水を汲み一息に飲む薬と共に", "url": "/tankas/000908.html" },
+    
+    { "title": "電気代ちょっと余計に費やしてイルミの光が冬に誘なう", "url": "/tankas/000909.html" },
+    
+    { "title": "にんぎょうも架空世界のともだちも忘れないよう名前を贈ろう", "url": "/tankas/000910.html" },
+    
+    { "title": "暖冬の日本を襲う大寒波優しい人は突然見切る", "url": "/tankas/000911.html" },
+    
+    { "title": "頼んでもないのに届くEメールいくら祈っても帰らぬあなた", "url": "/tankas/000912.html" },
+    
+    { "title": "TLの隣は何をする人ぞ下手な知り合いよりも知ってる", "url": "/tankas/000913.html" },
+    
+    { "title": "優しさが怖かったという神田川怖くなるほど愛されてみたい", "url": "/tankas/000914.html" },
+    
+    { "title": "七色のあの世とこの世を繋ぐ橋これも一種の長距離恋愛", "url": "/tankas/000915.html" },
+    
+    { "title": "誕生とお悔やみ欄が並ぶ紙面妹は前私は後ろ", "url": "/tankas/000916.html" },
+    
+    { "title": "約束よきっといつかは別れましょう人生ゲームの約束手形", "url": "/tankas/000917.html" },
+    
+    { "title": "雪だるま式に増えてく何某か大きな玉は自重で崩れる", "url": "/tankas/000918.html" },
+    
+    { "title": "渋滞よそんなに大勢何処へ行く年末年始の混雑予想", "url": "/tankas/000919.html" },
+    
+    { "title": "首を振り降る雪を追うNHK天気予報の雪だるまマーク", "url": "/tankas/000920.html" },
+    
+    { "title": "バファリンの半分は嘘優しさと言う名の虚飾を丸めて飲んだ", "url": "/tankas/000921.html" },
+    
+    { "title": "永遠を射影したのが空想であなたに会える夜の盈月", "url": "/tankas/000922.html" },
+    
+    { "title": "大雪に耐える冬、傘、雨宿り、土の下にて野菜は甘く", "url": "/tankas/000923.html" },
+    
+    { "title": "この星は球と付くからまるいけど遠くに向かってひたすら走れ", "url": "/tankas/000924.html" },
+    
+    { "title": "街中を照らす冷たいダイオード聖なる夜を真似る星空", "url": "/tankas/000925.html" },
+    
+    { "title": "YouTube生配信のときばかり広告が長いのは気のせいか", "url": "/tankas/000926.html" },
+    
+    { "title": "流行も興味も全て倍速で既読スルーの愛の告白", "url": "/tankas/000927.html" },
+    
+    { "title": "先を行くあなたに一生追いつけない孤独の夜を倍速で駆ける", "url": "/tankas/000928.html" },
+    
+    { "title": "空っぽのマルを描いた立看板任意の解を正答とします", "url": "/tankas/000929.html" },
+    
+    { "title": "地球とは転がる球だ戯れついたねこに追われてくるくる回る", "url": "/tankas/000930.html" },
+    
+    { "title": "インフラを痛め付けてる災害は遠くの国の大富豪らしい", "url": "/tankas/000931.html" },
+    
+    { "title": "交通も視界も遮る猛吹雪タイムラインもホワイトアウト", "url": "/tankas/000932.html" },
+    
+    { "title": "冷え切った両手の平を合わせてる合掌造りに降り積もる雪", "url": "/tankas/000933.html" },
+    
+    { "title": "一年の埃を払う大掃除私の言葉は汚れだったか", "url": "/tankas/000934.html" },
+    
+    { "title": "南西に向かって走る夕暮れは太陽めがけて倣うより跳べ", "url": "/tankas/000935.html" },
+    
+    { "title": "プレミアムプラスにNewのラベルあり新商品のコンビニ弁当", "url": "/tankas/000936.html" },
+    
+    { "title": "堂々と自分に自信が持てること隣の芝生に塩を撒く人", "url": "/tankas/000937.html" },
+    
+    { "title": "倒木にキノコ一本生えている私が消えても言葉は残る", "url": "/tankas/000938.html" },
+    
+    { "title": "遅ればせこたつをやっと設置してみかんの代わりに掴んだマウス", "url": "/tankas/000939.html" },
+    
+    { "title": "クリスマス完全予約のケーキ屋さん喜怒哀楽は生きてる証", "url": "/tankas/000940.html" },
+    
+    { "title": "メールには添付できない感情もzipで圧縮すれば送れる", "url": "/tankas/000941.html" },
+    
+    { "title": "冬晴れの家族で寿司を食べるイブ有馬記念とM-1を観る", "url": "/tankas/000942.html" },
+    
+    { "title": "十二時は今日と明日の境目で今日でも明日でもないその一瞬", "url": "/tankas/000943.html" },
+    
+    { "title": "冬至過ぎ今年の疲れを解すとてちょっと熱めの湯船に浸かる", "url": "/tankas/000944.html" },
+    
+    { "title": "大岩も転がりぶつかり削れてはいつかは砂の粒になりけり", "url": "/tankas/000945.html" },
+    
+    { "title": "菓子くへば除夜の鐘鳴る大晦日祓う邪念の三密回避", "url": "/tankas/000946.html" },
+    
+    { "title": "幸せな結婚をしてエンドロールこれがステキなお話なんだね", "url": "/tankas/000947.html" },
+    
+    { "title": "街中にまだクリスマスの気配あり白マフラーのミッキーマウス", "url": "/tankas/000948.html" },
+    
+    { "title": "年の瀬の慌ただしきはスーパーのレジスタ全部埋まると言ひけり", "url": "/tankas/000949.html" },
+    
+    { "title": "広告の全て個人の感想ですあなたと私は他人のままで", "url": "/tankas/000950.html" },
+    
+    { "title": "来年も丸く収まれ辰年の暦を一冊くるりと巻いた", "url": "/tankas/000951.html" },
+    
+    { "title": "今日の日ももう終わりかと時計見るそんな感じで今年も終わり", "url": "/tankas/000952.html" },
+    
+    { "title": "追い立てる師走の風に急かされて今年という名の崖から落ちた", "url": "/tankas/000953.html" },
+    
+    { "title": "夢破れ妥協の果ての小三元麻雀台を囲む年越し", "url": "/tankas/000954.html" },
+    
+    { "title": "生と死の境を濁すインテリジェンス三途の川の水力発電", "url": "/tankas/000955.html" },
+    
+    { "title": "紅白とみかんと蕎麦と麻雀とジンジャーエールと白紙の手帳", "url": "/tankas/000956.html" },
+    
+    { "title": "今度こそ和了りたいなと牌を曲げ河で生まれた満貫太郎", "url": "/tankas/000957.html" },
+    
+    { "title": "年越しの蕎麦を計ったタイマーが年の終わりを刻んだようだ", "url": "/tankas/000958.html" },
+    
+    { "title": "初詣吹雪の夜に詣りけり下弦の月と星空見えり", "url": "/tankas/000959.html" },
+    
+    { "title": "神の目は盗まれたらしいオリオンの星座がやけに綺麗に見えた", "url": "/tankas/000960.html" },
+    
+    { "title": "来ぬ人と死んだ人とが同じならいっそ死んでて欲しかったんだ", "url": "/tankas/000961.html" },
+    
+    { "title": "賢さという字を三度書き間違え私はどうもかしこくないな", "url": "/tankas/000962.html" },
+    
+    { "title": "年明けの気色は死んだ今日の日は妙に寒いが八月なんだ", "url": "/tankas/000963.html" },
+    
+    { "title": "カフェインで上がる心拍君のこと想う心も所詮化合物", "url": "/tankas/000964.html" },
+    
+    { "title": "令和さぁ、いくらチートが流行るって世界の変数いじるのやめてよ", "url": "/tankas/000965.html" },
+    
+    { "title": "言の葉が幽けき世界に舞っている有限の字が無限を描く", "url": "/tankas/000966.html" },
+    
+    { "title": "ゼロイチよ無限に続け我々の夢も想いも知ってる機械", "url": "/tankas/000967.html" },
+    
+    { "title": "舶来のものは何でもおめでたいノーベル賞とか化石賞とか", "url": "/tankas/000968.html" },
+    
+    { "title": "新しげタッチパネルのセルフレジ精算ボタンが反応しない", "url": "/tankas/000969.html" },
+    
+    { "title": "蓋の分ちょっぴり損する人生のキミと私は二つで一つ", "url": "/tankas/000970.html" },
+    
+    { "title": "あの街とこの世を繋ぐ在来線乗り換え必須の経営分離", "url": "/tankas/000971.html" },
+    
+    { "title": "穴の分普通は軽くなるんだろ油で揚げた分だけ重い", "url": "/tankas/000972.html" },
+    
+    { "title": "心なき言葉を綴るAIを出稼ぎに出す現代寒村", "url": "/tankas/000973.html" },
+    
+    { "title": "五寸釘という名の嘘藁人形歪んだ心に釘を打っとけ", "url": "/tankas/000974.html" },
+    
+    { "title": "普通にも異常にもなれない世界私の救いはキミがいるだけ", "url": "/tankas/000975.html" },
+    
+    { "title": "言霊が力を持つなら私からキミに全ての言葉を捧ぐ", "url": "/tankas/000976.html" },
+    
+    { "title": "真夜中に点すラジオは早口で時間という名の流れに乗ってけ", "url": "/tankas/000977.html" },
+    
+    { "title": "日中は邪魔するものが多すぎて受信できない星の瞬き", "url": "/tankas/000978.html" },
+    
+    { "title": "お守りをまとめて仕舞うどんど焼き片目のだるまが燃やされている", "url": "/tankas/000979.html" },
+    
+    { "title": "東京はISSより遠いらしい流れ星だと手を振ったキミ", "url": "/tankas/000980.html" },
+    
+    { "title": "引き換えに自分の寿命を全部やるからあの子を、は自信過剰か", "url": "/tankas/000981.html" },
+    
+    { "title": "人類は皆平等じゃなかったか諭吉の束が物言う社会", "url": "/tankas/000982.html" },
+    
+    { "title": "忘れ物した証とて足跡の君なき街に雪は積もって", "url": "/tankas/000983.html" },
+    
+    { "title": "初雪が疎ましいのはいつからかサンタクロースが来なかったから", "url": "/tankas/000984.html" },
+    
+    { "title": "ミサイルの速報が出る年明けに不知火型が心を救う", "url": "/tankas/000985.html" },
+    
+    { "title": "威嚇する顔は般若の心経はにゃの字が付くからねこにやさしい", "url": "/tankas/000986.html" },
+    
+    { "title": "東京の五時十二分は薄明の紫色に映える緑青", "url": "/tankas/000987.html" },
+    
+    { "title": "初夢に初白星に何にでも今年最初の枕を付ける", "url": "/tankas/000988.html" },
+    
+    { "title": "なんとなくインスピレーション欠乏症猫が駆けてく純白の道", "url": "/tankas/000989.html" },
+    
+    { "title": "コーヒーを飲む朝暗くその色を塗り潰したくミルクを入れる", "url": "/tankas/000990.html" },
+    
+    { "title": "特別な人が欲しいと独りごつ少女AにもBにもなれない", "url": "/tankas/000991.html" },
+    
+    { "title": "道徳の授業が嫌いだったからあなたの気持ちは理解出来ない", "url": "/tankas/000992.html" },
+    
+    { "title": "ペン先の減っているのに慣れ切って平常心は常に緊張", "url": "/tankas/000993.html" },
+    
+    { "title": "起きがけの時計が示す三時半特に可惜しくもない夜更け", "url": "/tankas/000994.html" },
+    
+    { "title": "包丁の切れ味悪く大根の三枚ひとひら鍋を泳いだ", "url": "/tankas/000995.html" },
+    
+    { "title": "階段の電気を消して上る夜行く手を阻む闇に抗え", "url": "/tankas/000996.html" },
+    
+    { "title": "古茶けた宝の地図に描かれた地形がどこにも存在しない", "url": "/tankas/000997.html" },
+    
+    { "title": "人知れず救われている生命ならこんな歌とか言うんじゃないよ", "url": "/tankas/000998.html" },
+    
+    { "title": "さよならを伝えるだけでよかったの咲かずに散った蕾を拾う", "url": "/tankas/000999.html" },
+    
+    { "title": "毎夜毎空を四角く切り取ってコレクションする実績解除", "url": "/tankas/001000.html" },
+    
+    { "title": "孤独から逃げ込んだのは陽だまりのお天道様は見てくれるから", "url": "/tankas/001001.html" },
+    
+    { "title": "感情が雨漏りしがちあの日見た朝焼けよりもちょっと明るい", "url": "/tankas/001002.html" },
+    
+    { "title": "鉄よりも傷付きにくいカーボン製理想の心のようなフラーレン", "url": "/tankas/001003.html" },
+    
+    { "title": "何よりもあなたのことが大切な愛ってなんだ好きってなんだ", "url": "/tankas/001004.html" },
+    
+    { "title": "裏街道遮二無二走れ表にはキミの姿は見えずと知って", "url": "/tankas/001005.html" },
+    
+    { "title": "勉強の相棒はこれアンパンと缶コーヒーで月を張り込む", "url": "/tankas/001006.html" },
+    
+    { "title": "機械でも金を稼げる時代だが私はロボットではありません", "url": "/tankas/001007.html" },
+    
+    { "title": "大寒の屋根を伝った雨垂れに雪の降らない世界を憂う", "url": "/tankas/001008.html" },
+    
+    { "title": "君の前花を手向けよ雪の花桜の枝に積もって散った", "url": "/tankas/001009.html" },
+    
+    { "title": "かにかまと胡瓜を和えて三杯酢いつでも旬を味わえる哉", "url": "/tankas/001010.html" },
+    
+    { "title": "秒針が慌てて廻る電波時計見てないときも仕事してくれ", "url": "/tankas/001011.html" },
+    
+    { "title": "大寒波街に蓋する白い雪あなたの言葉を焦がれる心", "url": "/tankas/001012.html" },
+    
+    { "title": "おみくじで大吉引いたと喜んだ君と一緒に飲んだ甘酒", "url": "/tankas/001013.html" },
+    
+    { "title": "大寒の新居に小さな来訪者新雪を踏む猫の足跡", "url": "/tankas/001014.html" },
+    
+    { "title": "一匹の個性を大事にするポケモン個を匿名で塗ったバケモノ", "url": "/tankas/001015.html" },
+    
+    { "title": "言の葉がコミュニケートの道具なら誰も読まなきゃ歩道の落ち葉", "url": "/tankas/001016.html" },
+    
+    { "title": "色もない世界にキミを置いて行き科無くて死す私は何処", "url": "/tankas/001017.html" },
+    
+    { "title": "おクスリが浮かべる夜空不眠症たまにはキミの夢でも見たい", "url": "/tankas/001018.html" },
+    
+    { "title": "悍ましい承認欲求の化け物自身の歌を忘れた小鳥", "url": "/tankas/001019.html" },
+    
+    { "title": "反転す水面に映る居待月私の顔は暗くて見えない", "url": "/tankas/001020.html" },
+    
+    { "title": "お別れを認められない自傷しく何度もSoldOutを見に行く", "url": "/tankas/001021.html" },
+    
+    { "title": "雨音を聞いて微睡むこうするとキミを今度は守れる気がして", "url": "/tankas/001022.html" },
+    
+    { "title": "月代わりカレンダーをむしろうとして二ヶ月一枚破れば三月", "url": "/tankas/001023.html" },
+    
+    { "title": "サミダレは五月の雨と書くならば二月の雨は誰の涙か", "url": "/tankas/001024.html" },
+    
+    { "title": "オススメを下に下にと掘り進む水面の底に沈むが如く", "url": "/tankas/001025.html" },
+    
+    { "title": "キミと見る素敵な景色を閉じ込めた写真ここから逃しはしない", "url": "/tankas/001026.html" },
+    
+    { "title": "元カレの名前を予測するスマホ私もいちいちあなたを想う", "url": "/tankas/001027.html" },
+    
+    { "title": "あなたとの道は二度とは交わらず願わくば道の間違いならずを", "url": "/tankas/001028.html" },
+    
+    { "title": "雪解けの陽気で香る春めいた外の空気を呼吸する部屋", "url": "/tankas/001029.html" },
+    
+    { "title": "この雪も愁いも全部流してよ息苦しいほど土砂降る雨よ", "url": "/tankas/001030.html" },
+    
+    { "title": "人肌は恋しくないがおふとんの名残が惜しい朝の五時半", "url": "/tankas/001031.html" },
+    
+    { "title": "寂しさを重ねて歩む如月の時雨るあめと指輪の錆と", "url": "/tankas/001032.html" },
+    
+    { "title": "乱数で言葉を紡ぐチューリング完全でない私の心", "url": "/tankas/001033.html" },
+    
+    { "title": "感情を飼い慣らす術募集中散歩に出掛けて引き摺られるヒト", "url": "/tankas/001034.html" },
+    
+    { "title": "君の名を希えや希え花冷えの雨よ私を連れてってくれ", "url": "/tankas/001035.html" },
+    
+    { "title": "やさしさを桜流しの神田川冬来たりなば春遠からじ", "url": "/tankas/001036.html" },
+    
+    { "title": "影薄きわたしの短所はちょっとだけ他人に傷をつけるのが下手", "url": "/tankas/001037.html" },
+    
+    { "title": "もしキミが待っているのが私なら全ての落葉に名前を付けよう", "url": "/tankas/001038.html" },
+    
+    { "title": "想うこと息を吸うこと眠ることそれら全てを祈りのように", "url": "/tankas/001039.html" },
+    
+    { "title": "ペンタブのペンと板とが擦り減って傷付け合って紡いだ世界", "url": "/tankas/001040.html" },
+    
+    { "title": "扇子もてあおげば涼し春の陽に同志諸君よまた会う日まで", "url": "/tankas/001041.html" },
+    
+    { "title": "失ったものばかりが美しく見え雪の欠片を数えて眠る", "url": "/tankas/001042.html" },
+    
+    { "title": "浅草の夕日に焼けたスカイツリー私も同じ5時18分", "url": "/tankas/001043.html" },
+    
+    { "title": "思い出の部屋はいつでも夕焼けでストリートビューはいつでも昼間", "url": "/tankas/001044.html" },
+    
+    { "title": "背伸びしてそれでもキミに届かない500に足らぬボトル飲料", "url": "/tankas/001045.html" },
+    
+    { "title": "明け方の下弦の月と新雪の私の前に足跡はない", "url": "/tankas/001046.html" },
+    
+    { "title": "自販機の缶コーヒーと帰り道思い出すのはキミのてのひら", "url": "/tankas/001047.html" },
+    
+    { "title": "体育祭フォークダンスの練習で毎回一緒に退場したひと", "url": "/tankas/001048.html" },
+    
+    { "title": "思い出が実家の壁にこびりつきそこに私はもう居ないのに", "url": "/tankas/001049.html" },
+    
+    { "title": "私めき目盛の歪んだ物差しは√2と1を正しく測る", "url": "/tankas/001050.html" },
+    
+    { "title": "スイセンとツクシが芽吹く庭の土私の夢が破れた東京", "url": "/tankas/001051.html" },
+    
+    { "title": "離れてもあなたと同じ息を吸うことがせめての私の抵抗", "url": "/tankas/001052.html" },
+    
+    { "title": "雨音が帳を解かす11時あなたの好きな歌を聴いてる", "url": "/tankas/001053.html" },
+    
+    { "title": "交番に行き着く財布、キーホルダー、待ち人の来ぬ私の心", "url": "/tankas/001054.html" },
+    
+    { "title": "桜咲く令和六年あなたへの想いと散った花びら数え", "url": "/tankas/001055.html" },
+    
+    { "title": "衣替えしても変わらぬこの想い桜の花も実にならず散る", "url": "/tankas/001056.html" },
+    
+    { "title": "カルピスは薄めに作るわだかまりも溶けて丁度良くなるだろう", "url": "/tankas/001057.html" },
+    
+    { "title": "物体の落ちてく向きが下ならばキミを蹴るよに心が落ちる", "url": "/tankas/001058.html" },
+    
+    { "title": "春毎に川を流れる花筏ひとの歩みもいつかは海に", "url": "/tankas/001059.html" },
+    
+    { "title": "「死んだらさ、邪魔するものはないのかな」うつつ浮世は閻魔より怖い", "url": "/tankas/001060.html" },
+    
+    { "title": "今日の日は二度と来ないと知っていて手放す時と花冷えの空", "url": "/tankas/001061.html" },
+    
+    { "title": "一昨年も声も笑顔も遠いものキミとの距離を定規で測る", "url": "/tankas/001062.html" },
+    
+    { "title": "大切な文字から順に消えていく赤のペンキであなたを描いた", "url": "/tankas/001063.html" },
+    
+    { "title": "塩漬けの想いを羽に桜餅サクラも散ってしまった世界", "url": "/tankas/001064.html" },
+    
+    { "title": "今日の日を何と思わぬ街中の車庫の裏手でねこが寝ていた", "url": "/tankas/001065.html" },
+    
+    { "title": "蜘蛛の糸だってないよりましだったキミは私のかみさまでした", "url": "/tankas/001066.html" },
+    
+    { "title": "夜なべして編んだゆりかご二人分ぼくはあなたのかみさまだから", "url": "/tankas/001067.html" },
+    
+    { "title": "ボクの生きる世界の先にキミはいる？　ハルシネーションを患う景色", "url": "/tankas/001068.html" },
+    
+    { "title": "もう会えぬキミを星座に描く夜星との距離も高々有限", "url": "/tankas/001069.html" },
+    
+    { "title": "手を伸ばし届けと希う流星群私のために降らずと知って", "url": "/tankas/001070.html" },
+    
+    { "title": "傍目からどうかしてると分かっても止まない想い願いよどうか", "url": "/tankas/001071.html" },
+    
+    { "title": "臆病で勇気もなくてそれ故に壊したものもあったのだろう", "url": "/tankas/001072.html" },
+    
+    { "title": "自販機に認識されない百円とあなたに認識されない私", "url": "/tankas/001073.html" },
+    
+    { "title": "どうしようもなく引き裂く事情なら二人の想いは二乗の率で", "url": "/tankas/001074.html" },
+    
+    { "title": "ドリンクで一日分の栄養と希望をまとめて飲み干す朝か", "url": "/tankas/001075.html" },
+    
+    { "title": "彼の世行きのぞみは全部満席な私の想いの渋滞情報", "url": "/tankas/001076.html" },
+    
+    { "title": "噴きこぼすラムネの瓶のビー玉の向こうにキミが逆さに映る", "url": "/tankas/001077.html" },
+    
+    { "title": "まじないも祈りの言葉も不能犯私の想いは誰が止めよう", "url": "/tankas/001078.html" },
+    
+    { "title": "溶け残るアイスのような甘さ分パピコを割って私にくれた", "url": "/tankas/001079.html" },
+    
+    { "title": "蜘蛛の糸を騙ったその手は麻縄の丸い形をしていたらしい", "url": "/tankas/001080.html" },
+    
+    { "title": "拍動がスキップするよな雨が降る言葉の花がランダムに咲く", "url": "/tankas/001081.html" },
+    
+    { "title": "モテるとは周りに好かれることと云う　いくつも愛を奪い去るひと", "url": "/tankas/001082.html" },
+    
+    { "title": "足元にいつもまとわる未練あり今日はとうとう影を抜き去る", "url": "/tankas/001083.html" },
+    
+    { "title": "真円を描けるほどの縁じゃないちょっと歪んだ楕円のような", "url": "/tankas/001084.html" },
+    
+    { "title": "雨の日の夜の寒さは紅葉がキミを拐ったあの秋のよう", "url": "/tankas/001085.html" },
+    
+    { "title": "全部嘘キミを拐った紅葉もあなたと私のあるべきカタチも", "url": "/tankas/001086.html" },
+    
+    { "title": "真夜中の私を忘れた東京をあなたは歩く朝に向かって", "url": "/tankas/001087.html" },
+    
+    { "title": "いい人が出来たんでしょうおざなりな返事に透ける興味のなさが", "url": "/tankas/001088.html" },
+    
+    { "title": "鏡面の向こうに見える無表情心を捧げた指も捧げた", "url": "/tankas/001089.html" },
+    
+    { "title": "私からあなたに最後の贈り物『今失くしたそれ』失くさないでね", "url": "/tankas/001090.html" },
+    
+    { "title": "ラムネの瓶ビー玉どっかに消えてった雨に溶けるわたあめの様に", "url": "/tankas/001091.html" },
+    
+    { "title": "東京の春に誓ったあの夢は所詮夢だよ二度とは見れぬ", "url": "/tankas/001092.html" },
+    
+    { "title": "光線を糸に見立てよレーザーハープ弾けはするけど布は織れない", "url": "/tankas/001093.html" },
+    
+    { "title": "噛み合わぬ歯車めいて素数蝉私とあなたは一期の一会", "url": "/tankas/001094.html" },
+    
+    { "title": "四季なくて何が変わるというのだろう桜は咲いて花火も上がる", "url": "/tankas/001095.html" },
+    
+    { "title": "葉桜の青もくすんだ梅雨時かキミの言葉は私が継いだ", "url": "/tankas/001096.html" },
+    
+    { "title": "お互いの肩を濡らした小雨だがバレたくないから傘は差さない", "url": "/tankas/001097.html" },
+    
+    { "title": "思い出のあなたの顔がハレーション見るもの全てがハルシネーション", "url": "/tankas/001098.html" },
+    
+    { "title": "路地裏を並んで歩く春の雨降り頻るのは私の心", "url": "/tankas/001099.html" },
+    
+    { "title": "紫陽花のまだ咲いてない花びらを吸い込むように今日も生きてる", "url": "/tankas/001100.html" },
+    
+    { "title": "東京も京都も知らぬ漠然と失くしてしまった四年を抱く", "url": "/tankas/001101.html" },
+    
+    { "title": "土曜日の朝にやってる番組の名古屋も渋谷も知らない街だ", "url": "/tankas/001102.html" },
+    
+    { "title": "鉄道は街と街とを繋ぐ線もう乗ることはないんだろうな", "url": "/tankas/001103.html" },
+    
+    { "title": "誰もいない誰も知らない真夜中に知らない街の空を見上げる", "url": "/tankas/001104.html" },
+    
+    { "title": "夕焼けのパンザマストよ子供らも私の憂いも拐ってしまえ", "url": "/tankas/001105.html" },
+    
+    { "title": "あの空に夢はないぞと鳥の声ハトもカラスも車道を歩く", "url": "/tankas/001106.html" },
+    
+    { "title": "アマビエも見なくなったな疫病も終息するのに止まらぬ生命", "url": "/tankas/001107.html" },
+    
+    { "title": "あの日まで見た夢の名を本歌とし返し歌とて生きる毎日", "url": "/tankas/001108.html" },
+    
+    { "title": "生活にバケモノ一つ入り込む自分の影が踏めない魔法", "url": "/tankas/001109.html" },
+    
+    { "title": "履き潰しどうやらやっと気が付いた花も咲かないアスファルトの夜", "url": "/tankas/001110.html" },
+    
+    { "title": "雨音で思い出されるキミのことそういや私はほとんど知らない", "url": "/tankas/001111.html" },
+    
+    { "title": "幸せのビーチフラッグの一着でハッピーエンドのフラグを折った", "url": "/tankas/001112.html" },
+    
+    { "title": "かさぶたがめくれるように増えてゆくミュートワードと短歌の在庫", "url": "/tankas/001113.html" },
+    
+    { "title": "人間を振り回す指示する感情ダンスダンスレボリューションのような信号", "url": "/tankas/001114.html" },
+    
+    { "title": "ふわふわと明日に向かう高揚感急に止まればエレベーター酔い", "url": "/tankas/001115.html" },
+    
+    { "title": "いつまでもあると思うな好感度後悔ばかりがいつまでもある", "url": "/tankas/001116.html" },
+    
+    { "title": "チョコレート菓子がくっつく初夏の日に降って固まる地面はあるか", "url": "/tankas/001117.html" },
+    
+    { "title": "「愛されたい」だけで駆動すSNS愛した証の見えない世界", "url": "/tankas/001118.html" },
+    
+    { "title": "「何もかも小さくなった気がする」と記憶の果ての高値の花よ", "url": "/tankas/001119.html" },
+    
+    { "title": "コンビニでアイスを二本ヒグラシとセミの区別もつかない夕べ", "url": "/tankas/001120.html" },
+    
+    { "title": "ただキミに生きて欲しいと願うだけ命と祈りは一文字違い", "url": "/tankas/001121.html" },
+    
+    { "title": "白票に名前書き込みつまみ入る焼香台に似た紺の箱", "url": "/tankas/001122.html" },
+    
+    { "title": "四色でどんな地図でも塗り分けてしまえば世界は平和になるか", "url": "/tankas/001123.html" },
+    
+    { "title": "履歴書を六文銭の代わりにし焼いて残るは名ばかりと云ふ", "url": "/tankas/001124.html" },
+    
+    { "title": "祝われて生き祝われて死ぬような呪いを愛と呼んだあの人", "url": "/tankas/001125.html" },
+    
+    { "title": "世は並べてはかなきものか秋の陽はあなたの夢と共に沈んで", "url": "/tankas/001126.html" },
+    
+    { "title": "おもむろに冒険者協会の受付に岩の柱を一本置いた", "url": "/tankas/001127.html" },
+    
+    { "title": "天高く鰯が泳ぐ秋の日は栗の炊き込みご飯を飾る", "url": "/tankas/001128.html" },
+    
+    { "title": "おぎゃあおぎゃあと鳴るアラームに急かされて旅立つ夢は二度とは見えず", "url": "/tankas/001129.html" },
+    
+    { "title": "回線とのぞみが繋ぐ東京の記憶はどうせ鮪の夢か", "url": "/tankas/001130.html" },
+    
+    { "title": "「信じるは人の言葉と書くけれど」言い訳ばかりがうまくなってさ", "url": "/tankas/001131.html" },
+    
+    { "title": "沸点は常に飽和の人々のインターネットの広告のバツ", "url": "/tankas/001132.html" },
+    
+    { "title": "終電が規定す社会の消灯の後も駄弁った秋の薄明", "url": "/tankas/001133.html" },
+    
+    { "title": "海温を喰らって育つ台風の卵は煮ても焼いても食えない", "url": "/tankas/001134.html" },
+    
+    { "title": "散歩する私の耳とiPhoneを繋ぐリードが世界を詠う", "url": "/tankas/001135.html" },
+    
+    { "title": "歌を詠むことしか出来ぬと諦めて秋の青空仰いで歩く", "url": "/tankas/001136.html" },
+    
+    { "title": "「助けて」も祈りの声も救い給べ神に祈るか人に願うか", "url": "/tankas/001137.html" },
+    
+    { "title": "「どうかまた、逢えますように」と呟いて墓に手向けた祈りの造花", "url": "/tankas/001138.html" },
+    
+    { "title": "人偏に憂うと書いて優と読む　優しいことは優れているか", "url": "/tankas/001139.html" },
+    
+    { "title": "過ちを去くと書いた夕立が未だ来ぬのはゲンザイ故か", "url": "/tankas/001140.html" },
+    
+    { "title": "「そんなネタ誰が分かる」と笑うから　通じてるじゃん、私も笑う", "url": "/tankas/001141.html" },
+    
+    { "title": "安いのは給料ばかり溜まるのは疲ればかりのうつつはばかか", "url": "/tankas/001142.html" },
+    
+    { "title": "信号がそっぽを向いた旧道は草食むサルの尻の赤色", "url": "/tankas/001143.html" },
+    
+    { "title": "村外れダム湖の底に雪は降り木枯らし切って車が走る", "url": "/tankas/001144.html" },
+    
+    { "title": "師走空　予行演習　陽が沈む　サンタが西に向かって駆ける", "url": "/tankas/001145.html" },
+    
+    { "title": "「毒舌だ」「風刺が利いてる」今日もまた日和見主義者が刃物を掲げる", "url": "/tankas/001146.html" },
+    
+    { "title": "パクられを恐れる人ら　我々も親の遺伝子のパクリじゃんかよ", "url": "/tankas/001147.html" },
+    
+    { "title": "手袋も寒いんだろか　幼子の丸めた雪を吸って縮んだ", "url": "/tankas/001148.html" },
+    
+    { "title": "願いとか想いを花に語らせて花の祈りは誰が聞くんだ", "url": "/tankas/001149.html" },
+    
+    { "title": "印籠の如く掲げたキーレスの鍵で車は勝手に開く", "url": "/tankas/001150.html" },
+    
+    { "title": "LEDの星が瞬く街中を一人で歩く私は樅の木", "url": "/tankas/001151.html" },
+    
+    { "title": "飛び火するSNSのマークめくバツ押す指で開く広告", "url": "/tankas/001152.html" },
+    
+    { "title": "「腹が立つやつを裁いてしまえたら」タラレバガニは茹でると赤い", "url": "/tankas/001153.html" },
+    
+    { "title": "青色は遠い色　あなたの街のストリートビューはいつ見ても晴れ", "url": "/tankas/001154.html" },
+    
+    { "title": "コンビニは歯医者の数より少なくて跡地に雪が積もった地元", "url": "/tankas/001155.html" },
+    
+    { "title": "来客もない年の瀬に見上げれば北にいつでもある北極星", "url": "/tankas/001156.html" },
+    
+    { "title": "紅白のリズムを刻む低音が今年の終わりをカウントしてる", "url": "/tankas/001157.html" },
+    
+    { "title": "東京の夢破れたり神田川スーパーカップはアイスじゃないの", "url": "/tankas/001158.html" },
+    
+    { "title": "立つ鳥は跡を濁さず辰年の身を省みて巳年を迎ふ", "url": "/tankas/001159.html" },
+    
+    { "title": "おやすみの代わり　今日だけ特別な「来年もよろしく」と囁く", "url": "/tankas/001160.html" },
+    
+    { "title": "号砲だ　さあ始まった　最後まではぐれてくれるな令和七年", "url": "/tankas/001161.html" },
+    
+    { "title": "五秒だけズレてる所為で昨年に置いていかれた私の時計", "url": "/tankas/001162.html" },
+    
+    { "title": "天候を尋ねて始めた通話にてどちらも同じ朝焼けの空", "url": "/tankas/001163.html" },
+    
+    { "title": "あなたとの距離を求めよ花占い　経緯は無視してよいものとする", "url": "/tankas/001164.html" },
+    
+    { "title": "花弁は星座になって土を染め花の命は誰が弔う", "url": "/tankas/001165.html" },
+    
+    { "title": "パイン飴　吹いても鳴らないその音はあなたの世界に響いているか", "url": "/tankas/001166.html" },
+    
+    { "title": "風が鳴る睦月の空の常夜灯　朝が来るたびキミを忘れる", "url": "/tankas/001167.html" },
+    
+    { "title": "最終ターン！　地球最後の桃鉄は賽を振るしかやることがない", "url": "/tankas/001168.html" },
+    
+    { "title": "恋人の構成要素をガチャで決め　来ないレアよりコモンがいいとか", "url": "/tankas/001169.html" },
+    
+    { "title": "人生はみな一周目　とりあえず世界はチュートリアルから始まる", "url": "/tankas/001170.html" },
+    
+    { "title": "ところでさ、「割れんばかりの拍手」って何が割れるの　身元？　カルピス？", "url": "/tankas/001171.html" },
+    
+    { "title": "会いたいと思う心が愛なのか上には上の飢えがあるんだ", "url": "/tankas/001172.html" },
+    
+    { "title": "幻肢痛めいた思い出　ブレスレットを腕から外す癖が抜けない", "url": "/tankas/001173.html" },
+    
+    { "title": "僕たちに貼られた勇気の五割引きシールはまるくてこっちを見ている", "url": "/tankas/001174.html" },
+    
+    { "title": "好きだった気がしただけか　どうしても思い出せない景色があった", "url": "/tankas/001175.html" },
+    
+    { "title": "非公開、削除が並ぶ花畑　咲かない花は花と呼べるか", "url": "/tankas/001176.html" },
+    
+    { "title": "冬空の瞬きは雪　そっちでも積もる話があるんだろうか", "url": "/tankas/001177.html" },
+    
+    { "title": "水槽のようなモニタと熱帯魚のような文字列　ことばはきれいか", "url": "/tankas/001178.html" },
+    
+    { "title": "何もかも燃えてしまえ、と叫ぶ子ら　片目のだるまが燃やされている", "url": "/tankas/001179.html" },
+    
+    { "title": "あんなにも欲しがったのに冷めたのでもう要らないと天神の噺", "url": "/tankas/001180.html" },
+    
+    { "title": "忘れたいことだけ何故か思い出す　雪の轍は何度も踏まれる", "url": "/tankas/001181.html" },
+    
+    { "title": "板チョコをそのまま渡す関係がそのまま続いて欲しいと願う", "url": "/tankas/001182.html" },
+    
+    { "title": "音楽の森をかき分け階段に向かう僕らは手も叩けない", "url": "/tankas/001183.html" },
+    
+    { "title": "何もかも高くなったと冬灯　高嶺の花も雪に埋もれて", "url": "/tankas/001184.html" },
+    
+    { "title": "スーパーの棚に並んだ僕達は手に取られても買われはしない", "url": "/tankas/001185.html" },
+    
+    { "title": "こうやってひとつふたつと忘れてく　去年の唄が一昨年になる", "url": "/tankas/001186.html" },
+    
+    { "title": "おすすめが当てにならぬと深夜二時　きっと私もハズレの仲間", "url": "/tankas/001187.html" },
+    
+    { "title": "一面にシアンを塗りたくった青　夜空の星は思案のカタチ", "url": "/tankas/001188.html" },
+    
+    { "title": "目を閉じてあなたを想う　いつだって地球のどこかは夜なのだから", "url": "/tankas/001189.html" },
+    
+    { "title": "部屋にある湿気ったあられをかじってる　孤独の文字に寄り添うあられ", "url": "/tankas/001190.html" },
+    
+    { "title": "Xの下には読み込み中のまる　ひっくり返せばドクロの完成", "url": "/tankas/001191.html" },
+    
+    { "title": "上書きを許可するツメを折るようにひとつひとつが永遠になる", "url": "/tankas/001192.html" },
+    
+    { "title": "窓開き春の匂いが流入す我の心も春よ来れと", "url": "/tankas/001193.html" },
+    
+    { "title": "新聞のお悔やみ欄の文字列はエンドロールのように流れて", "url": "/tankas/001194.html" },
+    
+    { "title": "夜警する悪夢が一人　夜更かしの子供を咎め頭をかじる", "url": "/tankas/001195.html" },
+    
+    { "title": "夜警する悪夢が四人　朝の日の光に灼かれ堕ちてしまえと", "url": "/tankas/001196.html" },
+    
+    { "title": "「ひょっとして、『一を聞いて十を知る』って現代ネットじゃ悪口なのか？」", "url": "/tankas/001197.html" },
+    
+    { "title": "喪った友の名がある電話帳　今日も何だかスマホが重い", "url": "/tankas/001198.html" },
+    
+    { "title": "ドーナツの穴と私の傷痕と　ないものねだりを生業にする", "url": "/tankas/001199.html" },
+    
+    { "title": "イマジンも虚数も僕の思い出もiから始まるような気がした", "url": "/tankas/001200.html" },
+    
+    { "title": "春の高山祭の報道の画面で桜が咲いたのを知る", "url": "/tankas/001201.html" },
+    
+    { "title": "遠く居るあなたの無事を祈ること　次に会うのがあの世としても", "url": "/tankas/001202.html" },
+    
+    { "title": "息をする　世界はギブとテイクでさ、僕と君とはお互い様だ", "url": "/tankas/001203.html" },
+    
+    { "title": "二年目の新居の窓から見えるもの　家路の子供と夕陽と桜", "url": "/tankas/001204.html" },
+    
+    { "title": "人生のセーブはできるんだよ、ただロードができないバグがあるだけ", "url": "/tankas/001205.html" },
+    
+    { "title": "不死の名を冠する山よ　見下ろせる我らに「富士見」を与えておくれ", "url": "/tankas/001206.html" },
+    
+    { "title": "叫んでも届かないな、と独りごつ　糸が切れてる電話みたいな", "url": "/tankas/001207.html" },
+    
+    { "title": "言の葉も散った晩春　感情という名の箒で集めて焚き火", "url": "/tankas/001208.html" },
+    
+    { "title": "ゲームにて死体ばかりが積み上がりしたいようには操れないな", "url": "/tankas/001209.html" },
+    
+    { "title": "四色で地図を塗り分けられるなら私とあなたは異なる色で", "url": "/tankas/001210.html" },
+    
+    { "title": "静電気除去シートを連打する　早押しクイズを間違うように", "url": "/tankas/001211.html" },
+    
+    { "title": "りっとうとやまいだれとで取り合った倉の中身は生きてる証", "url": "/tankas/001212.html" },
+    
+    { "title": "葉桜も散りゆく桜も桜なら目もかけられぬ五月の私", "url": "/tankas/001213.html" },
+    
+    { "title": "アモーとは　君の心に向けるもの《amō》　僕の生命を奪い去るもの《ammo》", "url": "/tankas/001214.html" },
+    
+    { "title": "「ハル・アンタ・ヤーバーニーユン」アラビアの風を運んだギターのタブ譜", "url": "/tankas/001215.html" },
+    
+    { "title": "体重をかけつつ前に倒れ込む　アクセルペダルを踏み込むように", "url": "/tankas/001216.html" },
+    
+    { "title": "我々はみなニワトリの真似をする　コココ、コココとお米をつつく", "url": "/tankas/001217.html" },
+    
+    { "title": "青空も鳥も全てが黒になる　夢とうつつが分からなくなる", "url": "/tankas/001218.html" },
+    
+    { "title": "たこ焼きの出来損ないを寄せ集め花火の空に浮かぶ半月", "url": "/tankas/001219.html" },
+    
+    { "title": "「この街はおかしな時間に夕方のベルが鳴るね」とおかしな二人", "url": "/tankas/001220.html" },
+    
+    { "title": "名も知らぬバンドが演奏する祭り　私もそんなよくある短歌(うた)だ", "url": "/tankas/001221.html" },
+    
+    { "title": "売り切れの相次ぐ人気の自販機はハズレばっかと貶まれても", "url": "/tankas/001222.html" },
+    
+    { "title": "「お買い得」の襷を掛けて出馬する不揃いのナス、キュウリのワゴン", "url": "/tankas/001223.html" },
+    
+    { "title": "神様のポイも和紙なの？　縁日の出店のお面は斜めに被る", "url": "/tankas/001224.html" },
+    
+    { "title": "此岸まで記憶のあなたに逢いに来た　暑さ寒さも彼岸までと云う", "url": "/tankas/001225.html" },
+    
+    { "title": "その傷の色は夕焼け　伸びる影、背高のっぽが並んで歩く", "url": "/tankas/001226.html" },
+    
+    { "title": "その奥にあなたは何を秘めてるの？　問うても帰らぬ無地の青空", "url": "/tankas/001227.html" },
+    
+    { "title": "盆ごろにナスやキュウリが値上がりし今年はあの世でゆっくりしてよう", "url": "/tankas/001228.html" },
+    
+    { "title": "for文のiをインクリメントしてあなたに会うたび募る想いが", "url": "/tankas/001229.html" },
+    
+    { "title": "秋雨に濡れる二枚の処方箋　心の傷に塗る薬はない", "url": "/tankas/001230.html" },
+    
+    { "title": "好きだった動画が六年前になる　私とあなたをメジャーで測る", "url": "/tankas/001231.html" },
+    
+    { "title": "いつもより遅い紅葉の色をした午後の紅茶を缶で飲んでる", "url": "/tankas/001232.html" },
+    
+    { "title": "ふるさとのススキが風に揺れている　人無き家の庭だとしても", "url": "/tankas/001233.html" },
+    
+    { "title": "傷口は鎮痛剤が慰める　心の傷にもおくすりが効く", "url": "/tankas/001234.html" },
+    
+    { "title": "青褪めた空をよそ目に歩く人　立ち止まるとき初めて見える", "url": "/tankas/001235.html" },
+    
+    { "title": "ガチャで出た証明写真を履歴書に　私も御社もハズレの籤か", "url": "/tankas/001236.html" },
+    
+    { "title": "「遠足は家に着くまで」　帰るなら無事に帰れと言ったばかりに", "url": "/tankas/001237.html" },
+    
+    { "title": "言語化をすれば一人になってしまう　言葉は誰のものでもあるから", "url": "/tankas/001238.html" },
+    
+    { "title": "最下位の星座は罰点のかたちで　誰もがいない空を見上げた", "url": "/tankas/001239.html" },
+    
+    { "title": "「またキミを、生まれ変わっても好きになる」　あなたの恋は周回遅れ", "url": "/tankas/001240.html" },
+    
+    { "title": "風船のひもを首輪に繋いでる　失言するたび一つずつ割る", "url": "/tankas/001241.html" },
+    
+    { "title": "折り紙の好きな色だけ抜き取って　黄色と赤の違いはなんだ", "url": "/tankas/001242.html" },
+    
+    { "title": "超能力なんて持たない私でもスプーンを曲げるような心で", "url": "/tankas/001243.html" },
+    
+    { "title": "今日もまた知らないあなたが歩いてる　絵の具よりかはキャンバスだよな", "url": "/tankas/001244.html" },
+    
+    { "title": "ひとつずつ星を畳んでいくようにシャツの折り目は星座になって", "url": "/tankas/001245.html" },
+    
+    { "title": "冬至祭の代わりに「類は人を呼ぶ」あなたが好いているだけあるね", "url": "/tankas/001246.html" },
+    
+    { "title": "ただ一つ言葉をくれなかったから幾ら書いても余白は尽きぬ", "url": "/tankas/001247.html" },
+    
+    { "title": "コンビニのプリンはみっつ入りだからふたりで分けるとひとつが余る", "url": "/tankas/001248.html" },
+    
+    { "title": "冬の庭　雪も狐もこんこんと　君の来ぬのを嘲るように", "url": "/tankas/001249.html" },
+    
+    { "title": "柚子の実を一つ浮かべた冬至湯は今日の夕陽をもいできたもの", "url": "/tankas/001250.html" },
+    
+    { "title": "つまらない授業を受ける体勢で車のリクライニングを倒す", "url": "/tankas/001251.html" },
+    
+    { "title": "クリスマスケーキは高く空を飛ぶサンタクロースと衝突してる", "url": "/tankas/001252.html" },
+    
+    { "title": "翌日のカレーライスの隠し味　いつまでサンタを信じてました？", "url": "/tankas/001253.html" },
+    
+    { "title": "玄関を掃除している　この世って結局見た目が九割だから", "url": "/tankas/001254.html" },
+    
+    { "title": "年の瀬に降る雨の音　夜更けまで待てばあなたに会えたと聞いて", "url": "/tankas/001255.html" },
+    
+    { "title": "いつまでも叶えられない願い事きっとサンタは悪い子なんだ", "url": "/tankas/001256.html" },
+    
+    { "title": "サイレントナイトも明けて朝が来る　雪解け水は海に流れる", "url": "/tankas/001257.html" },
+    
+    { "title": "今年もあと何時間だとテレビが言う終末時計は年を越せない", "url": "/tankas/001258.html" },
+    
+    { "title": "紅白に速報が出る僕たちはマグマの上に浮かんだ葉っぱ", "url": "/tankas/001259.html" },
+    
+    { "title": "年越しの月を見上げた　まるいとは言いがたいけど確かにあった", "url": "/tankas/001260.html" },
+    
+    { "title": "「クマやエビなどは保護せよ！　あ、別にヒトの弱者はどうでもいいです」", "url": "/tankas/001261.html" },
+    
+    { "title": "年明けは仮想通貨も跳ね上がりカブが高けりゃ粥も啜れぬ", "url": "/tankas/001262.html" }
+    
+  ];
+
+  function generateRandomTanka() {
+    const randomIndex = Math.floor(Math.random() * allTankas.length);
+    const selected = allTankas[randomIndex];
+    
+    const resultElement = document.getElementById('tamatebako-content');
+    resultElement.innerHTML = `
+      <h2 class="random-tanka-title">
+        <a href="${selected.url}" class="tcolor">${selected.title}</a>
+      </h2>
+    `;
+  }
+
+  // 初回読み込み時に実行
+  window.onload = generateRandomTanka;
+</script>
+  </body>
+</html>

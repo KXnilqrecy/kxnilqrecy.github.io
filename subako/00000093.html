@@ -1,0 +1,481 @@
+<!doctype html>
+<html>
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E4NPYH1T62"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E4NPYH1T62');
+</script>
+    <meta charset="utf-8">
+    <title>00000093</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://kxnilqrecy.github.io/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link type="application/atom+xml" rel="alternate" href="https://kxnilqrecy.github.io/feed.xml" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>00000093</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="00000093" />
+<meta name="author" content="ina" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="それこそ神みたいな超常の存在でもなけりゃ" />
+<meta property="og:description" content="それこそ神みたいな超常の存在でもなけりゃ" />
+<link rel="canonical" href="https://kxnilqrecy.github.io/subako/00000093.html" />
+<meta property="og:url" content="https://kxnilqrecy.github.io/subako/00000093.html" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-02-05T16:12:59+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="00000093" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"ina"},"dateModified":"2026-02-05T16:12:59+09:00","datePublished":"2026-02-05T16:12:59+09:00","description":"それこそ神みたいな超常の存在でもなけりゃ","headline":"00000093","mainEntityOfPage":{"@type":"WebPage","@id":"https://kxnilqrecy.github.io/subako/00000093.html"},"url":"https://kxnilqrecy.github.io/subako/00000093.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="google-site-verification" content="1XS-_jxYV-ZnPNosmqWTDri7p8729Qo40Ylm4px0YWA" />
+  </head>
+  <body>
+    <div class="clock">
+    <div id="clock2">ここに長期暦を表示</div>
+    <div id="clock">ここに暦を表示</div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    fetch('https://kxnilqrecy.github.io/assets/csv/jungo.csv')
+        .then(response => response.text())
+        .then(data => parseCSV(data));
+});
+function decToBase62(num_){
+  if (num_ === null) return void 0;
+  let num = Number(num_);
+  if (isNaN(num)) return void 0;
+  if (Math.floor(num) !== num) return void 0;
+  
+  let is_negative = num < 0;
+  num = Math.abs(num);
+  
+  let ret = "", digit = 0;
+  while(true){
+    digit = num % 62;
+    if (digit < 10)
+      ret+=String(digit); //0-9
+    else if (digit < 36)
+      ret+=String.fromCharCode(digit + 55); //A-Z
+    else
+      ret+=String.fromCharCode(digit + 61); //a-z
+    if (num < 62)
+      break;
+    else
+      num = Math.floor(num / 62);
+  }
+  if (is_negative) ret+="-";
+  return ret.split("").reverse().join("");
+}
+function parseCSV(data) {
+    const jungos = data.split('\n');
+    const lpmark = ['🌑', '🌒', '🌓', '🌔', '🌕', '🌖', '🌗', '🌘', '🌑'];
+    let nowdate = new Date();
+    const epochdate = new Date(2019, 4, 1, 18);
+    let deltadate = (nowdate.getTime() - epochdate.getTime()) / 1000 / 86400;
+    let day = Math.floor(deltadate);
+    let time = (deltadate - day);
+    let hisuiepoch = new Date(2005, 7, 15);
+    let hisuinum = Math.floor((nowdate.getTime() - hisuiepoch.getTime()) / 86400000);
+    let nowjungo = jungos[day];
+    let koku = Math.floor((time * 96) * 10) / 10;
+    const lunarepoch = new Date(2019, 4, 5, 7, 45);
+    let lunardelta = (nowdate.getTime() - lunarepoch.getTime()) / 1000 / 86400;
+    let lp = Math.floor((lunardelta - Math.floor(lunardelta / 29.530582990) * 29.530582990) * 10) / 10;
+    let lpmknum = Math.floor((lunardelta - Math.floor(lunardelta / 29.530582990) * 29.530582990) / 29.530582990 * 8 + 0.5);
+    let mk = lpmark[lpmknum];
+    const xqepoch = new Date(2018, 8, 23, 10, 54);
+    let xqdelta = (nowdate.getTime() - xqepoch.getTime()) / 1000 / 86400;
+    let xq = Math.floor(Math.ceil(xqdelta / 365.242050827423) * 365.242050827423 - xqdelta);
+    const qiepoch = new Date(2005, 8, 23, 7, 23);
+    let qidelta = (nowdate.getTime() - qiepoch.getTime()) / 1000 / 86400;
+    let qi = Math.floor(qidelta / 52.177435832489);
+    document.getElementById('clock').textContent = `Xq${xq}Lp${lp}${mk}/${nowjungo}(第${qi}期):&${hisuinum}-${koku}刻`;
+    const longepoch = new Date(-5513, 8, 26);
+    let longdelta = nowdate.getTime() - longepoch.getTime();
+    let long1 = ('0000' + decToBase62(longdelta % 14776334)).slice(-4);
+    let long2 = ('0000' + decToBase62(longdelta % 14776331)).slice(-4);
+    let long3 = ('0000' + decToBase62(longdelta % 14776329)).slice(-4);
+    let long4 = ('0000' + decToBase62(longdelta % 14776327)).slice(-4);
+    document.getElementById('clock2').textContent = `${long1}.${long2}.${long3}.${long4}`;
+}
+    </script>
+</div>
+    <div class="subako-timeline single-post">
+  <div class="subako-nav-top">
+    <a href="javascript:history.back()" class="subako-back-link">← 戻る</a>
+  </div>
+
+  
+    
+    
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+        
+        
+
+    
+      
+      <article class="subako-card parent-thread">
+        <div class="subako-aside">
+          <img src="/assets/images/ina.svg" class="subako-avatar-small">
+          <div class="thread-line"></div>
+        </div>
+        <div class="subako-main">
+          <div class="subako-header">
+            <span class="subako-name">伊那すいう</span>
+            <span class="subako-id">@ina_savacan</span>
+            <span class="subako-dot">·</span>
+            <span class="subako-date">いつか</span>
+          </div>
+          <div class="subako-body"><p>全てを救うことは出来ない</p>
+</div>
+        </div>
+      </article>
+    
+  
+
+  <!-- メイン投稿 (focus) -->
+  <article class="subako-card focus">
+    
+    <div class="subako-aside">
+      <img src="/assets/images/ina.svg" class="subako-avatar">
+    </div>
+    <div class="subako-main">
+      <div class="subako-header">
+        <span class="subako-name">伊那すいう</span>
+        <span class="subako-id">@ina_savacan</span>
+      </div>
+      
+      
+        
+        
+        
+      
+
+      <div class="subako-body big"><p>それこそ神みたいな超常の存在でもなけりゃ</p>
+</div>
+      <div class="subako-date-footer">いつか</div>
+    </div>
+  </article>
+
+  <!-- 返信一覧 -->
+  <div class="replies-section">
+    
+    
+    
+  </div>
+</div>
+
+<!-- JavaScriptによる青文字化 -->
+<script>
+function colorizeSubako() {
+  // 本文と返信先ラベルの両方をスキャン
+  const targets = document.querySelectorAll('.subako-body, .reply-target');
+  
+  targets.forEach(el => {
+    let html = el.innerHTML;
+    
+    // すでにspanで囲まれている場合はスキップ（二重処理防止）
+    if (html.includes('subako-mention') || html.includes('subako-tag')) return;
+
+    // @メンション: 空白、改行、またはHTMLタグの開始(<)までをキャプチャ
+    html = html.replace(/@([^\s\n<]+)/g, '<span class="subako-mention">@$1</span>');
+    
+    // $タグ: 同上
+    html = html.replace(/\$([^\s\n<]+)/g, '<span class="subako-tag">$$$1</span>');
+    
+    el.innerHTML = html;
+  });
+}
+
+// ページ読み込み完了時に実行
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', colorizeSubako);
+} else {
+  colorizeSubako();
+}
+</script>
+  </body>
+</html>

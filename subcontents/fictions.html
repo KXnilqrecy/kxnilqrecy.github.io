@@ -1,0 +1,356 @@
+<!doctype html>
+<html>
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E4NPYH1T62"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E4NPYH1T62');
+</script>
+    <meta charset="utf-8">
+    <title>鳴葉灯理の「あくまでフィクションです。」</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://kxnilqrecy.github.io/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link type="application/atom+xml" rel="alternate" href="https://kxnilqrecy.github.io/feed.xml" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>鳴葉灯理の「あくまでフィクションです。」</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="鳴葉灯理の「あくまでフィクションです。」" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://kxnilqrecy.github.io/subcontents/fictions.html" />
+<meta property="og:url" content="https://kxnilqrecy.github.io/subcontents/fictions.html" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="鳴葉灯理の「あくまでフィクションです。」" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"鳴葉灯理の「あくまでフィクションです。」","url":"https://kxnilqrecy.github.io/subcontents/fictions.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="google-site-verification" content="1XS-_jxYV-ZnPNosmqWTDri7p8729Qo40Ylm4px0YWA" />
+  </head>
+  <body>
+    <div class="clock">
+    <div id="clock2">ここに長期暦を表示</div>
+    <div id="clock">ここに暦を表示</div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    fetch('https://kxnilqrecy.github.io/assets/csv/jungo.csv')
+        .then(response => response.text())
+        .then(data => parseCSV(data));
+});
+function decToBase62(num_){
+  if (num_ === null) return void 0;
+  let num = Number(num_);
+  if (isNaN(num)) return void 0;
+  if (Math.floor(num) !== num) return void 0;
+  
+  let is_negative = num < 0;
+  num = Math.abs(num);
+  
+  let ret = "", digit = 0;
+  while(true){
+    digit = num % 62;
+    if (digit < 10)
+      ret+=String(digit); //0-9
+    else if (digit < 36)
+      ret+=String.fromCharCode(digit + 55); //A-Z
+    else
+      ret+=String.fromCharCode(digit + 61); //a-z
+    if (num < 62)
+      break;
+    else
+      num = Math.floor(num / 62);
+  }
+  if (is_negative) ret+="-";
+  return ret.split("").reverse().join("");
+}
+function parseCSV(data) {
+    const jungos = data.split('\n');
+    const lpmark = ['🌑', '🌒', '🌓', '🌔', '🌕', '🌖', '🌗', '🌘', '🌑'];
+    let nowdate = new Date();
+    const epochdate = new Date(2019, 4, 1, 18);
+    let deltadate = (nowdate.getTime() - epochdate.getTime()) / 1000 / 86400;
+    let day = Math.floor(deltadate);
+    let time = (deltadate - day);
+    let hisuiepoch = new Date(2005, 7, 15);
+    let hisuinum = Math.floor((nowdate.getTime() - hisuiepoch.getTime()) / 86400000);
+    let nowjungo = jungos[day];
+    let koku = Math.floor((time * 96) * 10) / 10;
+    const lunarepoch = new Date(2019, 4, 5, 7, 45);
+    let lunardelta = (nowdate.getTime() - lunarepoch.getTime()) / 1000 / 86400;
+    let lp = Math.floor((lunardelta - Math.floor(lunardelta / 29.530582990) * 29.530582990) * 10) / 10;
+    let lpmknum = Math.floor((lunardelta - Math.floor(lunardelta / 29.530582990) * 29.530582990) / 29.530582990 * 8 + 0.5);
+    let mk = lpmark[lpmknum];
+    const xqepoch = new Date(2018, 8, 23, 10, 54);
+    let xqdelta = (nowdate.getTime() - xqepoch.getTime()) / 1000 / 86400;
+    let xq = Math.floor(Math.ceil(xqdelta / 365.242050827423) * 365.242050827423 - xqdelta);
+    const qiepoch = new Date(2005, 8, 23, 7, 23);
+    let qidelta = (nowdate.getTime() - qiepoch.getTime()) / 1000 / 86400;
+    let qi = Math.floor(qidelta / 52.177435832489);
+    document.getElementById('clock').textContent = `Xq${xq}Lp${lp}${mk}/${nowjungo}(第${qi}期):&${hisuinum}-${koku}刻`;
+    const longepoch = new Date(-5513, 8, 26);
+    let longdelta = nowdate.getTime() - longepoch.getTime();
+    let long1 = ('0000' + decToBase62(longdelta % 14776334)).slice(-4);
+    let long2 = ('0000' + decToBase62(longdelta % 14776331)).slice(-4);
+    let long3 = ('0000' + decToBase62(longdelta % 14776329)).slice(-4);
+    let long4 = ('0000' + decToBase62(longdelta % 14776327)).slice(-4);
+    document.getElementById('clock2').textContent = `${long1}.${long2}.${long3}.${long4}`;
+}
+    </script>
+</div>
+    <div class="subpage-container">
+  <!-- ヘッダー部分：トップの自己紹介カードとデザインを統一 -->
+  <header class="subpage-header">
+    <nav class="breadcrumb"><a href="/">ホーム</a> ＞ 鳴葉灯理の「あくまでフィクションです。」</nav>
+    <h1>鳴葉灯理の「あくまでフィクションです。」</h1>
+    <p class="subpage-description">鳴葉灯理の創作論と人間論を書き連ねる場。</p>
+  </header>
+
+  <!-- 記事一覧：グリッドレイアウト -->
+  <div class="post-grid">
+    
+    
+      <article class="post-card">
+        <a href="/fictions/2026/01/14/%E8%AA%A4%E8%A7%A3/" class="post-card-link">
+          <div class="post-meta">
+            <time>2026.01.14</time>
+            
+              <span class="post-category">現実論</span>
+            
+          </div>
+          <h2 class="post-title">誤解</h2>
+          <div class="post-excerpt">
+            <!-- excerpt（抜粋）からHTMLを除去して短く表示 -->
+            　ある人物がいる。ある要素を持った集団を抽象化した、架空の人間だ。
+
+          </div>
+          <span class="read-more">記事を読む →</span>
+        </a>
+      </article>
+    
+      <article class="post-card">
+        <a href="/fictions/2025/12/19/%E3%83%86%E3%83%AC%E3%83%93%E3%83%9E%E3%83%B3/" class="post-card-link">
+          <div class="post-meta">
+            <time>2025.12.19</time>
+            
+              <span class="post-category">現実論</span>
+            
+          </div>
+          <h2 class="post-title">テレビマン</h2>
+          <div class="post-excerpt">
+            <!-- excerpt（抜粋）からHTMLを除去して短く表示 -->
+            　ある人物がいる。ある要素を持った集団を抽象化した、架空の人間だ。
+
+          </div>
+          <span class="read-more">記事を読む →</span>
+        </a>
+      </article>
+    
+      <article class="post-card">
+        <a href="/fictions/2025/11/18/%E3%81%B5%E3%81%8D%E3%81%AF%E3%82%89/" class="post-card-link">
+          <div class="post-meta">
+            <time>2025.11.18</time>
+            
+              <span class="post-category">現実論</span>
+            
+          </div>
+          <h2 class="post-title">ふきはら</h2>
+          <div class="post-excerpt">
+            <!-- excerpt（抜粋）からHTMLを除去して短く表示 -->
+            　ある人物がいる。ある要素を持った集団を抽象化した、架空の人間だ。
+
+          </div>
+          <span class="read-more">記事を読む →</span>
+        </a>
+      </article>
+    
+      <article class="post-card">
+        <a href="/fictions/2025/10/25/%E6%AD%A3%E8%AB%96%E3%83%91%E3%83%B3%E3%83%81/" class="post-card-link">
+          <div class="post-meta">
+            <time>2025.10.25</time>
+            
+              <span class="post-category">現実論</span>
+            
+          </div>
+          <h2 class="post-title">正論パンチ</h2>
+          <div class="post-excerpt">
+            <!-- excerpt（抜粋）からHTMLを除去して短く表示 -->
+            　ある人物がいる。ある要素を持った集団を抽象化した、架空の人間だ。
+
+          </div>
+          <span class="read-more">記事を読む →</span>
+        </a>
+      </article>
+    
+      <article class="post-card">
+        <a href="/fictions/2025/10/03/%E8%AC%9D%E3%82%89%E3%81%9B%E3%82%8B/" class="post-card-link">
+          <div class="post-meta">
+            <time>2025.10.03</time>
+            
+              <span class="post-category">現実論</span>
+            
+          </div>
+          <h2 class="post-title">謝らせる</h2>
+          <div class="post-excerpt">
+            <!-- excerpt（抜粋）からHTMLを除去して短く表示 -->
+            　ある人物がいる。ある要素を持った集団を抽象化した、架空の人間だ。
+
+          </div>
+          <span class="read-more">記事を読む →</span>
+        </a>
+      </article>
+    
+      <article class="post-card">
+        <a href="/fictions/2025/09/17/%E5%BE%A9%E8%AE%90/" class="post-card-link">
+          <div class="post-meta">
+            <time>2025.09.17</time>
+            
+              <span class="post-category">現実論</span>
+            
+          </div>
+          <h2 class="post-title">復讐</h2>
+          <div class="post-excerpt">
+            <!-- excerpt（抜粋）からHTMLを除去して短く表示 -->
+            　ある人物がいる。ある要素を持った集団を抽象化した、架空の人間だ。
+
+          </div>
+          <span class="read-more">記事を読む →</span>
+        </a>
+      </article>
+    
+      <article class="post-card">
+        <a href="/fictions/2025/09/05/%E8%81%9E%E3%81%8F%E5%8A%9B/" class="post-card-link">
+          <div class="post-meta">
+            <time>2025.09.05</time>
+            
+              <span class="post-category">現実論</span>
+            
+          </div>
+          <h2 class="post-title">聞く力</h2>
+          <div class="post-excerpt">
+            <!-- excerpt（抜粋）からHTMLを除去して短く表示 -->
+            　ある人物がいる。ある要素を持った集団を抽象化した、架空の人間だ。
+
+          </div>
+          <span class="read-more">記事を読む →</span>
+        </a>
+      </article>
+    
+      <article class="post-card">
+        <a href="/fictions/2025/08/30/%E6%B8%8B%E6%BB%9E/" class="post-card-link">
+          <div class="post-meta">
+            <time>2025.08.30</time>
+            
+              <span class="post-category">現実論</span>
+            
+          </div>
+          <h2 class="post-title">渋滞</h2>
+          <div class="post-excerpt">
+            <!-- excerpt（抜粋）からHTMLを除去して短く表示 -->
+            　ある人物がいる。ある要素を持った集団を抽象化した、架空の人間だ。
+
+          </div>
+          <span class="read-more">記事を読む →</span>
+        </a>
+      </article>
+    
+      <article class="post-card">
+        <a href="/fictions/2025/07/14/%E7%9B%B8%E8%B2%8C%E5%A4%B1%E8%AA%8D/" class="post-card-link">
+          <div class="post-meta">
+            <time>2025.07.14</time>
+            
+              <span class="post-category">現実論</span>
+            
+          </div>
+          <h2 class="post-title">相貌失認</h2>
+          <div class="post-excerpt">
+            <!-- excerpt（抜粋）からHTMLを除去して短く表示 -->
+            　ある人物がいる。ある要素を持った集団を抽象化した、架空の人間だ。
+
+          </div>
+          <span class="read-more">記事を読む →</span>
+        </a>
+      </article>
+    
+      <article class="post-card">
+        <a href="/fictions/2025/07/03/%E6%82%AA%E4%BB%A3%E5%AE%98/" class="post-card-link">
+          <div class="post-meta">
+            <time>2025.07.03</time>
+            
+              <span class="post-category">現実論</span>
+            
+          </div>
+          <h2 class="post-title">悪代官</h2>
+          <div class="post-excerpt">
+            <!-- excerpt（抜粋）からHTMLを除去して短く表示 -->
+            　ある人物がいる。ある要素を持った集団を抽象化した、架空の人間だ。
+
+          </div>
+          <span class="read-more">記事を読む →</span>
+        </a>
+      </article>
+    
+      <article class="post-card">
+        <a href="/fictions/2025/06/01/%E8%A8%80%E8%AA%9E%E5%8C%96%E3%81%AE%E4%B8%8B%E6%89%8B%E3%81%AA%E4%BA%BA/" class="post-card-link">
+          <div class="post-meta">
+            <time>2025.06.01</time>
+            
+              <span class="post-category">現実論</span>
+            
+          </div>
+          <h2 class="post-title">言語化の下手な人</h2>
+          <div class="post-excerpt">
+            <!-- excerpt（抜粋）からHTMLを除去して短く表示 -->
+            　ある人物がいる。ある要素を持った集団を抽象化した、架空の人間だ。
+
+          </div>
+          <span class="read-more">記事を読む →</span>
+        </a>
+      </article>
+    
+      <article class="post-card">
+        <a href="/fictions/2025/05/12/%E6%88%90%E6%95%97%E3%81%97%E3%81%9F%E3%81%84/" class="post-card-link">
+          <div class="post-meta">
+            <time>2025.05.12</time>
+            
+              <span class="post-category">現実論</span>
+            
+          </div>
+          <h2 class="post-title">成敗したい</h2>
+          <div class="post-excerpt">
+            <!-- excerpt（抜粋）からHTMLを除去して短く表示 -->
+            　ある人物がいる。ある要素を持った集団を抽象化した、架空の人間だ。
+
+          </div>
+          <span class="read-more">記事を読む →</span>
+        </a>
+      </article>
+    
+      <article class="post-card">
+        <a href="/fictions/2025/04/04/%E7%89%B9%E5%88%A5%E3%81%AA%E6%84%9F%E6%80%A7/" class="post-card-link">
+          <div class="post-meta">
+            <time>2025.04.04</time>
+            
+              <span class="post-category">現実論</span>
+            
+          </div>
+          <h2 class="post-title">特別な感性</h2>
+          <div class="post-excerpt">
+            <!-- excerpt（抜粋）からHTMLを除去して短く表示 -->
+            　ある人物がいる。ある要素を持った集団を抽象化した、架空の人間だ。
+
+          </div>
+          <span class="read-more">記事を読む →</span>
+        </a>
+      </article>
+    
+  </div>
+</div>
+  </body>
+</html>

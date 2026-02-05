@@ -1,0 +1,657 @@
+<!doctype html>
+<html>
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E4NPYH1T62"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E4NPYH1T62');
+</script>
+    <meta charset="utf-8">
+    <title>Kassjen Puzzle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://kxnilqrecy.github.io/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link type="application/atom+xml" rel="alternate" href="https://kxnilqrecy.github.io/feed.xml" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Kassjen Puzzle</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Kassjen Puzzle" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="🎮 ゲーム Kassjen Puzzle" />
+<meta property="og:description" content="🎮 ゲーム Kassjen Puzzle" />
+<link rel="canonical" href="https://kxnilqrecy.github.io/boxes/kassjen.html" />
+<meta property="og:url" content="https://kxnilqrecy.github.io/boxes/kassjen.html" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-02-05T16:12:59+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Kassjen Puzzle" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-02-05T16:12:59+09:00","datePublished":"2026-02-05T16:12:59+09:00","description":"🎮 ゲーム Kassjen Puzzle","headline":"Kassjen Puzzle","mainEntityOfPage":{"@type":"WebPage","@id":"https://kxnilqrecy.github.io/boxes/kassjen.html"},"url":"https://kxnilqrecy.github.io/boxes/kassjen.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="google-site-verification" content="1XS-_jxYV-ZnPNosmqWTDri7p8729Qo40Ylm4px0YWA" />
+  </head>
+  <body>
+    <div class="clock">
+    <div id="clock2">ここに長期暦を表示</div>
+    <div id="clock">ここに暦を表示</div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    fetch('https://kxnilqrecy.github.io/assets/csv/jungo.csv')
+        .then(response => response.text())
+        .then(data => parseCSV(data));
+});
+function decToBase62(num_){
+  if (num_ === null) return void 0;
+  let num = Number(num_);
+  if (isNaN(num)) return void 0;
+  if (Math.floor(num) !== num) return void 0;
+  
+  let is_negative = num < 0;
+  num = Math.abs(num);
+  
+  let ret = "", digit = 0;
+  while(true){
+    digit = num % 62;
+    if (digit < 10)
+      ret+=String(digit); //0-9
+    else if (digit < 36)
+      ret+=String.fromCharCode(digit + 55); //A-Z
+    else
+      ret+=String.fromCharCode(digit + 61); //a-z
+    if (num < 62)
+      break;
+    else
+      num = Math.floor(num / 62);
+  }
+  if (is_negative) ret+="-";
+  return ret.split("").reverse().join("");
+}
+function parseCSV(data) {
+    const jungos = data.split('\n');
+    const lpmark = ['🌑', '🌒', '🌓', '🌔', '🌕', '🌖', '🌗', '🌘', '🌑'];
+    let nowdate = new Date();
+    const epochdate = new Date(2019, 4, 1, 18);
+    let deltadate = (nowdate.getTime() - epochdate.getTime()) / 1000 / 86400;
+    let day = Math.floor(deltadate);
+    let time = (deltadate - day);
+    let hisuiepoch = new Date(2005, 7, 15);
+    let hisuinum = Math.floor((nowdate.getTime() - hisuiepoch.getTime()) / 86400000);
+    let nowjungo = jungos[day];
+    let koku = Math.floor((time * 96) * 10) / 10;
+    const lunarepoch = new Date(2019, 4, 5, 7, 45);
+    let lunardelta = (nowdate.getTime() - lunarepoch.getTime()) / 1000 / 86400;
+    let lp = Math.floor((lunardelta - Math.floor(lunardelta / 29.530582990) * 29.530582990) * 10) / 10;
+    let lpmknum = Math.floor((lunardelta - Math.floor(lunardelta / 29.530582990) * 29.530582990) / 29.530582990 * 8 + 0.5);
+    let mk = lpmark[lpmknum];
+    const xqepoch = new Date(2018, 8, 23, 10, 54);
+    let xqdelta = (nowdate.getTime() - xqepoch.getTime()) / 1000 / 86400;
+    let xq = Math.floor(Math.ceil(xqdelta / 365.242050827423) * 365.242050827423 - xqdelta);
+    const qiepoch = new Date(2005, 8, 23, 7, 23);
+    let qidelta = (nowdate.getTime() - qiepoch.getTime()) / 1000 / 86400;
+    let qi = Math.floor(qidelta / 52.177435832489);
+    document.getElementById('clock').textContent = `Xq${xq}Lp${lp}${mk}/${nowjungo}(第${qi}期):&${hisuinum}-${koku}刻`;
+    const longepoch = new Date(-5513, 8, 26);
+    let longdelta = nowdate.getTime() - longepoch.getTime();
+    let long1 = ('0000' + decToBase62(longdelta % 14776334)).slice(-4);
+    let long2 = ('0000' + decToBase62(longdelta % 14776331)).slice(-4);
+    let long3 = ('0000' + decToBase62(longdelta % 14776329)).slice(-4);
+    let long4 = ('0000' + decToBase62(longdelta % 14776327)).slice(-4);
+    document.getElementById('clock2').textContent = `${long1}.${long2}.${long3}.${long4}`;
+}
+    </script>
+</div>
+    <div class="post-container tool-page">
+  <header class="post-header">
+    <div class="parent-link-wrapper">
+       <span class="parent-category-label">🎮 ゲーム</span>
+    </div>
+    <h1 class="post-full-title">Kassjen Puzzle</h1>
+    <div class="post-title-separator"></div>
+  </header>
+
+  <div class="game-wrapper">
+    <!-- UIパネル：文字数カウンター風のステータス表示 -->
+    <div class="game-ui-panel">
+      <div class="stat-box">
+        <span class="stat-label">現在のフェーズ</span>
+        <span id="phase-label" class="stat-number-small">配置</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">スコア</span>
+        <span id="score-label" class="stat-number-small">0</span>
+      </div>
+      <div class="stat-box next-piece-box">
+        <span class="stat-label">次の駒</span>
+        <div id="next-piece-display">
+          <div id="next-piece-preview" class="piece-icon-lg">?</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 操作ボタン -->
+    <div class="game-actions">
+      <button id="btn-action" class="tool-button action-btn">出陣する</button>
+      <button id="btn-retreat" class="tool-button retreat-btn" disabled>撤退する</button>
+    </div>
+
+    <!-- ゲーム盤：スマホでは横スクロール可能に -->
+    <div class="canvas-scroll-container">
+      <div id="game-container">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+      </div>
+    </div>
+
+    <!-- 凡例エリア -->
+    <section class="game-legend-section">
+      <h2 class="legend-title">駒の種類と動き</h2>
+      <div class="legend-grid">
+        <div class="legend-card">
+          <div class="piece-icon-lg pc-60">V</div>
+          <div class="legend-text">
+            <span class="legend-name">60° (鋭角)</span>
+            <p>来た方向へ戻るように曲がる</p>
+          </div>
+        </div>
+        <div class="legend-card">
+          <div class="piece-icon-lg pc-120">Y</div>
+          <div class="legend-text">
+            <span class="legend-name">120° (広角)</span>
+            <p>進行方向へ広がるように曲がる</p>
+          </div>
+        </div>
+        <div class="legend-card">
+          <div class="piece-icon-lg pc-180">I</div>
+          <div class="legend-text">
+            <span class="legend-name">180° (直線)</span>
+            <p>そのまま直進、または真後ろに戻る</p>
+          </div>
+        </div>
+        <div class="legend-card">
+          <div class="piece-icon-lg pc-all">*</div>
+          <div class="legend-text">
+            <span class="legend-name">万能</span>
+            <p>隣接するどのマスへも移動可能</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 遊び方ガイド -->
+    <div class="how-to-play">
+      <h3>遊び方</h3>
+      <ol>
+        <li><strong>配置：</strong> NEXTの駒を空きマスに配置します。</li>
+        <li><strong>出陣：</strong> ボタンを押し、将軍（赤丸）を動かします。</li>
+        <li><strong>移動：</strong> 光るマスをクリックして進み、対岸の陣地を目指します。</li>
+      </ol>
+      <p class="notice">※撤退すると最初からやり直しになります。</p>
+    </div>
+  </div>
+
+  <footer class="post-footer">
+    <a href="/" class="back-button"><span>ホームへ戻る</span></a>
+  </footer>
+</div>
+
+<script>
+// --- 以下の定数が不足していたため追加しました ---
+const HEX_SIZE = 28;      // 六角形のサイズ
+const BOARD_RADIUS = 5;   // 盤面の広さ
+const CANVAS_WIDTH = 800; // キャンバスの幅
+const CANVAS_HEIGHT = 600;// キャンバスの高さ
+
+const COLORS = {
+    BG: '#ffffff',
+    GRID: '#eef6fc',     // 薄い青のグリッド
+    BASE_LEFT: '#fff9c4', // 薄い黄色
+    BASE_RIGHT: '#fff9c4',
+    HIGHLIGHT: 'rgba(93, 169, 233, 0.3)', // 青いハイライト
+    SHOGUN: '#ef5350',
+    PIECE_60: '#ab47bc',
+    PIECE_120: '#42a5f5',
+    PIECE_180: '#66bb6a',
+    PIECE_ALL: '#ffca28',
+    TEXT: '#333'
+};
+
+const PIECE_TYPES = ['60°', '120°', '180°', '万能'];
+
+/**
+ * ユーティリティ：キューブ座標系
+ */
+class Hex {
+    constructor(q, r, s) {
+        this.q = q;
+        this.r = r;
+        this.s = s;
+    }
+
+    equals(other) {
+        return this.q === other.q && this.r === other.r && this.s === other.s;
+    }
+
+    add(other) {
+        return new Hex(this.q + other.q, this.r + other.r, this.s + other.s);
+    }
+
+    subtract(other) {
+        return new Hex(this.q - other.q, this.r - other.r, this.s - other.s);
+    }
+
+    static direction(directionIndex) {
+        const directions = [
+            new Hex(1, 0, -1), new Hex(1, -1, 0), new Hex(0, -1, 1),
+            new Hex(-1, 0, 1), new Hex(-1, 1, 0), new Hex(0, 1, -1)
+        ];
+        return directions[(directionIndex + 6) % 6];
+    }
+
+    neighbor(directionIndex) {
+        return this.add(Hex.direction(directionIndex));
+    }
+    
+    toString() {
+        return `${this.q},${this.r},${this.s}`;
+    }
+}
+
+/**
+ * ゲームロジック
+ */
+class Game {
+    constructor(canvasId) {
+        this.canvas = document.getElementById(canvasId);
+        if (!this.canvas) return; // キャンバスがない場合は中断
+        this.ctx = this.canvas.getContext('2d');
+        
+        // 状態管理
+        this.phase = 'PLACEMENT'; 
+        this.grid = new Map(); 
+        this.score = 0;
+        
+        // 将軍の情報
+        this.shogunPos = null;
+        this.shogunStartPos = null; 
+        this.startSide = 'LEFT'; 
+        this.path = []; 
+        
+        // 陣地
+        this.baseLeft = new Hex(-5, 0, 5); 
+        this.baseRight = new Hex(5, 0, -5); 
+        
+        // 次に置く駒
+        this.nextPieceType = this.randomPiece();
+        this.placedCountInTurn = 0; 
+
+        this.initBoard();
+        this.resetShogunToLeft();
+        
+        // イベントリスナ
+        this.canvas.addEventListener('mousedown', (e) => this.handleClick(e));
+        this.updateUI();
+        this.loop();
+    }
+
+    initBoard() {
+        for (let q = -BOARD_RADIUS; q <= BOARD_RADIUS; q++) {
+            let r1 = Math.max(-BOARD_RADIUS, -q - BOARD_RADIUS);
+            let r2 = Math.min(BOARD_RADIUS, -q + BOARD_RADIUS);
+            for (let r = r1; r <= r2; r++) {
+                let s = -q - r;
+                let hex = new Hex(q, r, s);
+                this.grid.set(hex.toString(), { type: null, hex: hex });
+            }
+        }
+    }
+
+    resetShogunToLeft() {
+        this.shogunPos = this.baseLeft;
+        this.shogunStartPos = this.baseLeft;
+        this.startSide = 'LEFT';
+        this.path = [];
+        this.placedCountInTurn = 0;
+    }
+
+    randomPiece() {
+        return PIECE_TYPES[Math.floor(Math.random() * PIECE_TYPES.length)];
+    }
+
+    getPieceSymbol(type) {
+        switch(type) {
+            case '60°': return 'V';
+            case '120°': return 'Y';
+            case '180°': return 'I';
+            case '万能': return '*';
+            default: return '?';
+        }
+    }
+
+    hexToPixel(hex) {
+        const x = HEX_SIZE * (Math.sqrt(3) * hex.q + Math.sqrt(3)/2 * hex.r);
+        const y = HEX_SIZE * (3/2 * hex.r);
+        return { 
+            x: x + CANVAS_WIDTH / 2, 
+            y: y + CANVAS_HEIGHT / 2 
+        };
+    }
+
+    pixelToHex(x, y) {
+        x -= CANVAS_WIDTH / 2;
+        y -= CANVAS_HEIGHT / 2;
+        const q = (Math.sqrt(3)/3 * x - 1/3 * y) / HEX_SIZE;
+        const r = (2/3 * y) / HEX_SIZE;
+        return this.cubeRound(q, r, -q-r);
+    }
+
+    cubeRound(fracQ, fracR, fracS) {
+        let q = Math.round(fracQ);
+        let r = Math.round(fracR);
+        let s = Math.round(fracS);
+        const q_diff = Math.abs(q - fracQ);
+        const r_diff = Math.abs(r - fracR);
+        const s_diff = Math.abs(s - fracS);
+
+        if (q_diff > r_diff && q_diff > s_diff) {
+            q = -r - s;
+        } else if (r_diff > s_diff) {
+            r = -q - s;
+        } else {
+            s = -q - r;
+        }
+        return new Hex(q, r, s);
+    }
+
+    loop() {
+        this.draw();
+        requestAnimationFrame(() => this.loop());
+    }
+
+    draw() {
+        this.ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+
+        this.grid.forEach((cell, key) => {
+            const pos = this.hexToPixel(cell.hex);
+            this.drawHex(pos.x, pos.y, COLORS.GRID, false);
+            if (cell.hex.equals(this.baseLeft)) this.drawHex(pos.x, pos.y, COLORS.BASE_LEFT, true);
+            if (cell.hex.equals(this.baseRight)) this.drawHex(pos.x, pos.y, COLORS.BASE_RIGHT, true);
+            if (cell.type) this.drawPiece(pos.x, pos.y, cell.type);
+        });
+
+        if (this.phase === 'MOVEMENT') {
+            const validMoves = this.getValidMoves();
+            validMoves.forEach(hex => {
+                const pos = this.hexToPixel(hex);
+                this.drawHex(pos.x, pos.y, COLORS.HIGHLIGHT, true);
+            });
+        }
+
+        const sPos = this.hexToPixel(this.shogunPos);
+        this.drawShogun(sPos.x, sPos.y);
+    }
+
+    drawHex(x, y, color, fill) {
+        this.ctx.beginPath();
+        for (let i = 0; i < 6; i++) {
+            const angle_deg = 60 * i - 30;
+            const angle_rad = Math.PI / 180 * angle_deg;
+            const px = x + HEX_SIZE * Math.cos(angle_rad);
+            const py = y + HEX_SIZE * Math.sin(angle_rad);
+            if (i === 0) this.ctx.moveTo(px, py);
+            else this.ctx.lineTo(px, py);
+        }
+        this.ctx.closePath();
+        if (fill) {
+            this.ctx.fillStyle = color;
+            this.ctx.fill();
+        } else {
+            this.ctx.strokeStyle = color;
+            this.ctx.stroke();
+        }
+    }
+
+    drawPiece(x, y, type) {
+        let color = '#000';
+        switch(type) {
+            case '60°': color = COLORS.PIECE_60; break;
+            case '120°': color = COLORS.PIECE_120; break;
+            case '180°': color = COLORS.PIECE_180; break;
+            case '万能': color = COLORS.PIECE_ALL; break;
+        }
+        const symbol = this.getPieceSymbol(type);
+        this.ctx.beginPath();
+        this.ctx.arc(x, y, HEX_SIZE * 0.7, 0, Math.PI * 2);
+        this.ctx.fillStyle = color;
+        this.ctx.fill();
+        this.ctx.fillStyle = '#fff';
+        this.ctx.font = 'bold 16px Arial';
+        this.ctx.textAlign = 'center';
+        this.ctx.textBaseline = 'middle';
+        this.ctx.fillText(symbol, x, y);
+    }
+
+    drawShogun(x, y) {
+        this.ctx.beginPath();
+        this.ctx.arc(x, y, HEX_SIZE * 0.5, 0, Math.PI * 2);
+        this.ctx.fillStyle = COLORS.SHOGUN;
+        this.ctx.fill();
+        this.ctx.lineWidth = 2;
+        this.ctx.strokeStyle = '#fff';
+        this.ctx.stroke();
+        this.ctx.fillStyle = '#fff';
+        this.ctx.font = 'bold 12px Arial';
+        this.ctx.textAlign = 'center';
+        this.ctx.textBaseline = 'middle';
+        this.ctx.fillText('将', x, y);
+    }
+
+    handleClick(e) {
+        const rect = this.canvas.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const clickedHex = this.pixelToHex(x, y);
+        const key = clickedHex.toString();
+        if (!this.grid.has(key)) return;
+        if (this.phase === 'PLACEMENT') {
+            this.handlePlacementClick(clickedHex, key);
+        } else if (this.phase === 'MOVEMENT') {
+            this.handleMovementClick(clickedHex);
+        }
+    }
+
+    handlePlacementClick(hex, key) {
+        if (hex.equals(this.baseLeft) || hex.equals(this.baseRight)) return;
+        const cell = this.grid.get(key);
+        if (cell.type === null) {
+            cell.type = this.nextPieceType;
+            this.nextPieceType = this.randomPiece();
+            this.placedCountInTurn++;
+            this.checkGameOver();
+            this.updateUI();
+        }
+    }
+
+    handleMovementClick(hex) {
+        const validMoves = this.getValidMoves();
+        const canMove = validMoves.some(m => m.equals(hex));
+        if (canMove) {
+            this.path.push(hex);
+            this.shogunPos = hex;
+            const target = (this.startSide === 'LEFT') ? this.baseRight : this.baseLeft;
+            if (hex.equals(target)) {
+                this.handleGoal();
+            } else {
+                this.updateUI();
+            }
+        }
+    }
+
+    handleGoal() {
+        const uniqueHexes = new Set();
+        this.path.forEach(h => {
+            if (!h.equals(this.baseLeft) && !h.equals(this.baseRight)) {
+                uniqueHexes.add(h.toString());
+            }
+        });
+        const points = uniqueHexes.size * 100;
+        this.score += points;
+        setTimeout(() => {
+            alert(`対岸に到達！ ${uniqueHexes.size}個の駒を回収し、${points}点獲得しました。`);
+            uniqueHexes.forEach(key => {
+                const cell = this.grid.get(key);
+                if (cell) cell.type = null;
+            });
+            this.startSide = (this.startSide === 'LEFT') ? 'RIGHT' : 'LEFT';
+            this.shogunStartPos = this.shogunPos;
+            this.path = [];
+            this.placedCountInTurn = 0;
+            this.phase = 'PLACEMENT';
+            this.updateUI();
+        }, 50);
+    }
+
+    getValidMoves() {
+        const moves = [];
+        const currentHex = this.shogunPos;
+        const isAtBase = currentHex.equals(this.baseLeft) || currentHex.equals(this.baseRight);
+        if (isAtBase) {
+            for (let i = 0; i < 6; i++) {
+                const neighbor = currentHex.neighbor(i);
+                const key = neighbor.toString();
+                if (this.grid.has(key)) {
+                    if (this.grid.get(key).type !== null) {
+                        moves.push(neighbor);
+                    }
+                }
+            }
+            return moves;
+        }
+        let prevHex = this.shogunStartPos;
+        if (this.path.length > 1) {
+            prevHex = this.path[this.path.length - 2];
+        } else if (this.path.length === 1) {
+            prevHex = this.shogunStartPos;
+        }
+        const entryVec = currentHex.subtract(prevHex);
+        let entryDir = -1;
+        for(let i=0; i<6; i++) {
+            if (Hex.direction(i).equals(entryVec)) {
+                entryDir = i;
+                break;
+            }
+        }
+        if (entryDir === -1) return [];
+        const currentCell = this.grid.get(currentHex.toString());
+        if (!currentCell || !currentCell.type) return [];
+        const type = currentCell.type;
+        const validDirs = [];
+        if (type === '180°') {
+            validDirs.push(entryDir); 
+            validDirs.push((entryDir + 3) % 6);
+        } else if (type === '120°') {
+            validDirs.push((entryDir + 1) % 6);
+            validDirs.push((entryDir + 5) % 6);
+        } else if (type === '60°') {
+            validDirs.push((entryDir + 2) % 6);
+            validDirs.push((entryDir + 4) % 6);
+        } else if (type === '万能') {
+            for(let i=0; i<6; i++) validDirs.push(i);
+        }
+        validDirs.forEach(d => {
+            const targetHex = currentHex.neighbor(d);
+            const key = targetHex.toString();
+            if (this.grid.has(key)) {
+                const targetCell = this.grid.get(key);
+                const isGoal = (this.startSide === 'LEFT' && targetHex.equals(this.baseRight)) ||
+                               (this.startSide === 'RIGHT' && targetHex.equals(this.baseLeft));
+                if (targetCell.type !== null || isGoal) {
+                    moves.push(targetHex);
+                }
+            }
+        });
+        return moves;
+    }
+
+    checkGameOver() {
+        let emptyCount = 0;
+        this.grid.forEach((cell) => {
+            if (!cell.hex.equals(this.baseLeft) && !cell.hex.equals(this.baseRight) && cell.type === null) {
+                emptyCount++;
+            }
+        });
+        if (emptyCount === 0) {
+            setTimeout(() => alert("配置できるマスがなくなりました。ゲームオーバー！"), 100);
+            this.phase = 'GAMEOVER';
+        }
+    }
+
+    startMovement() {
+        if (this.phase !== 'PLACEMENT') return;
+        this.phase = 'MOVEMENT';
+        this.updateUI();
+    }
+
+    retreat() {
+        if (this.phase !== 'MOVEMENT') return;
+        this.shogunPos = this.shogunStartPos;
+        this.path = [];
+        this.phase = 'PLACEMENT';
+        this.placedCountInTurn = 0; 
+        this.updateUI();
+    }
+
+    updateUI() {
+        document.getElementById('phase-label').innerText = (this.phase === 'PLACEMENT') ? '配置' : '移動';
+        document.getElementById('score-label').innerText = this.score;
+        const nextPieceDiv = document.getElementById('next-piece-preview');
+        const symbol = this.phase === 'PLACEMENT' ? this.getPieceSymbol(this.nextPieceType) : '-';
+        nextPieceDiv.innerText = symbol;
+        let color = '#ccc';
+        let className = 'piece-icon-lg';
+        if (this.phase === 'PLACEMENT') {
+             switch(this.nextPieceType) {
+                case '60°': color = COLORS.PIECE_60; className += ' pc-60'; break;
+                case '120°': color = COLORS.PIECE_120; className += ' pc-120'; break;
+                case '180°': color = COLORS.PIECE_180; className += ' pc-180'; break;
+                case '万能': color = COLORS.PIECE_ALL; className += ' pc-all'; break;
+            }
+        }
+        nextPieceDiv.className = className;
+        nextPieceDiv.style.backgroundColor = color;
+        const btnAction = document.getElementById('btn-action');
+        const btnRetreat = document.getElementById('btn-retreat');
+        if (this.phase === 'PLACEMENT') {
+            btnRetreat.disabled = true;
+            btnAction.disabled = false;
+        } else {
+            btnAction.disabled = true;
+            btnRetreat.disabled = false;
+        }
+    }
+}
+
+// 起動
+window.onload = () => {
+    const game = new Game('gameCanvas');
+    document.getElementById('btn-action').onclick = () => {
+        game.startMovement();
+    };
+    document.getElementById('btn-retreat').onclick = () => {
+        game.retreat();
+        document.getElementById('btn-action').disabled = false;
+    };
+    const originalHandlePlacement = game.handlePlacementClick.bind(game);
+    game.handlePlacementClick = (hex, key) => {
+        originalHandlePlacement(hex, key);
+        document.getElementById('btn-action').disabled = false;
+    };
+};
+</script>
+  </body>
+</html>

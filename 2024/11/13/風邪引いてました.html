@@ -38,7 +38,7 @@
 
     <meta name="google-site-verification" content="1XS-_jxYV-ZnPNosmqWTDri7p8729Qo40Ylm4px0YWA" />
   </head>
-  <body class="c7">
+  <body>
     <div class="clock">
     <div id="clock2">ここに長期暦を表示</div>
     <div id="clock">ここに暦を表示</div>
@@ -108,17 +108,31 @@ function parseCSV(data) {
 }
     </script>
 </div>
-    <h1 class="c1">風邪引いてました。</h1>
+    <article class="post-container">
+  <!-- 記事ヘッダー -->
+  <header class="post-header">
+    <div class="post-meta-top">
+      <time class="post-date">2024年11月13日</time>
+      
+      
+      
+        <span class="post-author">
+          <a href="/authors/ina.html">
+            <i class="author-icon">👤</i> 伊那すいう
+          </a>
+        </span>
+      
+    </div>
+    
+    <h1 class="post-full-title">風邪引いてました。</h1>
+    
+    <!-- 飾り線 -->
+    <div class="post-title-separator"></div>
+  </header>
 
-<p>
-  13 Nov 2024
-  
-  
-    - <a href="/authors/ina.html">伊那すいう</a>
-  
-</p>
-
-<p>　手足口病に罹って長期休養していました。伊那すいうです。</p>
+  <!-- 記事本文 -->
+  <div class="post-main-content">
+    <p>　手足口病に罹って長期休養していました。伊那すいうです。</p>
 
 <p>　いや、感染症自体は一週間前に治っていたのですが、これ以外にもブログが更新できなかった理由がありまして。</p>
 
@@ -140,27 +154,14 @@ function parseCSV(data) {
 
 <p>　今回はそんな言い訳の回でした。公開アーカイブに意味が出るようになったらまた更新することになると思います。では。</p>
 
-    <hr>
-    <nav>
-    <div class="center">サイトナビゲーション<br>
-    
-      <a href="/" >Home</a>
-    
-      <a href="/subcontents/blog.html" >「久入すいう」のブログ</a>
-    
-      <a href="/subcontents/ytigeets.html" >ユーティゲート測候所</a>
-    
-      <a href="/subcontents/pseudrences.html" >夢似科学研究所</a>
-    
-      <a href="/subcontents/tankas.html" >千翠れいしの短歌集</a>
-    
-      <a href="/subcontents/conlangs.html" >久入言語研究室</a>
-    
-      <a href="/subcontents/staff.html" >構成員</a>
-    
-      <a href="/about.html" >恵生ニルクレシィについて</a>
-    
-    </div>
-</nav>
+  </div>
+
+  <!-- 記事フッター（戻るボタンなど） -->
+  <footer class="post-footer">
+    <a href="javascript:history.back()" class="back-button">
+      <span>← 前の画面に戻る</span>
+    </a>
+  </footer>
+</article>
   </body>
 </html>

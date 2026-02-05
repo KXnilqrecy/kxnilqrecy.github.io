@@ -38,7 +38,7 @@
 
     <meta name="google-site-verification" content="1XS-_jxYV-ZnPNosmqWTDri7p8729Qo40Ylm4px0YWA" />
   </head>
-  <body class="c7">
+  <body>
     <div class="clock">
     <div id="clock2">ここに長期暦を表示</div>
     <div id="clock">ここに暦を表示</div>
@@ -108,17 +108,31 @@ function parseCSV(data) {
 }
     </script>
 </div>
-    <h1 class="c1">カレンダー機能の追加</h1>
+    <article class="post-container">
+  <!-- 記事ヘッダー -->
+  <header class="post-header">
+    <div class="post-meta-top">
+      <time class="post-date">2024年09月14日</time>
+      
+      
+      
+        <span class="post-author">
+          <a href="/authors/hasuma.html">
+            <i class="author-icon">👤</i> 蓮間ひさと
+          </a>
+        </span>
+      
+    </div>
+    
+    <h1 class="post-full-title">カレンダー機能の追加</h1>
+    
+    <!-- 飾り線 -->
+    <div class="post-title-separator"></div>
+  </header>
 
-<p>
-  14 Sep 2024
-  
-  
-    - <a href="/authors/hasuma.html">蓮間ひさと</a>
-  
-</p>
-
-<p>　プログラミング担当の蓮間ひさとです。恵生ニルクレシィのサイトにカレンダー機能を追加しました。</p>
+  <!-- 記事本文 -->
+  <div class="post-main-content">
+    <p>　プログラミング担当の蓮間ひさとです。恵生ニルクレシィのサイトにカレンダー機能を追加しました。</p>
 
 <p>　このブログが公開されて、あなたがここを読んでいる頃には既に見えていると思いますが、サイト最上部に「旬号暦」を表示するようにしました。</p>
 
@@ -136,27 +150,14 @@ function parseCSV(data) {
 
 <p>　追記：パスの指定法に問題があって一部ページで旬号暦が正しく表示されていませんでした。一応の修正はしましたが、もしサイトの一番上の赤いところにundefinedと書いてあるのを見たら、久入の誰かに伝えてください。</p>
 
-    <hr>
-    <nav>
-    <div class="center">サイトナビゲーション<br>
-    
-      <a href="/" >Home</a>
-    
-      <a href="/subcontents/blog.html" >「久入すいう」のブログ</a>
-    
-      <a href="/subcontents/ytigeets.html" >ユーティゲート測候所</a>
-    
-      <a href="/subcontents/pseudrences.html" >夢似科学研究所</a>
-    
-      <a href="/subcontents/tankas.html" >千翠れいしの短歌集</a>
-    
-      <a href="/subcontents/conlangs.html" >久入言語研究室</a>
-    
-      <a href="/subcontents/staff.html" >構成員</a>
-    
-      <a href="/about.html" >恵生ニルクレシィについて</a>
-    
-    </div>
-</nav>
+  </div>
+
+  <!-- 記事フッター（戻るボタンなど） -->
+  <footer class="post-footer">
+    <a href="javascript:history.back()" class="back-button">
+      <span>← 前の画面に戻る</span>
+    </a>
+  </footer>
+</article>
   </body>
 </html>

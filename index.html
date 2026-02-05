@@ -34,7 +34,7 @@
 
     <meta name="google-site-verification" content="1XS-_jxYV-ZnPNosmqWTDri7p8729Qo40Ylm4px0YWA" />
   </head>
-  <body class="c7">
+  <body>
     <div class="clock">
     <div id="clock2">ここに長期暦を表示</div>
     <div id="clock">ここに暦を表示</div>
@@ -104,74 +104,95 @@ function parseCSV(data) {
 }
     </script>
 </div>
-    <h1 class="c1">恵生ニルクレシィ(KXnilqrecy)へようこそ</h1>
-<div class="c2"><h2 class="de_h2">久入すいうについて</h2>
-<h3 class="de_h3">このサイト(恵生ニルクレシィ)の管理人であり、「伊那すいう」はじめ数名の共同名義。<br>
-特に明示しない限り、管理人＝伊那すいうです。</h3></div>
-<div class="c3"><h2 class="de_h2">恵生ニルクレシィについて</h2>
-<h3 class="de_h3">「久入すいう」名義で作成された、<br>
-・人工言語群について<br>
-・人工言語と特に関係のない架空世界群について<br>
-・「夢似科学(むじかがく|Pseudrence)」という名の個人哲学<br>
-・恵生ニルクレシィ構成員の日記<br>
-・その他雑多な文章<br>
-また、「千翠れいし」名義で作成された、<br>
-・短歌<br>
-・その自分なりの解釈<br>
-が置いてあります。<br></h3></div>
-<div class="c4"><h2 class="de_h2">コンテンツ</h2>
-<h3 class="de_h3">
-  
-  ・ <a href="/subcontents/blog.html">「久入すいう」のブログ</a><br>
-  
-  ・ <a href="/subcontents/conlangs.html">久入言語研究室</a><br>
-  
-  ・ <a href="/subcontents/counter.html">文字数カウンター</a><br>
-  
-  ・ <a href="/subcontents/pseudrences.html">夢似科学研究所</a><br>
-  
-  ・ <a href="/subcontents/staff.html">構成員</a><br>
-  
-  ・ <a href="/subcontents/tankas.html">叶わじの彼岸花</a><br>
-  
-  ・ <a href="/subcontents/utils.html">でたらめ短歌</a><br>
-  
-  ・ <a href="/subcontents/ytigeets.html">ユーティゲート測候所</a><br>
-  
-(この一覧は自動で生成されています)
-</h3></div>
-<div class="c5"><h2 class="de_h2">連絡先</h2>
-<h3 class="de_h3">X(旧:Twitter):<a href="https://x.com/kuilusuiu">@KuiluSuiu</a> もしくは <a href="https://x.com/qidrilexi">@QidriLexi</a><br>
-Bluesky:<a href="https://bsky.app/profile/kuilusuiu.bsky.social">@KuiluSuiu.bsky.social</a><br>
-Misskey.io:<a href="https://misskey.io/kuilusuiu">@KuiluSuiu@misskey.io</a><br>
-mstdn.jp:<a href="https://mstdn.jp/@kuilusuiu">@KuiluSuiu@mstdn.jp</a><br>
-(上にあるほど確認頻度が高いです)
-</h3></div>
-<div class="c6"><h2 class="de_h2">相互リンク</h2>
-<h3 class="de_h3">今はまだ空っぽです。。<br>
-恵生ニルクレシィは相互リンクを募集しています。連絡は上記の連絡先まで。</h3>
-</div>
-    <hr>
-    <nav>
-    <div class="center">サイトナビゲーション<br>
-    
-      <a href="/" class="current">Home</a>
-    
-      <a href="/subcontents/blog.html" >「久入すいう」のブログ</a>
-    
-      <a href="/subcontents/ytigeets.html" >ユーティゲート測候所</a>
-    
-      <a href="/subcontents/pseudrences.html" >夢似科学研究所</a>
-    
-      <a href="/subcontents/tankas.html" >千翠れいしの短歌集</a>
-    
-      <a href="/subcontents/conlangs.html" >久入言語研究室</a>
-    
-      <a href="/subcontents/staff.html" >構成員</a>
-    
-      <a href="/about.html" >恵生ニルクレシィについて</a>
-    
+    <div class="main-container">
+  <!-- 自己紹介セクション -->
+  <section class="profile-section">
+    <div class="profile-card">
+      <img src="assets/images/favicon.png" alt="プロフィール画像" class="avatar">
+      <h2>久入綏雨について</h2>
+      <p>このサイト(恵生ニルクレシィ)の管理人であり、「伊那すいう」はじめ数名の共同名義。<br>特に明示しない限り、管理人＝伊那すいうです。</p>
     </div>
-</nav>
+  </section>
+
+  <!-- サイトの説明セクション -->
+  <section class="description-section">
+    <h2>恵生ニルクレシィについて</h2>
+    <p>主に「久入綏雨」名義で作成された、<br>・架空世界の設定集や作品群<br>・「夢似科学(むじかがく|Pseudrence)」という名の個人哲学<br>・恵生ニルクレシィ構成員の日記<br>・その他雑多な文章<br>また、「千翠伶枝」名義で作成された短歌が置いてあります。</p>
+  </section>
+
+  <!-- コンテンツ一覧セクション -->
+  <section class="contents-section">
+    <h2>コンテンツ一覧</h2>
+    <div class="contents-grid">
+      <!-- ボタン14個（リンク先と名前を書き換えてください） -->
+      
+      <a href="/subcontents/blog.html" class="content-button">
+        <span class="button-icon">📖</span>
+        <span class="button-text">久入綏雨供之日記抄本</span>
+      </a>
+      
+      <a href="/subcontents/ytigeets.html" class="content-button">
+        <span class="button-icon">🪶</span>
+        <span class="button-text">ユーティゲート測候所</span>
+      </a>
+      
+      <a href="/subcontents/crystals.html" class="content-button">
+        <span class="button-icon">🔮</span>
+        <span class="button-text">析出世界</span>
+      </a>
+      
+      <a href="/subcontents/pseudrences.html" class="content-button">
+        <span class="button-icon">⚗️</span>
+        <span class="button-text">夢似科学理論研究所(LoPT)</span>
+      </a>
+      
+      <a href="/subcontents/practices.html" class="content-button">
+        <span class="button-icon">🥼</span>
+        <span class="button-text">LoPT実践分室</span>
+      </a>
+      
+      <a href="/subcontents/fictions.html" class="content-button">
+        <span class="button-icon">🖋️</span>
+        <span class="button-text">鳴葉灯理の「あくまでフィクションです。」</span>
+      </a>
+      
+      <a href="/tankas/index.html" class="content-button">
+        <span class="button-icon">🥀</span>
+        <span class="button-text">歌集：叶わじの彼岸花</span>
+      </a>
+      
+      <a href="/subcontents/observatories.html" class="content-button">
+        <span class="button-icon">🕰️</span>
+        <span class="button-text">氷科計中央天文台</span>
+      </a>
+      
+      <a href="/subcontents/boxes.html" class="content-button">
+        <span class="button-icon">🗃️</span>
+        <span class="button-text">杓内なづきのおもちゃ箱</span>
+      </a>
+      
+      <a href="/subako/index.html" class="content-button">
+        <span class="button-icon">🪺</span>
+        <span class="button-text">くいるのすばこ(仮称)</span>
+      </a>
+      
+      <a href="/subcontents/links.html" class="content-button">
+        <span class="button-icon">🔗</span>
+        <span class="button-text">リンク集・連絡先</span>
+      </a>
+      
+      <a href="/subcontents/staff.html" class="content-button">
+        <span class="button-icon">👪</span>
+        <span class="button-text">構成員</span>
+      </a>
+      
+      <a href="/about.html" class="content-button">
+        <span class="button-icon">❓</span>
+        <span class="button-text">恵生ニルクレシィについて</span>
+      </a>
+      
+    </div>
+  </section>
+</div>
   </body>
 </html>

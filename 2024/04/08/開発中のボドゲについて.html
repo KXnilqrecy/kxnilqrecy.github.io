@@ -38,7 +38,7 @@
 
     <meta name="google-site-verification" content="1XS-_jxYV-ZnPNosmqWTDri7p8729Qo40Ylm4px0YWA" />
   </head>
-  <body class="c7">
+  <body>
     <div class="clock">
     <div id="clock2">ここに長期暦を表示</div>
     <div id="clock">ここに暦を表示</div>
@@ -108,17 +108,31 @@ function parseCSV(data) {
 }
     </script>
 </div>
-    <h1 class="c1">開発中のボドゲについて</h1>
+    <article class="post-container">
+  <!-- 記事ヘッダー -->
+  <header class="post-header">
+    <div class="post-meta-top">
+      <time class="post-date">2024年04月08日</time>
+      
+      
+      
+        <span class="post-author">
+          <a href="/authors/hasuma.html">
+            <i class="author-icon">👤</i> 蓮間ひさと
+          </a>
+        </span>
+      
+    </div>
+    
+    <h1 class="post-full-title">開発中のボドゲについて</h1>
+    
+    <!-- 飾り線 -->
+    <div class="post-title-separator"></div>
+  </header>
 
-<p>
-  08 Apr 2024
-  
-  
-    - <a href="/authors/hasuma.html">蓮間ひさと</a>
-  
-</p>
-
-<p>　蓮間ひさとです。伊那がボードゲームを考案してきたのですが、私のプログラミング力(ぢから)では動かせるようなコードを書けなかったので、せめて明文化しておこうと思います。</p>
+  <!-- 記事本文 -->
+  <div class="post-main-content">
+    <p>　蓮間ひさとです。伊那がボードゲームを考案してきたのですが、私のプログラミング力(ぢから)では動かせるようなコードを書けなかったので、せめて明文化しておこうと思います。</p>
 
 <p>・9*9マスの盤面を使う、ただし将棋などと違って向かい合わせではない。</p>
 
@@ -162,27 +176,14 @@ function parseCSV(data) {
 
 <p>以上が大まかなルールです。もし実装していただける方がいらっしゃれば久入すいうの何らかの連絡先に伝えていただけると私と伊那が喜びます。</p>
 
-    <hr>
-    <nav>
-    <div class="center">サイトナビゲーション<br>
-    
-      <a href="/" >Home</a>
-    
-      <a href="/subcontents/blog.html" >「久入すいう」のブログ</a>
-    
-      <a href="/subcontents/ytigeets.html" >ユーティゲート測候所</a>
-    
-      <a href="/subcontents/pseudrences.html" >夢似科学研究所</a>
-    
-      <a href="/subcontents/tankas.html" >千翠れいしの短歌集</a>
-    
-      <a href="/subcontents/conlangs.html" >久入言語研究室</a>
-    
-      <a href="/subcontents/staff.html" >構成員</a>
-    
-      <a href="/about.html" >恵生ニルクレシィについて</a>
-    
-    </div>
-</nav>
+  </div>
+
+  <!-- 記事フッター（戻るボタンなど） -->
+  <footer class="post-footer">
+    <a href="javascript:history.back()" class="back-button">
+      <span>← 前の画面に戻る</span>
+    </a>
+  </footer>
+</article>
   </body>
 </html>

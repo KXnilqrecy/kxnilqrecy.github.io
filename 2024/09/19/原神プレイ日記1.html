@@ -38,7 +38,7 @@
 
     <meta name="google-site-verification" content="1XS-_jxYV-ZnPNosmqWTDri7p8729Qo40Ylm4px0YWA" />
   </head>
-  <body class="c7">
+  <body>
     <div class="clock">
     <div id="clock2">ここに長期暦を表示</div>
     <div id="clock">ここに暦を表示</div>
@@ -108,17 +108,31 @@ function parseCSV(data) {
 }
     </script>
 </div>
-    <h1 class="c1">原神プレイ日記1</h1>
+    <article class="post-container">
+  <!-- 記事ヘッダー -->
+  <header class="post-header">
+    <div class="post-meta-top">
+      <time class="post-date">2024年09月19日</time>
+      
+      
+      
+        <span class="post-author">
+          <a href="/authors/mewoka.html">
+            <i class="author-icon">👤</i> 社枝めをか
+          </a>
+        </span>
+      
+    </div>
+    
+    <h1 class="post-full-title">原神プレイ日記1</h1>
+    
+    <!-- 飾り線 -->
+    <div class="post-title-separator"></div>
+  </header>
 
-<p>
-  19 Sep 2024
-  
-  
-    - <a href="/authors/mewoka.html">社枝めをか</a>
-  
-</p>
-
-<p>　はじめまして。旅人のめをかです。今度から恵生ニルクレシィのブログで、原神のプレイ日記をつけることになりました。</p>
+  <!-- 記事本文 -->
+  <div class="post-main-content">
+    <p>　はじめまして。旅人のめをかです。今度から恵生ニルクレシィのブログで、原神のプレイ日記をつけることになりました。</p>
 
 <p>　今回は「ver5.0のナタ魔神任務1幕/2幕、ムアラニ伝説任務、キィニチ伝説任務」のプレイ時のメモを残そうと思います。</p>
 
@@ -248,27 +262,14 @@ function parseCSV(data) {
 
 <p>　魔神任務2幕でイアンサが「力には、代償が伴うけどな」と言っていたが、キィニチ伝説任務で「栄誉には代償が伴う」「契約には代償が伴う」と出てきたのは、今後もこのテーマを使うということなのだろうか。</p>
 
-    <hr>
-    <nav>
-    <div class="center">サイトナビゲーション<br>
-    
-      <a href="/" >Home</a>
-    
-      <a href="/subcontents/blog.html" >「久入すいう」のブログ</a>
-    
-      <a href="/subcontents/ytigeets.html" >ユーティゲート測候所</a>
-    
-      <a href="/subcontents/pseudrences.html" >夢似科学研究所</a>
-    
-      <a href="/subcontents/tankas.html" >千翠れいしの短歌集</a>
-    
-      <a href="/subcontents/conlangs.html" >久入言語研究室</a>
-    
-      <a href="/subcontents/staff.html" >構成員</a>
-    
-      <a href="/about.html" >恵生ニルクレシィについて</a>
-    
-    </div>
-</nav>
+  </div>
+
+  <!-- 記事フッター（戻るボタンなど） -->
+  <footer class="post-footer">
+    <a href="javascript:history.back()" class="back-button">
+      <span>← 前の画面に戻る</span>
+    </a>
+  </footer>
+</article>
   </body>
 </html>
