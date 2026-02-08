@@ -108,7 +108,7 @@ h2::after {
   padding-left: 1em;
   padding-right: 1em;
   color: #fef4f4;
-  background-color: #ba2636;
+  background-color: #912415;
   display: flex;
   justify-content: space-between;
 }
@@ -120,6 +120,10 @@ h2::after {
 
 /* スマホ対応（さらに細かな調整が必要な場合） */
 @media (max-width: 600px) {
+  .clock {
+    display: block;
+    justify-content: normal;
+  }
   .contents-grid {
     grid-template-columns: 1fr 1fr; /* スマホでも2列にしたい場合はここを 1fr 1fr に */
     gap: 15px;

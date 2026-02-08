@@ -38,7 +38,8 @@
   <body>
     <div class="clock">
     <div id="clock2">ここに長期暦を表示</div>
-    <div id="clock">ここに暦を表示</div>
+    <div id="clock1">ここに暦1を表示</div>
+    <div id="clock3">ここに暦2を表示</div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
     fetch('https://kxnilqrecy.github.io/assets/csv/jungo.csv')
@@ -94,7 +95,8 @@ function parseCSV(data) {
     const qiepoch = new Date(2005, 8, 23, 7, 23);
     let qidelta = (nowdate.getTime() - qiepoch.getTime()) / 1000 / 86400;
     let qi = Math.floor(qidelta / 52.177435832489);
-    document.getElementById('clock').textContent = `Xq${xq}Lp${lp}${mk}/${nowjungo}(第${qi}期):&${hisuinum}-${koku}刻`;
+    document.getElementById('clock1').textContent = `Xq${xq}Lp${lp}${mk}`
+    document.getElementById('clock3').textContent = `${nowjungo}(第${qi}期):&${hisuinum}-${koku}刻`;
     const longepoch = new Date(-5513, 8, 26);
     let longdelta = nowdate.getTime() - longepoch.getTime();
     let long1 = ('0000' + decToBase62(longdelta % 14776334)).slice(-4);
