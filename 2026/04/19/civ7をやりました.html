@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E4NPYH1T62"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E4NPYH1T62');
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Civ7をやりました</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://kxnilqrecy.github.io/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link type="application/atom+xml" rel="alternate" href="https://kxnilqrecy.github.io/feed.xml" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Civ7をやりました</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Civ7をやりました" />
+<meta name="author" content="ina" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="　正直、ChatGPTの正しい使い方は傾聴させることだと思います。どっかの誰かさんと違って「まともに話を聞く」ので。伊那すいうです。" />
+<meta property="og:description" content="　正直、ChatGPTの正しい使い方は傾聴させることだと思います。どっかの誰かさんと違って「まともに話を聞く」ので。伊那すいうです。" />
+<link rel="canonical" href="https://kxnilqrecy.github.io/2026/04/19/civ7%E3%82%92%E3%82%84%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F.html" />
+<meta property="og:url" content="https://kxnilqrecy.github.io/2026/04/19/civ7%E3%82%92%E3%82%84%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F.html" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-04-19T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Civ7をやりました" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"ina"},"dateModified":"2026-04-19T00:00:00+09:00","datePublished":"2026-04-19T00:00:00+09:00","description":"　正直、ChatGPTの正しい使い方は傾聴させることだと思います。どっかの誰かさんと違って「まともに話を聞く」ので。伊那すいうです。","headline":"Civ7をやりました","mainEntityOfPage":{"@type":"WebPage","@id":"https://kxnilqrecy.github.io/2026/04/19/civ7%E3%82%92%E3%82%84%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F.html"},"url":"https://kxnilqrecy.github.io/2026/04/19/civ7%E3%82%92%E3%82%84%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="google-site-verification" content="1XS-_jxYV-ZnPNosmqWTDri7p8729Qo40Ylm4px0YWA" />
+  </head>
+  <body>
+    <div class="clock">
+    <div id="clock2">ここに長期暦を表示</div>
+    <div id="clock1">ここに暦1を表示</div>
+    <div id="clock3">ここに暦2を表示</div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    fetch('https://kxnilqrecy.github.io/assets/csv/jungo.csv')
+        .then(response => response.text())
+        .then(data => parseCSV(data));
+});
+function decToBase62(num_){
+  if (num_ === null) return void 0;
+  let num = Number(num_);
+  if (isNaN(num)) return void 0;
+  if (Math.floor(num) !== num) return void 0;
+  
+  let is_negative = num < 0;
+  num = Math.abs(num);
+  
+  let ret = "", digit = 0;
+  while(true){
+    digit = num % 62;
+    if (digit < 10)
+      ret+=String(digit); //0-9
+    else if (digit < 36)
+      ret+=String.fromCharCode(digit + 55); //A-Z
+    else
+      ret+=String.fromCharCode(digit + 61); //a-z
+    if (num < 62)
+      break;
+    else
+      num = Math.floor(num / 62);
+  }
+  if (is_negative) ret+="-";
+  return ret.split("").reverse().join("");
+}
+function parseCSV(data) {
+    const jungos = data.split('\n');
+    const lpmark = ['🌑', '🌒', '🌓', '🌔', '🌕', '🌖', '🌗', '🌘', '🌑'];
+    let nowdate = new Date();
+    const epochdate = new Date(2019, 4, 1, 18);
+    let deltadate = (nowdate.getTime() - epochdate.getTime()) / 1000 / 86400;
+    let day = Math.floor(deltadate);
+    let time = (deltadate - day);
+    let hisuiepoch = new Date(2005, 7, 15);
+    let hisuinum = Math.floor((nowdate.getTime() - hisuiepoch.getTime()) / 86400000);
+    let nowjungo = jungos[day];
+    let koku = Math.floor((time * 96) * 10) / 10;
+    const lunarepoch = new Date(2019, 4, 5, 7, 45);
+    let lunardelta = (nowdate.getTime() - lunarepoch.getTime()) / 1000 / 86400;
+    let lp = Math.floor((lunardelta - Math.floor(lunardelta / 29.530582990) * 29.530582990) * 10) / 10;
+    let lpmknum = Math.floor((lunardelta - Math.floor(lunardelta / 29.530582990) * 29.530582990) / 29.530582990 * 8 + 0.5);
+    let mk = lpmark[lpmknum];
+    const xqepoch = new Date(2018, 8, 23, 10, 54);
+    let xqdelta = (nowdate.getTime() - xqepoch.getTime()) / 1000 / 86400;
+    let xq = Math.floor(Math.ceil(xqdelta / 365.242050827423) * 365.242050827423 - xqdelta);
+    const qiepoch = new Date(2005, 8, 23, 7, 23);
+    let qidelta = (nowdate.getTime() - qiepoch.getTime()) / 1000 / 86400;
+    let qi = Math.floor(qidelta / 52.177435832489);
+    document.getElementById('clock1').textContent = `Xq${xq}Lp${lp}${mk}`
+    document.getElementById('clock3').textContent = `${nowjungo}(第${qi}期):&${hisuinum}-${koku}刻`;
+    const longepoch = new Date(-5513, 8, 26);
+    let longdelta = nowdate.getTime() - longepoch.getTime();
+    let long1 = ('0000' + decToBase62(longdelta % 14776334)).slice(-4);
+    let long2 = ('0000' + decToBase62(longdelta % 14776331)).slice(-4);
+    let long3 = ('0000' + decToBase62(longdelta % 14776329)).slice(-4);
+    let long4 = ('0000' + decToBase62(longdelta % 14776327)).slice(-4);
+    document.getElementById('clock2').textContent = `${long1}.${long2}.${long3}.${long4}`;
+}
+    </script>
+</div>
+    <article class="post-container">
+  <!-- 記事ヘッダー -->
+  <header class="post-header">
+    <div class="post-meta-top">
+      <time class="post-date">2026年04月19日</time>
+      
+      
+      
+        <span class="post-author">
+          <a href="/authors/ina.html">
+            <i class="author-icon">👤</i> 伊那すいう
+          </a>
+        </span>
+      
+    </div>
+    
+    <h1 class="post-full-title">Civ7をやりました</h1>
+    
+    <!-- 飾り線 -->
+    <div class="post-title-separator"></div>
+  </header>
+
+  <!-- 記事本文 -->
+  <div class="post-main-content">
+    <p>　正直、ChatGPTの正しい使い方は傾聴させることだと思います。どっかの誰かさんと違って「まともに話を聞く」ので。伊那すいうです。</p>
+
+<p>　↑という書き出し候補があったのですが、なんか最近のアプデが入ってからかなんか「そんなこと言ってないんだけど……」と思う回数が増えてきたので、半分没ということで今回消費しちゃいたいと思います。伊那すいうです。</p>
+
+<p>　……え、ブログの書き出しってネタ帳作ってるのかって？　そうです(伊那だけですが)。私はブログでも小説でも書き出しに悩むタイプなので、マクラを確保しておくのは重要なのです。</p>
+
+<p>　本題ですが、この間けーにる外の友人とCiv7(シヴィライゼーションⅦ)をプレイしました。協力戦だったのですが、そこである要素の噛み合わせによって面白い結果が得られたので、ここに書き残しておこうと思います。</p>
+
+<p>　まず前提として、Civ7の仕様をいくつか紹介します。</p>
+
+<ul>
+  <li>
+    <p>指導者と文明が別々に配られる：伊那はローマ帝国のフリードリヒ二世、友人はミシシッピ文明のパチャクテクでした。文明にはそれぞれ固有の効果があり、場合によっては大きくプレイ方針に影響するものもあります。</p>
+  </li>
+  <li>
+    <p>古代→探検の時代→近代の3つの時代がある：今回は大陸2枚のマップでプレイしたのですが、新大陸(最初にスポーンしなかった側の大陸)は基本的に探検の時代にならないと探索できません(外洋を探索するための技術ツリー「地図製作法」は探検の時代にならないと取得できないので)。</p>
+  </li>
+  <li>
+    <p>居住地の数に事実上の上限(これを超えて居住地をつくるとデバフが掛かる)があり、社会制度ツリーを進めていくことで徐々に居住地を増やせるようになる</p>
+  </li>
+  <li>
+    <p>時代が一定の進度を迎えると数百年飛び、新たな時代になる</p>
+  </li>
+</ul>
+
+<p>　……という前提を踏まえてプレイ日記の概略を話そうと思います。</p>
+
+<p>　まず、古代の時点であるCPUが敗北しました。そこでCPU込みのプレイヤーの人数を数えてみると、どうも一人のCPUが新大陸を独り占めしているっぽいことが判明しました。</p>
+
+<p>　そして、探検の時代に入り、外洋探索をしていると「ナポレオン」という指導者の「海賊共和国」という文明を発見しました。</p>
+
+<p>　ですが、なんかおかしい。</p>
+
+<p>　まず、送り出した斥候が一向にナポレオンの領土に当たらない。ナポレオンは新大陸を独り占めしてるんじゃなかったのか？</p>
+
+<p>　そこで右上の各プレイヤーのパラメータを確認すると、なんかやけに貧乏だし、3つしか居住地を持っていない(伊那はこの時点で9つの居住地を持っていました)。</p>
+
+<p>　はて、なぜこんなことに。それは「海賊共和国」という文明の特殊効果に原因がありました。</p>
+
+<p>　それは、「自分で開拓者(居住地を増やすユニット)を作れない代わりに、他人の開拓者を捕獲できる」というものでした。</p>
+
+<p>　その瞬間、新大陸で起こったであろう次のようなストーリーが二人の中で完成しました。</p>
+
+<ul>
+  <li>
+    <p>古代：おそらくナポレオンは海賊共和国以外の文明を引いていて、古代の居住地制限に引っかからないように、もう一つの文明を滅ぼしつつ、つつましく居住地をつくった</p>
+  </li>
+  <li>
+    <p>探検の時代：新大陸は自分だけだし、領土広げるぞーと思った矢先に海賊共和国を引く。我々の大陸から開拓者が来るのはしばらく後……</p>
+  </li>
+</ul>
+
+<p>　その瞬間、友人は言いました。「ナポレオンはほっといて、こっちの大陸を統一しましょ」</p>
+
+<p>　とはいえ、結局はナポレオンと旧大陸の間の島に橋頭堡となる居住地をつくって、二正面で戦争を進めていくことになります。</p>
+
+<p>　旧大陸は私(伊那)、新大陸は友人、というのがざっくりとした役割分担でした。</p>
+
+<p>　旧大陸を統一して、やることは新大陸に行った友人の応援くらいかー(海軍持ってないし)、と思っていたころ、友人はナポレオンの最後の都市を攻めていました。</p>
+
+<p>　しかしここで、まさかの伏兵。「残り10ターン」という表示。まさかのゲームシステムが参戦。</p>
+
+<p>　そう。時代が進んでしまうと、ユニットの配置や文明の分担が変化するので、それまでに決着をつけないと面倒なことになってしまうのです。</p>
+
+<p>「一応、次の時代に進んでも速攻でナポレオン倒しますが、準備だけしておいてくださいよ」とは友人。</p>
+
+<p>　そのターンでナポレオンの最後の都市を攻め落とした！　……と思ったが、なぜか勝利画面が出ない。</p>
+
+<p>　よく見ると、さっきまで「都市国家ハマー」だった場所がナポレオンの領土になっているではありませんか。最後の最後に、併合という手段で逃げ延びていたのです。</p>
+
+<p>伊那「まぁ、史実のナポレオンも島流しに遭ってたし……」</p>
+
+<p>友人「セントヘレナ島ですね」</p>
+
+<p>　友人の軍隊が現在の戦線からハマーにたどり着くまでに若干時間を要する、でもそうすると時代が終わってしまう……何か、都市の防壁だけでも削る方法は……あった！　海上の未開放タイルをめくろうとしてふらふらと動かしていたコグ船二隻が、ちょうどハマー沖にいる！</p>
+
+<p>友人「すいうさん！　そこのコグ船でナポレオンに海上攻撃してください！」</p>
+
+<p>伊那「了解！」</p>
+
+<p>　そうして、最後の1ターン、時代が終わるギリギリに、我々はなんとか世界統一を果たすことが出来たのです。</p>
+
+<p>友人「この世界は近代まで進めないんですね」</p>
+
+<p>伊那「なんてこと言うんですか、ちゃんと進めてますよ。我々の国だけですが」</p>
+
+<p>　ということで、図らずも探検の時代までにゲームをクリアしてしまった、というわけです。</p>
+
+  </div>
+
+  <!-- 記事フッター（戻るボタンなど） -->
+  <footer class="post-footer">
+    <a href="javascript:history.back()" class="back-button">
+      <span>← 前の画面に戻る</span>
+    </a>
+  </footer>
+</article>
+  </body>
+</html>
