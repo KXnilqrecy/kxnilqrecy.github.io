@@ -98,6 +98,34 @@ h2::after {
   border-color: #bbdefb;
 }
 
+.clapper {
+  max-width: 160px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.clap-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background-color: #ffffff;
+  color: #5da9e9;
+  text-decoration: none;
+  border: 2px solid #e3f2fd;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.clap-button:hover {
+  background-color: #e3f2fd;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 123, 255, 0.1);
+  border-color: #bbdefb;
+}
+
 .current {
   color: green;
 }
@@ -143,7 +171,7 @@ h2::after {
     transform: translateY(0);
   }
 }
-.profile-card, .description-section, .content-button {
+.profile-card, .description-section, .content-button, .clap-button {
   animation: fadeInUp 0.8s ease backwards;
 }
 

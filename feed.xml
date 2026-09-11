@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://kxnilqrecy.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kxnilqrecy.github.io/" rel="alternate" type="text/html" /><updated>2026-08-21T22:12:45+09:00</updated><id>https://kxnilqrecy.github.io/feed.xml</id><entry><title type="html">続・現実病</title><link href="https://kxnilqrecy.github.io/2026/08/21/%E7%B6%9A-%E7%8F%BE%E5%AE%9F%E7%97%85.html" rel="alternate" type="text/html" title="続・現実病" /><published>2026-08-21T00:00:00+09:00</published><updated>2026-08-21T00:00:00+09:00</updated><id>https://kxnilqrecy.github.io/2026/08/21/%E7%B6%9A%E3%83%BB%E7%8F%BE%E5%AE%9F%E7%97%85</id><content type="html" xml:base="https://kxnilqrecy.github.io/2026/08/21/%E7%B6%9A-%E7%8F%BE%E5%AE%9F%E7%97%85.html"><![CDATA[<p>「せいさん」という語を聞くと、呼ばれた気がしてちょっとビクっとなります。伊那すいうです。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://kxnilqrecy.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kxnilqrecy.github.io/" rel="alternate" type="text/html" /><updated>2026-09-12T05:41:30+09:00</updated><id>https://kxnilqrecy.github.io/feed.xml</id><entry><title type="html">拍手機能の追加</title><link href="https://kxnilqrecy.github.io/2026/09/12/%E6%8B%8D%E6%89%8B%E6%A9%9F%E8%83%BD%E3%81%AE%E8%BF%BD%E5%8A%A0.html" rel="alternate" type="text/html" title="拍手機能の追加" /><published>2026-09-12T00:00:00+09:00</published><updated>2026-09-12T00:00:00+09:00</updated><id>https://kxnilqrecy.github.io/2026/09/12/%E6%8B%8D%E6%89%8B%E6%A9%9F%E8%83%BD%E3%81%AE%E8%BF%BD%E5%8A%A0</id><content type="html" xml:base="https://kxnilqrecy.github.io/2026/09/12/%E6%8B%8D%E6%89%8B%E6%A9%9F%E8%83%BD%E3%81%AE%E8%BF%BD%E5%8A%A0.html"><![CDATA[<p>　蓮間ひさとの開発日記です。</p>
+
+<p>　……ブログを久々に書く気がします。たぶん気のせいではない。</p>
+
+<p>　今回、実験的にGoogleフォームを使った拍手機能を追加しました。ページの一番下に「👏拍手する」機能がついてると思います。ついてなければ失敗していますが、たぶん大丈夫でしょう。</p>
+
+<p>　ポチっと押すとGoogleフォームが開きます。「今のページのURL」と「今のページのタイトル」は自動で設定されます。ひとことは、書いても書かなくても届きます。</p>
+
+<p>　準備が出来たら送信してもらえば、あなたのお気持ちがけーにるメンバーに届きます。基本的に匿名なのでご安心を。</p>]]></content><author><name>hasuma</name></author><summary type="html"><![CDATA[　蓮間ひさとの開発日記です。]]></summary></entry><entry><title type="html">続・現実病</title><link href="https://kxnilqrecy.github.io/2026/08/21/%E7%B6%9A-%E7%8F%BE%E5%AE%9F%E7%97%85.html" rel="alternate" type="text/html" title="続・現実病" /><published>2026-08-21T00:00:00+09:00</published><updated>2026-08-21T00:00:00+09:00</updated><id>https://kxnilqrecy.github.io/2026/08/21/%E7%B6%9A%E3%83%BB%E7%8F%BE%E5%AE%9F%E7%97%85</id><content type="html" xml:base="https://kxnilqrecy.github.io/2026/08/21/%E7%B6%9A-%E7%8F%BE%E5%AE%9F%E7%97%85.html"><![CDATA[<p>「せいさん」という語を聞くと、呼ばれた気がしてちょっとビクっとなります。伊那すいうです。</p>
 
 <p>　今回は<a href="../16/現実病.html">前回のブログ</a>の続き。</p>
 
@@ -242,14 +250,4 @@
 
 <p>　この間、「子供がAIを使ってるのをやめさせたい」という文脈で、「AIを使ってる子供より自分で考える子供の方が偉い」みたいな演出をしてるテレビ番組を見かけたのですが、「人力は気持ちがこもってる」って言うなら「じゃあコンバインで作った米じゃなくて手植え手刈りの米食ってろ」「テレビカメラなんぞ捨てて狼煙の時代に戻ってろ」と思うし、国の経済が数十年低迷しっぱなしで「お前らは年寄りを養っていかなきゃならないんだぞ、お前らに年金はないだろうけど税金は納めろよ」みたいなことを義務教育で教えられる時代に「自分で考えればいつか自分に報われる」なんて幻想以上の何者でもない、「AIに喰われる」以前にこの国の若者は「ITオンチの老害どもと湿布を保険適用で買い込む老人どもと既得権益」に喰われてるのに、自分に得がないからAIは使うなって、じゃあ我々にも頼るんじゃねーぞお前らと言いたい。</p>
 
-<p>　取り乱しました。我々の生きてる意味って、なんなんでしょうね。</p>]]></content><author><name>hasuma</name></author><summary type="html"><![CDATA[　開発担当の蓮間です。]]></summary></entry><entry><title type="html">新・恵生ニルクレシィ</title><link href="https://kxnilqrecy.github.io/2026/02/01/%E6%96%B0-%E6%81%B5%E7%94%9F%E3%83%8B%E3%83%AB%E3%82%AF%E3%83%AC%E3%82%B7%E3%82%A3.html" rel="alternate" type="text/html" title="新・恵生ニルクレシィ" /><published>2026-02-01T00:00:00+09:00</published><updated>2026-02-01T00:00:00+09:00</updated><id>https://kxnilqrecy.github.io/2026/02/01/%E6%96%B0%E3%83%BB%E6%81%B5%E7%94%9F%E3%83%8B%E3%83%AB%E3%82%AF%E3%83%AC%E3%82%B7%E3%82%A3</id><content type="html" xml:base="https://kxnilqrecy.github.io/2026/02/01/%E6%96%B0-%E6%81%B5%E7%94%9F%E3%83%8B%E3%83%AB%E3%82%AF%E3%83%AC%E3%82%B7%E3%82%A3.html"><![CDATA[<p>　このブログをあなたが読んでいるころには、恵生ニルクレシィのページに発生している異変に気付くことでしょう。</p>
-
-<p>　そう。前回のブログ更新から半年をかけて、けーにるのサイトを全面リニューアルしました。</p>
-
-<p>　だいぶリッチな見た目になりましたでしょう？　蓮間には感謝しています。</p>
-
-<p>　見た目だけじゃありません。記事のカテゴリを再編して、今までよりガンガン記事を追加できるような体制にしています。</p>
-
-<p>　……まぁ、やる気が起きなければ更新も起きないんですけど。</p>
-
-<p>　ということで、色々見ていってください。いま一番「久入綏雨」のことが分かるのはここのはずなので。</p>]]></content><author><name>ina</name></author><summary type="html"><![CDATA[　このブログをあなたが読んでいるころには、恵生ニルクレシィのページに発生している異変に気付くことでしょう。]]></summary></entry></feed>
+<p>　取り乱しました。我々の生きてる意味って、なんなんでしょうね。</p>]]></content><author><name>hasuma</name></author><summary type="html"><![CDATA[　開発担当の蓮間です。]]></summary></entry></feed>
