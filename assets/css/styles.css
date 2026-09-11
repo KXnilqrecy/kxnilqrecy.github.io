@@ -99,7 +99,9 @@ h2::after {
 }
 
 .clapper {
-  max-width: 160px;
+  display: flex;
+  justify-content: center;
+  max-width: 220px;
   margin: 0 auto;
   padding: 40px 20px;
 }
@@ -109,6 +111,7 @@ h2::after {
   align-items: center;
   justify-content: center;
   height: 40px;
+  width: 200px;
   background-color: #ffffff;
   color: #5da9e9;
   text-decoration: none;
